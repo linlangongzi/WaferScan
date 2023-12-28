@@ -1,0 +1,24 @@
+[
+    {
+        "ChannelParameters": [
+            {
+                "AD_Frequency": 100,
+                "DA_Frequency": 1,
+                "FPGA_Frequency": 100,
+                "FPGA_RAM_Size": 16384,
+                "RectifierZero": 490,
+                "TCG_RAM_Size": 1024,
+                "wAPlus": 20,
+                "wBPlus": 20,
+                "wCPlus": 0,
+                "wDPlus": 0
+            }
+        ],
+        "Device": "PXI100",
+        "ID": "1",
+        "Name": "LowerComputer",
+        "NumChannels": 992,
+        "Type": "UTInstrument",
+        "WorkMode": 3
+    }
+]

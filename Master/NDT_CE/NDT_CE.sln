@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NDT_CE", "NDT_CE\NDT_CE.vcproj", "{138E0319-80DE-47A2-AB1F-C999F750AD45}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CeConsole", "CeConsole\CeConsole.vcproj", "{B5D3E812-B44A-4F0C-9E66-3B526E777E81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|SDK1 (ARMV4I) = Debug|SDK1 (ARMV4I)
+		Release|SDK1 (ARMV4I) = Release|SDK1 (ARMV4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{138E0319-80DE-47A2-AB1F-C999F750AD45}.Debug|SDK1 (ARMV4I).ActiveCfg = Debug|SDK1 (ARMV4I)
+		{138E0319-80DE-47A2-AB1F-C999F750AD45}.Debug|SDK1 (ARMV4I).Build.0 = Debug|SDK1 (ARMV4I)
+		{138E0319-80DE-47A2-AB1F-C999F750AD45}.Debug|SDK1 (ARMV4I).Deploy.0 = Debug|SDK1 (ARMV4I)
+		{138E0319-80DE-47A2-AB1F-C999F750AD45}.Release|SDK1 (ARMV4I).ActiveCfg = Release|SDK1 (ARMV4I)
+		{138E0319-80DE-47A2-AB1F-C999F750AD45}.Release|SDK1 (ARMV4I).Build.0 = Release|SDK1 (ARMV4I)
+		{138E0319-80DE-47A2-AB1F-C999F750AD45}.Release|SDK1 (ARMV4I).Deploy.0 = Release|SDK1 (ARMV4I)
+		{B5D3E812-B44A-4F0C-9E66-3B526E777E81}.Debug|SDK1 (ARMV4I).ActiveCfg = Debug|SDK1 (ARMV4I)
+		{B5D3E812-B44A-4F0C-9E66-3B526E777E81}.Debug|SDK1 (ARMV4I).Build.0 = Debug|SDK1 (ARMV4I)
+		{B5D3E812-B44A-4F0C-9E66-3B526E777E81}.Debug|SDK1 (ARMV4I).Deploy.0 = Debug|SDK1 (ARMV4I)
+		{B5D3E812-B44A-4F0C-9E66-3B526E777E81}.Release|SDK1 (ARMV4I).ActiveCfg = Release|SDK1 (ARMV4I)
+		{B5D3E812-B44A-4F0C-9E66-3B526E777E81}.Release|SDK1 (ARMV4I).Build.0 = Release|SDK1 (ARMV4I)
+		{B5D3E812-B44A-4F0C-9E66-3B526E777E81}.Release|SDK1 (ARMV4I).Deploy.0 = Release|SDK1 (ARMV4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

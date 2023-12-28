@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChannelTreeWidget</class>
+ <widget class="QWidget" name="ChannelTreeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="3">
+    <widget class="QToolButton" name="add">
+     <property name="icon">
+      <iconset resource="../../../Resources/Resources.qrc">
+       <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QToolButton" name="remove">
+     <property name="icon">
+      <iconset resource="../../../Resources/Resources.qrc">
+       <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="2" colspan="5">
+    <widget class="QTreeWidget" name="treeWidget">
+     <column>
+      <property name="text">
+       <string>通道</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>间距</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

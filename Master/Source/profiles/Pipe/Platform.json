@@ -1,0 +1,119 @@
+﻿{
+    "AScan1": true,
+    "AScan10": false,
+    "AScan11": false,
+    "AScan12": false,
+    "AScan13": false,
+    "AScan14": false,
+    "AScan15": false,
+    "AScan16": false,
+    "AScan17": false,
+    "AScan18": false,
+    "AScan19": false,
+    "AScan2": false,
+    "AScan20": false,
+    "AScan21": false,
+    "AScan22": false,
+    "AScan23": false,
+    "AScan24": false,
+    "AScan25": false,
+    "AScan26": false,
+    "AScan27": false,
+    "AScan28": false,
+    "AScan29": false,
+    "AScan3": false,
+    "AScan30": false,
+    "AScan31": false,
+    "AScan32": false,
+    "AScan33": false,
+    "AScan4": false,
+    "AScan5": false,
+    "AScan6": false,
+    "AScan7": false,
+    "AScan8": false,
+    "AScan9": false,
+    "AScanPlotAntialiasing": false,
+    "AScanPlotFillColor": true,
+    "AxisController": true,
+    "CScan1": true,
+    "Camera": false,
+    "DACColor": "#0000FF",
+    "DefaultInterval": 0.10000000000000001,
+    "DefaultStep": 1,
+    "DefaultWindowsState": "\u0000\u0000\u0000Ъ\u0000\u0000\u0000\u0000Щ\u0000\u0000\u0000\u0002\u0000\u0000\u0000\u0000\u0000\u0000\u0005э\u0000\u0000\u0004HЭ\u0002\u0000\u0000\u0000\u0006ШЪЪЪЪ\u0001\u0000\u0000\u0000\u0017\u0000\u0000\u0001N\u0000\u0000\u0000w\u0000ЪЪЪШЪЪЪЪ\u0002\u0000\u0000\u0003├\u0000\u0000\u0002\u001e\u0000\u0000\u0001д\u0000\u0000\u0002\fШЪЪЪЪ\u0000\u0000\u0000\u0000\u0000ЪЪЪЪ\u0000\u0000\u0000w\u0000ЪЪЪШЪЪЪЪ\u0001\u0000\u0000\u0001i\u0000\u0000\u0002-\u0000\u0000\u0000║\u0000ЪЪЪШЪЪЪЪ\u0000\u0000\u0000\u0000\u0000ЪЪЪЪ\u0000\u0000\u0000║\u0000ЪЪЪШЪЪЪЪ\u0001\u0000\u0000\u0003 \u0000\u0000\u0000е\u0000\u0000\u0000е\u0000ЪЪЪ\u0000\u0000\u0000\u0001\u0000\u0000\u0001═\u0000\u0000\u0004HЭ\u0002\u0000\u0000\u0000\u0004Ш\u0000\u0000\u0000$\u0000P\u0000a\u0000n\u0000e\u0000l\u0000M\u0000o\u0000t\u0000i\u0000o\u0000n\u0000C\u0000t\u0000r\u0000l\u0000C\u0000m\u0000d\u0000\u0000\u0000\u0000\u0000ЪЪЪЪ\u0000\u0000\u0000┬\u0000ЪЪЪШЪЪЪЪ\u0001\u0000\u0000\u0000\u0017\u0000\u0000\u0001А\u0000\u0000\u00015\u0000ЪЪЪШЪЪЪЪ\u0001\u0000\u0000\u0001Э\u0000\u0000\u0002c\u0000\u0000\u0000│\u0000ЪЪЪШЪЪЪЪ\u0000\u0000\u0000\u0000\u0000ЪЪЪЪ\u0000\u0000\u0000▄\u0000ЪЪЪ\u0000\u0000\u0000\u0000\u0000\u0000\u0004H\u0000\u0000\u0000\u0004\u0000\u0000\u0000\u0004\u0000\u0000\u0000\b\u0000\u0000\u0000\bЭ\u0000\u0000\u0000\u0000",
+    "EmptyHeight": 20,
+    "GlobalConfigFileName": "PipeGlobalConfigHasARS500.json",
+    "MotionDevice": "Trio",
+    "MotionDriverConnectOnLaunch": false,
+    "MotionIP": "192.168.0.89",
+    "ParameterInterval": 150,
+    "ReportKeys": [
+        {
+            "Enum": [
+            ],
+            "Key": "ReportNumber",
+            "Name": "报表编号",
+            "Value": ""
+        },
+        {
+            "Enum": [
+            ],
+            "Key": "Entrusted",
+            "Name": "请托单位",
+            "Value": ""
+        },
+        {
+            "Enum": [
+            ],
+            "Key": "DetectionSpeed",
+            "Name": "检测速度",
+            "Value": ""
+        },
+        {
+            "Enum": [
+            ],
+            "Key": "PipeNumber",
+            "Name": "材料编号",
+            "Value": ""
+        },
+        {
+            "Enum": [
+            ],
+            "Key": "PipeDiameter",
+            "Name": "材料直径",
+            "Value": ""
+        },
+        {
+            "Enum": [
+            ],
+            "Key": "PipeLength",
+            "Name": "材料长度",
+            "Value": ""
+        },
+        {
+            "Enum": [
+            ],
+            "Key": "Shift",
+            "Name": "班次",
+            "Value": ""
+        },
+        {
+            "Enum": [
+            ],
+            "Key": "Personal",
+            "Name": "探伤人员",
+            "Value": ""
+        },
+        {
+            "Enum": [
+            ],
+            "Key": "Standard",
+            "Name": "探伤标准",
+            "Value": ""
+        }
+    ],
+    "TCGColor": "#00FF00",
+    "TCGDelRange": 0.02,
+    "TCGReference": 80,
+    "UTInstrumentConnectOnLaunch": false
+}

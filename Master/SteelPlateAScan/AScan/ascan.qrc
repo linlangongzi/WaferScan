@@ -1,0 +1,46 @@
+<RCC>
+  <qresource prefix="/image">
+    <file>AScanResources/zheng2_select.png</file>
+    <file>AScanResources/A_定稿.png</file>
+    <file>AScanResources/A_定稿_MarkMan.png</file>
+    <file>AScanResources/baocun_noselect.png</file>
+    <file>AScanResources/baocun_select.png</file>
+    <file>AScanResources/danzhen_noselect.png</file>
+    <file>AScanResources/danzhen_select.png</file>
+    <file>AScanResources/danzzhen_move.png</file>
+    <file>AScanResources/dongjie_move.png</file>
+    <file>AScanResources/dongjie_noselect.png</file>
+    <file>AScanResources/dongjie_select.png</file>
+    <file>AScanResources/fangkuang_noselect.png</file>
+    <file>AScanResources/fangkuang_select.png</file>
+    <file>AScanResources/fu2_noselect.png</file>
+    <file>AScanResources/fu2_select.png</file>
+    <file>AScanResources/huaganshangceng.png</file>
+    <file>AScanResources/huaganshangceng-v.png</file>
+    <file>AScanResources/huaganxiaceng.png</file>
+    <file>AScanResources/huaganxiaceng-v.png</file>
+    <file>AScanResources/huangananniu.png</file>
+    <file>AScanResources/jiantou_down.jpg</file>
+    <file>AScanResources/jiantou_noselect.png</file>
+    <file>AScanResources/jiantou_select.png</file>
+    <file>AScanResources/jiantou_up.jpg</file>
+    <file>AScanResources/logo.png</file>
+    <file>AScanResources/luping_move.png</file>
+    <file>AScanResources/luping_noselect.png</file>
+    <file>AScanResources/luping_select.png</file>
+    <file>AScanResources/quan_noselect.png</file>
+    <file>AScanResources/quan_select.png</file>
+    <file>AScanResources/shuangsanjiao.png</file>
+    <file>AScanResources/shutiao.png</file>
+    <file>AScanResources/tuqi.jpg</file>
+    <file>AScanResources/tuqixian.png</file>
+    <file>AScanResources/xiaotiao.png</file>
+    <file>AScanResources/xuanfuzhi_move.png</file>
+    <file>AScanResources/xuanfuzhi_noselect.png</file>
+    <file>AScanResources/xuanfuzhi_select.png</file>
+    <file>AScanResources/zhankai_move.png</file>
+    <file>AScanResources/zhankai_noselect.png</file>
+    <file>AScanResources/zhankai_select.png</file>
+    <file>AScanResources/zheng2_noselect.png</file>
+  </qresource>
+</RCC>

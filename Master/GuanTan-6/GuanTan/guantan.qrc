@@ -1,0 +1,59 @@
+<RCC>
+  <qresource prefix="GuanTan">
+    <file>Resources/allrising.jpg</file>
+    <file>Resources/allrising.png</file>
+    <file>Resources/yonghuguanli_move1.png</file>
+    <file>Resources/yonghuguanli_noselect.png</file>
+    <file>Resources/yonghuguanli_select.png</file>
+    <file>Resources/ouhebuliang.png</file>
+    <file>Resources/xiayiji _select.png</file>
+    <file>Resources/dakai_move.png</file>
+    <file>Resources/dakai_noselect.png</file>
+    <file>Resources/dakai_select.png</file>
+    <file>Resources/shangyiji_move.png</file>
+    <file>Resources/shangyiji_noselect.png</file>
+    <file>Resources/shangyiji_select.png</file>
+    <file>Resources/xiayiji _move.png</file>
+    <file>Resources/xiayiji _noselect.png</file>
+    <file>Resources/CSIC.jpg</file>
+    <file>Resources/lastpipe_select.png</file>
+    <file>Resources/lastpipe_move.png</file>
+    <file>Resources/lastpipe_noselect.png</file>
+    <file>Resources/tantouhong.png</file>
+    <file>Resources/tantoulv.png</file>
+    <file>Resources/buhege.png</file>
+    <file>Resources/hege.png</file>
+    <file>Resources/A_move.png</file>
+    <file>Resources/A_noselect.png</file>
+    <file>Resources/A_select.png</file>
+    <file>Resources/bangzhu_move.png</file>
+    <file>Resources/bangzhu_noselect.png</file>
+    <file>Resources/bangzhu_select.png</file>
+    <file>Resources/biaotilan.png</file>
+    <file>Resources/gangbancanshushezhi_move.png</file>
+    <file>Resources/gangbancanshushezhi_noselect.png</file>
+    <file>Resources/gangbancanshushezhi_select.png</file>
+    <file>Resources/kaishi_move.png</file>
+    <file>Resources/kaishi_noselect.png</file>
+    <file>Resources/kaishi_select.png</file>
+    <file>Resources/logoGONGSI.png</file>
+    <file>Resources/lujinglingcunwei_move.png</file>
+    <file>Resources/lujinglingcunwei_noselect.png</file>
+    <file>Resources/lujinglingcunwei_select.png</file>
+    <file>Resources/qiehuanyonghu_move.png</file>
+    <file>Resources/qiehuanyonghu_noselect.png</file>
+    <file>Resources/qiehuanyonghu_select.png</file>
+    <file>Resources/tanshangliebiao_move.png</file>
+    <file>Resources/tanshangliebiao_noselect.png</file>
+    <file>Resources/tanshangliebiao_select.png</file>
+    <file>Resources/tingzhi_move.png</file>
+    <file>Resources/tingzhi_noselect.png</file>
+    <file>Resources/tingzhi_select.png</file>
+    <file>Resources/zhankaipng.png</file>
+    <file>Resources/zhuxiao_move.png</file>
+    <file>Resources/zhuxiao_noselect.png</file>
+    <file>Resources/zhuxiao_select.png</file>
+    <file>Resources/jiantou_up.jpg</file>
+    <file>Resources/jiantou_down.jpg</file>
+  </qresource>
+</RCC>

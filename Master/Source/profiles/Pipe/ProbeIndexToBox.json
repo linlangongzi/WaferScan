@@ -1,0 +1,130 @@
+﻿[
+	{
+		"BoxIndex": 0,
+        "ChannelIndex": 0
+	},
+	{
+		"BoxIndex": 0,
+        "ChannelIndex": 1
+	},
+	{
+		"BoxIndex": 0,
+        "ChannelIndex": 2
+	},
+	{
+		"BoxIndex": 0,
+        "ChannelIndex": 3
+	},
+	{
+		"BoxIndex": 1,
+        "ChannelIndex": 4
+	},
+	{
+		"BoxIndex": 1,
+        "ChannelIndex": 5
+	},
+	{
+		"BoxIndex": 1,
+        "ChannelIndex": 6
+	},
+	{
+		"BoxIndex": 1,
+        "ChannelIndex": 7
+	},
+	{
+		"BoxIndex": 2,
+        "ChannelIndex": 8
+	},
+	{
+		"BoxIndex": 2,
+        "ChannelIndex": 9
+	},
+	{
+		"BoxIndex": 2,
+        "ChannelIndex": 10
+	},
+	{
+		"BoxIndex": 2,
+        "ChannelIndex": 11
+	},
+	{
+		"BoxIndex": 3,
+        "ChannelIndex": 12
+	},
+	{
+		"BoxIndex": 3,
+        "ChannelIndex": 13
+	},
+	{
+		"BoxIndex": 3,
+        "ChannelIndex": 14
+	},
+	{
+		"BoxIndex": 3,
+        "ChannelIndex": 15
+	},
+	{
+		"BoxIndex": 4,
+        "ChannelIndex": 16
+	},
+	{
+		"BoxIndex": 4,
+        "ChannelIndex": 17
+	},
+	{
+		"BoxIndex": 4,
+        "ChannelIndex": 18
+	},
+	{
+		"BoxIndex": 4,
+        "ChannelIndex": 19
+	},
+	{
+		"BoxIndex": 0,
+        "ChannelIndex": 20
+	},
+	{
+		"BoxIndex": 1,
+        "ChannelIndex": 21
+	},
+	{
+		"BoxIndex": 2,
+        "ChannelIndex": 22
+	},
+	{
+		"BoxIndex": 3,
+        "ChannelIndex": 23
+	},
+	{
+		"BoxIndex": 4,
+        "ChannelIndex": 24
+	},
+	{
+		"BoxIndex": 0,
+        "ChannelIndex": 25
+	},
+	{
+		"BoxIndex": 1,
+        "ChannelIndex": 26
+	},
+	{
+		"BoxIndex": 2,
+        "ChannelIndex": 27
+	},
+	{
+		"BoxIndex": 3,
+        "ChannelIndex": 28
+	},
+	{
+		"BoxIndex": 4,
+        "ChannelIndex": 29
+    },
+    {
+        "BoxIndex": 0,
+        "ChannelIndex": 30
+    },
+    {
+        "BoxIndex": 1,
+        "ChannelIndex": 31
+    }
+]

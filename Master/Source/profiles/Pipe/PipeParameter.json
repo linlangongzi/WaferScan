@@ -1,0 +1,60 @@
+﻿{
+    "couplingAmp": 30,
+    "defectAmp": 50,
+    "materialDiameter": 300,
+    "materialLength": 12000,
+    "materialLevelText": "TestLevel",
+    "materialLevel":
+        [
+            {
+                "materialLevel": "TestLevel"
+            }
+        ],
+    "materialNumber": "001",
+    "materialThick": 15,
+    "orderCount": 500,
+    "orderNumber": "ARS20160531",
+    "showEnd": 12000,
+    "showStart": 0,
+    "testLevelText": "L1",
+    "testLevel":
+        [
+            {
+                "testLevel": "L1"
+            }
+        ],
+    "testStandardText": "GBT-5777-2008",
+    "testStandard":
+        [
+            {
+                "testStandard": "GBT-5777-2008"
+            },
+            {
+                "testStandard": "GBT-31925-2015"
+            }
+        ],
+    "thickMax": 18,
+    "thickMin": 12,
+    "thickShowMax": 20,
+    "thickShowMin": 10,
+    "workerClassesText": "白班",
+    "workerClasses":
+        [
+            {
+                "workerClasses": "白班"
+            },
+            {
+                "workerClasses": "夜班"
+            }
+        ],
+    "workerNameText": "ww",
+    "workerName":
+        [
+            {
+                "workerName": "ww"
+            },
+            {
+                "workerName": "wl"
+            }
+        ]
+}

@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ControlPanel</class>
+ <widget class="QDockWidget" name="ControlPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>749</width>
+    <height>508</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>控制面板</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QToolBar" name="toolbar">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <addaction name="actionStart"/>
+      <addaction name="actionStop"/>
+      <addaction name="separator"/>
+      <addaction name="actionLoad"/>
+      <addaction name="separator"/>
+      <addaction name="actionGenerateReport"/>
+      <addaction name="actionOpenReport"/>
+      <addaction name="separator"/>
+      <addaction name="actionStatistics"/>
+      <addaction name="separator"/>
+      <addaction name="actionPlot"/>
+      <addaction name="actionMakeImage"/>
+      <addaction name="separator"/>
+      <addaction name="actionConfig"/>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>信息</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>3</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QSplitter" name="splitter_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="handleWidth">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <layout class="QGridLayout" name="gridLayout_6">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="groupBox_2">
+              <property name="minimumSize">
+               <size>
+                <width>160</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>160</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="title">
+               <string>车辆信息</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="PanelTrainInfo" name="trainInfo">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="groupBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="title">
+               <string>通用信息</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="PanelDocumentInfo" name="documentInfo">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <spacer name="horizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>328</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QPushButton" name="modify">
+                <property name="text">
+                 <string>修改</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="title">
+            <string>通讯日志</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item row="0" column="1">
+             <widget class="QPlainTextEdit" name="log"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>车轮识别</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QSplitter" name="splitter">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="handleWidth">
+           <number>1</number>
+          </property>
+          <property name="childrenCollapsible">
+           <bool>false</bool>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="labelLeft_2">
+              <property name="text">
+               <string>右</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="BScanChart" name="chartRight">
+              <property name="renderHints">
+               <set>QPainter::Antialiasing|QPainter::TextAntialiasing</set>
+              </property>
+              <property name="dragMode">
+               <enum>QGraphicsView::RubberBandDrag</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="labelLeft">
+              <property name="text">
+               <string>左</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="BScanChart" name="chartLeft">
+              <property name="renderHints">
+               <set>QPainter::Antialiasing|QPainter::TextAntialiasing</set>
+              </property>
+              <property name="dragMode">
+               <enum>QGraphicsView::RubberBandDrag</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionStart">
+   <property name="icon">
+    <iconset resource="../../Resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/control_play_blue.png</normaloff>:/fatcow/16x16/control_play_blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>开始扫描</string>
+   </property>
+   <property name="toolTip">
+    <string>开始扫描</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="../../Resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/control_stop_blue.png</normaloff>:/fatcow/16x16/control_stop_blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>结束扫描</string>
+   </property>
+   <property name="toolTip">
+    <string>结束扫描</string>
+   </property>
+  </action>
+  <action name="actionLoad">
+   <property name="icon">
+    <iconset resource="../../Resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/folder_vertical_open.png</normaloff>:/fatcow/16x16/folder_vertical_open.png</iconset>
+   </property>
+   <property name="text">
+    <string>加载文件</string>
+   </property>
+   <property name="toolTip">
+    <string>加载文件</string>
+   </property>
+  </action>
+  <action name="actionStatistics">
+   <property name="icon">
+    <iconset resource="../../Resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/statistics.png</normaloff>:/fatcow/16x16/statistics.png</iconset>
+   </property>
+   <property name="text">
+    <string>数据统计</string>
+   </property>
+   <property name="toolTip">
+    <string>数据统计</string>
+   </property>
+  </action>
+  <action name="actionGenerateReport">
+   <property name="icon">
+    <iconset resource="../../Resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/report_word.png</normaloff>:/fatcow/16x16/report_word.png</iconset>
+   </property>
+   <property name="text">
+    <string>打印报表</string>
+   </property>
+   <property name="toolTip">
+    <string>打印报表</string>
+   </property>
+  </action>
+  <action name="actionConfig">
+   <property name="icon">
+    <iconset resource="../../Resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/cog.png</normaloff>:/fatcow/16x16/cog.png</iconset>
+   </property>
+   <property name="text">
+    <string>全局配置</string>
+   </property>
+   <property name="toolTip">
+    <string>全局配置</string>
+   </property>
+  </action>
+  <action name="actionPlot">
+   <property name="icon">
+    <iconset resource="../../Resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/plotchart.png</normaloff>:/fatcow/16x16/plotchart.png</iconset>
+   </property>
+   <property name="text">
+    <string>车轮轨迹</string>
+   </property>
+   <property name="toolTip">
+    <string>车轮轨迹</string>
+   </property>
+  </action>
+  <action name="actionMakeImage">
+   <property name="icon">
+    <iconset resource="../../Resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/image.png</normaloff>:/fatcow/16x16/image.png</iconset>
+   </property>
+   <property name="text">
+    <string>导出图像</string>
+   </property>
+   <property name="toolTip">
+    <string>导出图像</string>
+   </property>
+  </action>
+  <action name="actionOpenReport">
+   <property name="icon">
+    <iconset resource="../../Resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/report_magnify.png</normaloff>:/fatcow/16x16/report_magnify.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开报表</string>
+   </property>
+   <property name="toolTip">
+    <string>打开报表</string>
+   </property>
+  </action>
+  <action name="actionDestruct">
+   <property name="text">
+    <string>析构WheelDataset</string>
+   </property>
+   <property name="toolTip">
+    <string>析构WheelDataset</string>
+   </property>
+  </action>
+  <action name="actionStructure">
+   <property name="text">
+    <string>构造WheelDataset</string>
+   </property>
+   <property name="toolTip">
+    <string>构造WheelDataset</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BScanChart</class>
+   <extends>QGraphicsView</extends>
+   <header>Plot/BScanChart.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PanelTrainInfo</class>
+   <extends>QFrame</extends>
+   <header>PanelTrainInfo.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>PanelDocumentInfo</class>
+   <extends>QFrame</extends>
+   <header>PanelDocumentInfo.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../Resources/icons/Fatcow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

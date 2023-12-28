@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" name="LocalScan" qt:editorversion="4.4.0" initial="Idle">
+    <qt:editorinfo initialGeometry="358.60;295.87;-20;-20;40;40"/>
+    <state id="Locate">
+        <qt:editorinfo geometry="260.25;587.66;-60;-50;120;100" scenegeometry="260.25;587.66;200.25;537.66;120;100"/>
+        <transition type="external" event="axisIdle" target="Scan"/>
+        <onentry>
+            <script>MoveAbs(startPos)</script>
+        </onentry>
+        <transition type="external" event="stopPressed" target="Idle">
+            <qt:editorinfo localGeometry="161.11;-134.67"/>
+        </transition>
+        <onexit>
+            <script>Cancel()</script>
+        </onexit>
+    </state>
+    <state id="Scan">
+        <qt:editorinfo geometry="525.44;587.66;-60;-50;120;100" scenegeometry="525.44;587.66;465.44;537.66;120;100"/>
+        <transition type="external" event="axisIdle" target="Restore"/>
+        <onentry>
+            <script>setDataEnabled(true)
+MoveAbs(endPos)</script>
+        </onentry>
+        <onexit>
+            <script>setDataEnable(false)
+Cancel()</script>
+        </onexit>
+        <transition type="external" event="stopPressed" target="Idle">
+            <qt:editorinfo localGeometry="62.22;-145.89" endTargetFactors="49.99;72.87"/>
+        </transition>
+    </state>
+    <state id="Restore">
+        <qt:editorinfo geometry="790.70;587.66;-60;-50;120;100" scenegeometry="790.70;587.66;730.70;537.66;120;100"/>
+        <transition type="external" event="axisIdle | stopPressed" target="Idle">
+            <qt:editorinfo movePoint="40.81;-12.24"/>
+        </transition>
+        <onentry>
+            <script>MoveAbs(resetPos)</script>
+        </onentry>
+    </state>
+    <state id="Idle">
+        <qt:editorinfo geometry="525.44;295.87;-60;-50;120;100" scenegeometry="525.44;295.87;465.44;245.87;120;100"/>
+        <transition type="external" event="scanPressed" target="Locate" cond="type=Both">
+            <qt:editorinfo localGeometry="-201.21;85.47"/>
+        </transition>
+        <transition type="external" event="scanPressed" target="Scan" cond="type!=Both">
+            <qt:editorinfo localGeometry="-38.82;147.24"/>
+        </transition>
+    </state>
+</scxml>

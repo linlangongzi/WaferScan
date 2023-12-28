@@ -1,0 +1,16 @@
+﻿{
+    \"Name\" : \"Core\",
+    \"Version\" : \"$$DS_VERSION\",
+    \"CompatVersion\" : \"$$DS_COMPAT_VERSION\",
+    \"Required\" : true,
+    \"Vendor\" : \"Allrising (Beijing) Technology Ltd\",
+    \"Copyright\" : \"(C) $$DS_YEAR Allrising (Beijing) Technology Ltd\",
+    \"License\" : [ \"Commercial Usage\"
+    ],
+    \"Category\" : \"DolphinSense\",
+    \"Description\" : \"The core plugin of DolphinSense.\",
+    \"Url\" : \"http://www.allrising.com.cn\",
+    \"Arguments\" : [
+    ],
+    $$dependencyList
+}

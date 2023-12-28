@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="Login">
+    <file>Resources/DengLuAnNiu.png</file>
+    <file>Resources/DengLuBeiJing.png</file>
+    <file>Resources/Ren.png</file>
+    <file>Resources/Suo.png</file>
+  </qresource>
+</RCC>

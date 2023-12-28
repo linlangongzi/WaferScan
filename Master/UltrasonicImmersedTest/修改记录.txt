@@ -1,0 +1,64 @@
+_HAFEI m_bTailDecreasePipe
+_BEIFANG_ZHONGGONG
+
+时间：2012.11.28   
+修改人：黄亚昌
+修改内容：修改“生成报告里的A扫波形序号跟统计里面的序号对应不上”的问题，更新了SurfaceDetailDlg.cpp
+
+
+时间：2012.11.28   
+修改人：黄亚昌
+修改内容：修改“导出报表时，选择不导出后该项依旧导出”的问题，更新了SurfaceDetailDlg.cpp
+
+早一点版本面4块卡 A扫存储打开直接退出 应该跟这有关
+m_AScanDataSocket = new CAScanDataSocket;  	m_AScanDataSocket = new CAScanDataSocket[nAECNum];
+
+2014-09-09
+修改人：王炳福
+修改内容：加轴开关(得使用新的加密狗程序)
+
+2014-09-10
+修改人：王炳福
+修改内容：双晶关联时，回位要区分通道
+
+2014-10-11
+修改人：王炳福
+修改内容：m_qCScanData(C扫缓存队列) 和m_qAScanData(A扫缓存队列)添加size output信息方便调试(后面得注释掉)
+
+2014-10-11
+修改人：王炳福
+修改内容：m_qCScanData(C扫缓存队列) 和m_qAScanData(A扫缓存队列)添加size output信息，调试用(后面得注释掉)
+OutputDebugString()Debug版和Release版都会输出(TRACE()Debug版输出（MFC），但Debug版 无法正常运行，时间急，暂不解决，不用Debug版)
+
+2014-10-14
+修改人：王炳福
+修改内容：对m_pMovePathView->m_GraphMove.PathTracing(dAcoord)的调用时间 添加output信息方便调试
+
+2014-10-23 
+修改人：王炳福
+修改内容：解决每次扫查都比上次扫查内存增涨的内存泄漏问题
+
+2014-10-30
+修改人：王炳福
+修改内容：发布哈飞版本，报表与北方重工一样，SurfaceDetailDlg.cpp L2168 TableCreate() 改成TableCreateBeiFangZhongGong1()
+
+2014-12-23
+修改人：王炳福
+修改内容：DogInfo增加一项 nCount计数 增加WriteIniData() 计数--，当计数为0时，系统退出 加密狗也增加一项nCount计数，
+IniParams.cpp  unsigned short ReadDatOffset = 0x480; 改成unsigned short ReadDatOffset = 0x80;
+L161-166
+bRet = m_IniParams.WriteIniData();
+	if(!bRet)
+	{
+		AfxMessageBox(_T("过期，未授权!"));
+		return FALSE;
+	}
+现在注释掉 没判断计数
+
+2014-12-31
+修改人：王炳福
+修改内容：注释掉判断轴开关(bXEnable,...)(发给山东昊轩)
+
+2014-01-19
+修改人：王炳福
+修改内容：打开B扫并修改B扫错误

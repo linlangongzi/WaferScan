@@ -1,0 +1,4020 @@
+{
+    "BasicNo": 20000,
+    "Connection": [
+        {
+            "AecCardNo": 0,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24001,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24002,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24003,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24004,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24005,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24006,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24007,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24008,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24009,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24010,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24011,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24012,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24013,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24014,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24015,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24016,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24017,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24018,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24019,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24020,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24021,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24022,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24023,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24024,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24025,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24026,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24027,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24028,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24029,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24030,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24031,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24032,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24033,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24034,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24035,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24036,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24037,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24038,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24039,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24040,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24041,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24042,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24043,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24044,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24045,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24046,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24047,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24048,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24049,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24050,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24051,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24052,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24053,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24054,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24055,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24056,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24057,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24058,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24059,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24060,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24061,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24062,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24063,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24064,
+                            "second": -1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 1,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24065,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24066,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24067,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24068,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24069,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24070,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24071,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24072,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24073,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24074,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24075,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24076,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24077,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24078,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24079,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24080,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24081,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24082,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24083,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24084,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24085,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24086,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24087,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24088,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24089,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24090,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24091,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24092,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24093,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24094,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24095,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24096,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24097,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24098,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24099,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24100,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24101,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24102,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24103,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24104,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24105,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24106,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24107,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24108,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24109,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24110,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24111,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24112,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24113,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24114,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24115,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24116,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24117,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24118,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24119,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24120,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24121,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24122,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24123,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24124,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24125,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24126,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24127,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24128,
+                            "second": -1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 2,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24129,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24130,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24131,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24132,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24133,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24134,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24135,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24136,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24137,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24138,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24139,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24140,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24141,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24142,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24143,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24144,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24145,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24146,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24147,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24148,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24149,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24150,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24151,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24152,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24153,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24154,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24155,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24156,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24157,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24158,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24159,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24160,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24161,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24162,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24163,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24164,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24165,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24166,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24167,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24168,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24169,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24170,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24171,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24172,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24173,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24174,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24175,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24176,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24177,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24178,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24179,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24180,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24181,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24182,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24183,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24184,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 24185,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 24186,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 24187,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 24188,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 24189,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 24190,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 24191,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 24192,
+                            "second": -1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 3,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20000,
+                            "second": 20002
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20004,
+                            "second": 20006
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20008,
+                            "second": 20010
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20012,
+                            "second": 20014
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20016,
+                            "second": 20018
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20020,
+                            "second": 20022
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20024,
+                            "second": 20026
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20028,
+                            "second": 20030
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20001,
+                            "second": 20003
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20005,
+                            "second": 20007
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20009,
+                            "second": 20011
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20013,
+                            "second": 20015
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20017,
+                            "second": 20019
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20021,
+                            "second": 20023
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20025,
+                            "second": 20027
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20029,
+                            "second": 20031
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20096,
+                            "second": 20098
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20100,
+                            "second": 20102
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20104,
+                            "second": 20106
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20108,
+                            "second": 20110
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20112,
+                            "second": 20114
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20116,
+                            "second": 20118
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20120,
+                            "second": 20122
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20124,
+                            "second": 20126
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20097,
+                            "second": 20099
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20101,
+                            "second": 20103
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20105,
+                            "second": 20107
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20109,
+                            "second": 20111
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20113,
+                            "second": 20115
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20117,
+                            "second": 20119
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20121,
+                            "second": 20123
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20125,
+                            "second": 20127
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21000,
+                            "second": 21004
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21008,
+                            "second": 21012
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21016,
+                            "second": 21020
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21024,
+                            "second": 21028
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21032,
+                            "second": 21036
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21040,
+                            "second": 21044
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21048,
+                            "second": 21052
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21056,
+                            "second": 21060
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21001,
+                            "second": 21005
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21009,
+                            "second": 21013
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21017,
+                            "second": 21021
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21025,
+                            "second": 21029
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21033,
+                            "second": 21037
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21041,
+                            "second": 21045
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21049,
+                            "second": 21053
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21057,
+                            "second": 21061
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21002,
+                            "second": 21006
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21010,
+                            "second": 21014
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21018,
+                            "second": 21022
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21026,
+                            "second": 21030
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21034,
+                            "second": 21038
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21042,
+                            "second": 21046
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21050,
+                            "second": 21054
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21058,
+                            "second": 21062
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21003,
+                            "second": 21007
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21011,
+                            "second": 21015
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21019,
+                            "second": 21023
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21027,
+                            "second": 21031
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21035,
+                            "second": 21039
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21043,
+                            "second": 21047
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21051,
+                            "second": 21055
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21059,
+                            "second": 21063
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 4,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20032,
+                            "second": 20034
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20036,
+                            "second": 20038
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20040,
+                            "second": 20042
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20044,
+                            "second": 20046
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20048,
+                            "second": 20050
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20052,
+                            "second": 20054
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20056,
+                            "second": 20058
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20060,
+                            "second": 20062
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20033,
+                            "second": 20035
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20037,
+                            "second": 20039
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20041,
+                            "second": 20043
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20045,
+                            "second": 20047
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20049,
+                            "second": 20051
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20053,
+                            "second": 20055
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20057,
+                            "second": 20059
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20061,
+                            "second": 20063
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20128,
+                            "second": 20130
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20132,
+                            "second": 20134
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20136,
+                            "second": 20138
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20140,
+                            "second": 20142
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20144,
+                            "second": 20146
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20148,
+                            "second": 20150
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20152,
+                            "second": 20154
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20156,
+                            "second": 20158
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20129,
+                            "second": 20131
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20133,
+                            "second": 20135
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20137,
+                            "second": 20139
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20141,
+                            "second": 20143
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20145,
+                            "second": 20147
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20149,
+                            "second": 20151
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20153,
+                            "second": 20155
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20157,
+                            "second": 20159
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21064,
+                            "second": 21068
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21072,
+                            "second": 21076
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21080,
+                            "second": 21084
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21088,
+                            "second": 21092
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21096,
+                            "second": 21100
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21104,
+                            "second": 21108
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21112,
+                            "second": 21116
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21120,
+                            "second": 21124
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21065,
+                            "second": 21069
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21073,
+                            "second": 21077
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21081,
+                            "second": 21085
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21089,
+                            "second": 21093
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21097,
+                            "second": 21101
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21105,
+                            "second": 21109
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21113,
+                            "second": 21117
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21121,
+                            "second": 21125
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21066,
+                            "second": 21070
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21074,
+                            "second": 21078
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21082,
+                            "second": 21086
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21090,
+                            "second": 21094
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21098,
+                            "second": 21102
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21106,
+                            "second": 21110
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21114,
+                            "second": 21118
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21122,
+                            "second": 21126
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21067,
+                            "second": 21071
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21075,
+                            "second": 21079
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21083,
+                            "second": 21087
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21091,
+                            "second": 21095
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21099,
+                            "second": 21103
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21107,
+                            "second": 21111
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21115,
+                            "second": 21119
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21123,
+                            "second": 21127
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 5,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20064,
+                            "second": 20066
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20068,
+                            "second": 20070
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20072,
+                            "second": 20074
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20076,
+                            "second": 20078
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20080,
+                            "second": 20082
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20084,
+                            "second": 20086
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20088,
+                            "second": 20090
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20092,
+                            "second": 20094
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20065,
+                            "second": 20067
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20069,
+                            "second": 20071
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20073,
+                            "second": 20075
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20077,
+                            "second": 20079
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20081,
+                            "second": 20083
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20085,
+                            "second": 20087
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20089,
+                            "second": 20091
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20093,
+                            "second": 20095
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20160,
+                            "second": 20162
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20164,
+                            "second": 20166
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20168,
+                            "second": 20170
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20172,
+                            "second": 20174
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20176,
+                            "second": 20178
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20180,
+                            "second": 20182
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20184,
+                            "second": 20186
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20188,
+                            "second": 20190
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 20161,
+                            "second": 20163
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 20165,
+                            "second": 20167
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 20169,
+                            "second": 20171
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 20173,
+                            "second": 20175
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 20177,
+                            "second": 20179
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 20181,
+                            "second": 20183
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 20185,
+                            "second": 20187
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 20189,
+                            "second": 20191
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21128,
+                            "second": 21132
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21136,
+                            "second": 21140
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21144,
+                            "second": 21148
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21152,
+                            "second": 21156
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21160,
+                            "second": 21164
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21168,
+                            "second": 21172
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21176,
+                            "second": 21180
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21184,
+                            "second": 21188
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21129,
+                            "second": 21133
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21137,
+                            "second": 21141
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21145,
+                            "second": 21149
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21153,
+                            "second": 21157
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21161,
+                            "second": 21165
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21169,
+                            "second": 21173
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21177,
+                            "second": 21181
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21185,
+                            "second": 21189
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21130,
+                            "second": 21134
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21138,
+                            "second": 21142
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21146,
+                            "second": 21150
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21154,
+                            "second": 21158
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21162,
+                            "second": 21166
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21170,
+                            "second": 21174
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21178,
+                            "second": 21182
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21186,
+                            "second": 21190
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 21131,
+                            "second": 21135
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 21139,
+                            "second": 21143
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 21147,
+                            "second": 21151
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 21155,
+                            "second": 21159
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 21163,
+                            "second": 21167
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 21171,
+                            "second": 21175
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 21179,
+                            "second": 21183
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 21187,
+                            "second": 21191
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 6,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22000,
+                            "second": 22003
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22006,
+                            "second": 22009
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22012,
+                            "second": 22015
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22018,
+                            "second": 22021
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22024,
+                            "second": 22027
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22030,
+                            "second": 22033
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22036,
+                            "second": 22039
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22042,
+                            "second": 22045
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22001,
+                            "second": 22004
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22007,
+                            "second": 22010
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22013,
+                            "second": 22016
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22019,
+                            "second": 22022
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22025,
+                            "second": 22028
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22031,
+                            "second": 22034
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22037,
+                            "second": 22040
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22043,
+                            "second": 22046
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22002,
+                            "second": 22005
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22008,
+                            "second": 22011
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22014,
+                            "second": 22017
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22020,
+                            "second": 22023
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22026,
+                            "second": 22029
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22032,
+                            "second": 22035
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22038,
+                            "second": 22041
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22044,
+                            "second": 22047
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22120,
+                            "second": 22123
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22126,
+                            "second": 22129
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22132,
+                            "second": 22135
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22138,
+                            "second": 22141
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22144,
+                            "second": 22147
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22150,
+                            "second": 22153
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22156,
+                            "second": 22159
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22162,
+                            "second": 22165
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22121,
+                            "second": 22124
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22127,
+                            "second": 22130
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22133,
+                            "second": 22136
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22139,
+                            "second": 22142
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22145,
+                            "second": 22148
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22151,
+                            "second": 22154
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22157,
+                            "second": 22160
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22163,
+                            "second": 22166
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22122,
+                            "second": 22125
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22128,
+                            "second": 22131
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22134,
+                            "second": 22137
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22140,
+                            "second": 22143
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22146,
+                            "second": 22149
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22152,
+                            "second": 22155
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22158,
+                            "second": 22161
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22164,
+                            "second": 22167
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 7,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22048,
+                            "second": 22051
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22054,
+                            "second": 22057
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22060,
+                            "second": 22063
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22066,
+                            "second": 22069
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22072,
+                            "second": 22075
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22078,
+                            "second": 22081
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22084,
+                            "second": 22087
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22090,
+                            "second": 22093
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22049,
+                            "second": 22052
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22055,
+                            "second": 22058
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22061,
+                            "second": 22064
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22067,
+                            "second": 22070
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22073,
+                            "second": 22076
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22079,
+                            "second": 22082
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22085,
+                            "second": 22088
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22091,
+                            "second": 22094
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22050,
+                            "second": 22053
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22056,
+                            "second": 22059
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22062,
+                            "second": 22065
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22068,
+                            "second": 22071
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22074,
+                            "second": 22077
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22080,
+                            "second": 22083
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22086,
+                            "second": 22089
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22092,
+                            "second": 22095
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22168,
+                            "second": 22171
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22174,
+                            "second": 22177
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22180,
+                            "second": 22183
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22186,
+                            "second": 22189
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22192,
+                            "second": 22195
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22198,
+                            "second": 22201
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22204,
+                            "second": 22207
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22210,
+                            "second": 22213
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22169,
+                            "second": 22172
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22175,
+                            "second": 22178
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22181,
+                            "second": 22184
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22187,
+                            "second": 22190
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22193,
+                            "second": 22196
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22199,
+                            "second": 22202
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22205,
+                            "second": 22208
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22211,
+                            "second": 22214
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22170,
+                            "second": 22173
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22176,
+                            "second": 22179
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22182,
+                            "second": 22185
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22188,
+                            "second": 22191
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 22194,
+                            "second": 22197
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 22200,
+                            "second": 22203
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 22206,
+                            "second": 22209
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 22212,
+                            "second": 22215
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 8,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22096,
+                            "second": 22099
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22102,
+                            "second": 22105
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22108,
+                            "second": 22111
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22114,
+                            "second": 22117
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23000,
+                            "second": 23003
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23006,
+                            "second": 23009
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23012,
+                            "second": 23015
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23018,
+                            "second": 23021
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22097,
+                            "second": 22100
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22103,
+                            "second": 22106
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22109,
+                            "second": 22112
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22115,
+                            "second": 22118
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23001,
+                            "second": 23004
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23007,
+                            "second": 23010
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23013,
+                            "second": 23016
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23019,
+                            "second": 23022
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22098,
+                            "second": 22101
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22104,
+                            "second": 22107
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22110,
+                            "second": 22113
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22116,
+                            "second": 22119
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23002,
+                            "second": 23005
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23008,
+                            "second": 23011
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23014,
+                            "second": 23017
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23020,
+                            "second": 23023
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22216,
+                            "second": 22219
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22222,
+                            "second": 22225
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22228,
+                            "second": 22231
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22234,
+                            "second": 22237
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23120,
+                            "second": 23123
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23126,
+                            "second": 23129
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23132,
+                            "second": 23135
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23138,
+                            "second": 23141
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22217,
+                            "second": 22220
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22223,
+                            "second": 22226
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22229,
+                            "second": 22232
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22235,
+                            "second": 22238
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23121,
+                            "second": 23124
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23127,
+                            "second": 23130
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23133,
+                            "second": 23136
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23139,
+                            "second": 23142
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 22218,
+                            "second": 22221
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 22224,
+                            "second": 22227
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 22230,
+                            "second": 22233
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 22236,
+                            "second": 22239
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23122,
+                            "second": 23125
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23128,
+                            "second": 23131
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23134,
+                            "second": 23137
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23140,
+                            "second": 23143
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 9,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23024,
+                            "second": 23027
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23030,
+                            "second": 23033
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23036,
+                            "second": 23039
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23042,
+                            "second": 23045
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23048,
+                            "second": 23051
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23054,
+                            "second": 23057
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23060,
+                            "second": 23063
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23066,
+                            "second": 23069
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23025,
+                            "second": 23028
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23031,
+                            "second": 23034
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23037,
+                            "second": 23040
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23043,
+                            "second": 23046
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23049,
+                            "second": 23052
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23055,
+                            "second": 23058
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23061,
+                            "second": 23064
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23067,
+                            "second": 23070
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23026,
+                            "second": 23029
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23032,
+                            "second": 23035
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23038,
+                            "second": 23041
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23044,
+                            "second": 23047
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23050,
+                            "second": 23053
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23056,
+                            "second": 23059
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23062,
+                            "second": 23065
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23068,
+                            "second": 23071
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23144,
+                            "second": 23147
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23150,
+                            "second": 23153
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23156,
+                            "second": 23159
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23162,
+                            "second": 23165
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23168,
+                            "second": 23171
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23174,
+                            "second": 23177
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23180,
+                            "second": 23183
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23186,
+                            "second": 23189
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23145,
+                            "second": 23148
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23151,
+                            "second": 23154
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23157,
+                            "second": 23160
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23163,
+                            "second": 23166
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23169,
+                            "second": 23172
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23175,
+                            "second": 23178
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23181,
+                            "second": 23184
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23187,
+                            "second": 23190
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23146,
+                            "second": 23149
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23152,
+                            "second": 23155
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23158,
+                            "second": 23161
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23164,
+                            "second": 23167
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23170,
+                            "second": 23173
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23176,
+                            "second": 23179
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23182,
+                            "second": 23185
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23188,
+                            "second": 23191
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "AecCardNo": 10,
+            "AecChannel": [
+                {
+                    "AecChannelNo": 0,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23072,
+                            "second": 23075
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23078,
+                            "second": 23081
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23084,
+                            "second": 23087
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23090,
+                            "second": 23093
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23096,
+                            "second": 23099
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23102,
+                            "second": 23105
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23108,
+                            "second": 23111
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23114,
+                            "second": 23117
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 1,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23073,
+                            "second": 23076
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23079,
+                            "second": 23082
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23085,
+                            "second": 23088
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23091,
+                            "second": 23094
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23097,
+                            "second": 23100
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23103,
+                            "second": 23106
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23109,
+                            "second": 23112
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23115,
+                            "second": 23118
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 2,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23074,
+                            "second": 23077
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23080,
+                            "second": 23083
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23086,
+                            "second": 23089
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23092,
+                            "second": 23095
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23098,
+                            "second": 23101
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23104,
+                            "second": 23107
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23110,
+                            "second": 23113
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23116,
+                            "second": 23119
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 3,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23192,
+                            "second": 23195
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23198,
+                            "second": 23201
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23204,
+                            "second": 23207
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23210,
+                            "second": 23213
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23216,
+                            "second": 23219
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23222,
+                            "second": 23225
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23228,
+                            "second": 23231
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23234,
+                            "second": 23237
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 4,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23193,
+                            "second": 23196
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23199,
+                            "second": 23202
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23205,
+                            "second": 23208
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23211,
+                            "second": 23214
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23217,
+                            "second": 23220
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23223,
+                            "second": 23226
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23229,
+                            "second": 23232
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23235,
+                            "second": 23238
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 5,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": 23194,
+                            "second": 23197
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": 23200,
+                            "second": 23203
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": 23206,
+                            "second": 23209
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": 23212,
+                            "second": 23215
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": 23218,
+                            "second": 23221
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": 23224,
+                            "second": 23227
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": 23230,
+                            "second": 23233
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": 23236,
+                            "second": 23239
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 6,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                },
+                {
+                    "AecChannelNo": 7,
+                    "TxChannel": [
+                        {
+                            "TxChannelNo": 0,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 1,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 2,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 3,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 4,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 5,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 6,
+                            "first": -1,
+                            "second": -1
+                        },
+                        {
+                            "TxChannelNo": 7,
+                            "first": -1,
+                            "second": -1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

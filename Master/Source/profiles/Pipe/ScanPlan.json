@@ -1,0 +1,36 @@
+[
+    {
+        "Children": [
+            {
+                "ID": "2",
+                "MotionInfo": {
+                    "MultipleChannelSelect": false,
+                    "OffsetDirection": "X",
+                    "OffsetInterval": 0,
+                    "ProbeOffset": {
+                        "X": 0,
+                        "Y": 0,
+                        "Z": 0
+                    },
+                    "ScanAxis": 1,
+                    "Speed": 240,
+                    "Step": 1,
+                    "UTSetupID": "1",
+                    "X1": 515.59000000000003,
+                    "X2": 281.94,
+                    "Y1": 226.15000000000001,
+                    "Y2": 0,
+                    "Z1": 107.52,
+                    "Z2": 107.52
+                },
+                "MotionType": "RECTANGLE",
+                "Name": "平板 1",
+                "Type": "ScanPlan"
+            }
+        ],
+        "ID": "1",
+        "MotionType": "NONE",
+        "Name": "扫描计划",
+        "Type": "ScanPlan"
+    }
+]

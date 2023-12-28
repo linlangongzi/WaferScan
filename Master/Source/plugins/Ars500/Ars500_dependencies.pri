@@ -1,0 +1,3 @@
+DS_PLUGIN_NAME = Ars500
+DS_PLUGIN_DEPENDS += \
+    Ultrasonic

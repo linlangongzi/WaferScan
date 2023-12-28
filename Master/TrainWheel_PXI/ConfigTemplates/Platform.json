@@ -1,0 +1,11 @@
+{
+    "AecCardNum": 11,
+    "SensorCardIndex": 3,
+    "DeleteFrameNum": 2,
+    "CommunicationId": 305811457,
+    "MaxFrameAvgCount": 4,
+    "StraightFlangeCardNum": 3,
+    "IsStraightFlangeTwoSensor": true,
+    "21DegreeCardNum":6,
+    "Is21DegreeTwoSensor": true
+}

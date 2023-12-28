@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PanelScanPlanControl</class>
+ <widget class="QWidget" name="PanelScanPlanControl">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>478</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>扫描计划</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="6" column="0">
+    <widget class="QWidget" name="progressContainer" native="true">
+     <layout class="QFormLayout" name="formLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item row="1" column="1">
+       <widget class="QLabel" name="time"/>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <widget class="QProgressBar" name="progress"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="scanLine"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="scanLineTitle">
+        <property name="text">
+         <string>扫描线</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="status"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="progressTitle">
+        <property name="text">
+         <string>预计时间</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="statusTitle">
+        <property name="text">
+         <string>状态</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QToolBar" name="toolbar_2">
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="movable">
+      <bool>true</bool>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="floatable">
+      <bool>false</bool>
+     </property>
+     <addaction name="actionStart"/>
+     <addaction name="actionPause"/>
+     <addaction name="actionStop"/>
+     <addaction name="separator"/>
+     <addaction name="actionRemoveTask"/>
+     <addaction name="actionClearTasks"/>
+     <addaction name="actionEditTask"/>
+     <addaction name="actionOpenSelectedFile"/>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QToolBar" name="toolbar">
+     <property name="iconSize">
+      <size>
+       <width>16</width>
+       <height>16</height>
+      </size>
+     </property>
+     <addaction name="actionQuickStart"/>
+     <addaction name="actionCreateTask"/>
+     <addaction name="separator"/>
+     <addaction name="actionAddFolder"/>
+     <addaction name="actionAddLegacyRectangle"/>
+     <addaction name="actionAddRectangle"/>
+     <addaction name="actionAddLegacyCylinder"/>
+     <addaction name="actionAddCylinder"/>
+     <addaction name="actionAddLegacyDisk"/>
+     <addaction name="actionAddDisk"/>
+     <addaction name="separator"/>
+     <addaction name="actionAddCylinderRotation"/>
+     <addaction name="actionAddDiskRotation"/>
+     <addaction name="actionImportCam"/>
+     <addaction name="actionAddAnnulus"/>
+     <addaction name="separator"/>
+     <addaction name="actionRename"/>
+     <addaction name="actionEdit"/>
+     <addaction name="actionDelete"/>
+     <addaction name="actionSetup"/>
+     <addaction name="separator"/>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="ScanPlanTreeView" name="scanPlan"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QTreeView" name="tasks">
+     <property name="contextMenuPolicy">
+      <enum>Qt::CustomContextMenu</enum>
+     </property>
+     <property name="indentation">
+      <number>0</number>
+     </property>
+     <property name="itemsExpandable">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionQuickStart">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/control_play_blue.png</normaloff>:/fatcow/16x16/control_play_blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>快速扫描</string>
+   </property>
+   <property name="toolTip">
+    <string>快速扫描</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/control_pause_blue.png</normaloff>:/fatcow/16x16/control_pause_blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>暂停扫描</string>
+   </property>
+   <property name="toolTip">
+    <string>暂停扫描</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/control_stop_blue.png</normaloff>:/fatcow/16x16/control_stop_blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>终止扫描</string>
+   </property>
+   <property name="toolTip">
+    <string>终止扫描</string>
+   </property>
+  </action>
+  <action name="actionAddFolder">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/folder_add.png</normaloff>:/fatcow/16x16/folder_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建扫描计划组</string>
+   </property>
+  </action>
+  <action name="actionAddRectangle">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/card_chip_silver.png</normaloff>:/fatcow/16x16/card_chip_silver.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建平板 (高级)</string>
+   </property>
+  </action>
+  <action name="actionAddLegacyCylinder">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/database.png</normaloff>:/fatcow/16x16/database.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建管棒</string>
+   </property>
+  </action>
+  <action name="actionAddDisk">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/cd.png</normaloff>:/fatcow/16x16/cd.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建圆盘 (高级)</string>
+   </property>
+   <property name="toolTip">
+    <string>新建圆盘 (高级)</string>
+   </property>
+  </action>
+  <action name="actionRename">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/textfield_rename.png</normaloff>:/fatcow/16x16/textfield_rename.png</iconset>
+   </property>
+   <property name="text">
+    <string>重命名</string>
+   </property>
+  </action>
+  <action name="actionEdit">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/application_form_edit.png</normaloff>:/fatcow/16x16/application_form_edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>编辑扫描计划</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/application_form_delete.png</normaloff>:/fatcow/16x16/application_form_delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除扫描计划</string>
+   </property>
+  </action>
+  <action name="actionAddCylinderRotation">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/database.png</normaloff>:/fatcow/16x16/database.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建管棒-旋转步进</string>
+   </property>
+   <property name="toolTip">
+    <string>新建管棒-旋转步进</string>
+   </property>
+  </action>
+  <action name="actionAddDiskRotation">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/cd.png</normaloff>:/fatcow/16x16/cd.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建圆盘-旋转步进</string>
+   </property>
+   <property name="toolTip">
+    <string>新建圆盘-旋转步进</string>
+   </property>
+  </action>
+  <action name="actionImportCam">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/draw_spiral.png</normaloff>:/fatcow/16x16/draw_spiral.png</iconset>
+   </property>
+   <property name="text">
+    <string>导入CAM</string>
+   </property>
+  </action>
+  <action name="actionSetup">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/cog.png</normaloff>:/fatcow/16x16/cog.png</iconset>
+   </property>
+   <property name="text">
+    <string>编辑工艺</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑工艺</string>
+   </property>
+  </action>
+  <action name="actionAddAnnulus">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/dish.png</normaloff>:/fatcow/16x16/dish.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建圆环</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/control_play_blue.png</normaloff>:/fatcow/16x16/control_play_blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>开始扫描</string>
+   </property>
+  </action>
+  <action name="actionCreateTask">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/application_add.png</normaloff>:/fatcow/16x16/application_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>创建任务</string>
+   </property>
+   <property name="toolTip">
+    <string>创建任务</string>
+   </property>
+  </action>
+  <action name="actionEditTask">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/application_edit.png</normaloff>:/fatcow/16x16/application_edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>任务属性</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑修改</string>
+   </property>
+  </action>
+  <action name="actionRemoveTask">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/delete.png</normaloff>:/fatcow/16x16/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除任务</string>
+   </property>
+   <property name="toolTip">
+    <string>删除任务</string>
+   </property>
+  </action>
+  <action name="actionOpenSelectedFile">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/file_extension_bin.png</normaloff>:/fatcow/16x16/file_extension_bin.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开当前文件</string>
+   </property>
+   <property name="toolTip">
+    <string>打开当前文件</string>
+   </property>
+  </action>
+  <action name="actionClearTasks">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/basket_delete.png</normaloff>:/fatcow/16x16/basket_delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>清空任务</string>
+   </property>
+  </action>
+  <action name="actionAddLegacyRectangle">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/card_chip_silver.png</normaloff>:/fatcow/16x16/card_chip_silver.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建平板</string>
+   </property>
+  </action>
+  <action name="actionAddCylinder">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/database_green.png</normaloff>:/fatcow/16x16/database_green.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建管棒 (高级)</string>
+   </property>
+   <property name="toolTip">
+    <string>新建管棒 (高级)</string>
+   </property>
+  </action>
+  <action name="actionAddLegacyDisk">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/cd.png</normaloff>:/fatcow/16x16/cd.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建圆盘</string>
+   </property>
+   <property name="toolTip">
+    <string>新建圆盘</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ScanPlanTreeView</class>
+   <extends>QTreeView</extends>
+   <header>Acquisition/ScanPlanTreeView.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../resources/icons/Fatcow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InstrumentConnection</class>
+ <widget class="QWidget" name="InstrumentConnection">
+  <property name="windowTitle">
+   <string>仪器连接</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QLineEdit" name="ip">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="connect">
+     <property name="text">
+      <string>连接</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../Resources/icons/Fatcow.qrc">
+       <normaloff>:/fatcow/16x16/connect.png</normaloff>:/fatcow/16x16/connect.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="disconnect">
+     <property name="text">
+      <string>断开</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../Resources/icons/Fatcow.qrc">
+       <normaloff>:/fatcow/16x16/disconnect.png</normaloff>:/fatcow/16x16/disconnect.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="reset">
+     <property name="text">
+      <string>重置</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../Resources/icons/Fatcow.qrc">
+       <normaloff>:/fatcow/16x16/arrow_refresh.png</normaloff>:/fatcow/16x16/arrow_refresh.png</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../Resources/icons/Fatcow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

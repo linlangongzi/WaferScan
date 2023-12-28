@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" name="ScanController" qt:editorversion="4.2.2">
+    <state id="Unavailable">
+        <qt:editorinfo geometry="123.77;204.58;-60;-50;120;100" scenegeometry="123.77;204.58;63.77;154.58;120;100"/>
+        <transition type="external" event="McConnected" target="Idle">
+            <qt:editorinfo localGeometry="230.20;-35" movePoint="87.48;-8.08"/>
+        </transition>
+    </state>
+    <state id="Idle">
+        <qt:editorinfo geometry="579.99;204.58;-60;-50;120;100" scenegeometry="579.99;204.58;519.99;154.58;120;100"/>
+        <transition type="external" event="UserStart" target="Locate">
+            <qt:editorinfo movePoint="17.60;5.50"/>
+        </transition>
+        <transition type="external" event="McDisconnected" target="Unavailable">
+            <qt:editorinfo localGeometry="-226.02;45.76" movePoint="-160.16;13.46"/>
+        </transition>
+    </state>
+    <state id="Locate">
+        <qt:editorinfo geometry="896.06;204.58;-60;-50;120;100" scenegeometry="896.06;204.58;836.06;154.58;120;100"/>
+        <transition type="external" event="LocateDone" target="Send"/>
+        <transition type="external" event="McDisconnected" target="Final_7">
+            <qt:editorinfo movePoint="10.78;1.35"/>
+            <assign location="errorString" expr="Controller disconnected unexpectedly"/>
+        </transition>
+        <onentry>
+            <raise event="doLocate"/>
+        </onentry>
+    </state>
+    <state id="Send">
+        <qt:editorinfo geometry="896.06;682.57;-60;-50;120;100" scenegeometry="896.06;682.57;836.06;632.57;120;100"/>
+        <transition type="external" event="QueueStarting" target="Start"/>
+        <transition type="external" event="QueueRunning" target="Run"/>
+        <transition type="external" event="UserStop" target="Idle"/>
+        <transition type="external" event="UserPause" target="Paused"/>
+        <transition type="external" event="McDisconnected" target="Final_1">
+            <qt:editorinfo movePoint="2.69;8.08"/>
+        </transition>
+    </state>
+    <state id="Start">
+        <qt:editorinfo geometry="896.06;1033.04;-60;-50;120;100" scenegeometry="896.06;1033.04;836.06;983.04;120;100"/>
+        <transition type="external" event="QueueRunning" target="Run"/>
+        <transition type="external" event="McDisconnected" target="Final_6"/>
+    </state>
+    <state id="Run">
+        <qt:editorinfo geometry="579.99;1033.04;-60;-50;120;100" scenegeometry="579.99;1033.04;519.99;983.04;120;100"/>
+        <transition type="external" event="UserPause" target="Pausing"/>
+        <transition type="external" event="UserStop" target="Stopping"/>
+        <transition type="external" event="McDisconnected" target="Final_3"/>
+    </state>
+    <state id="Pausing">
+        <qt:editorinfo geometry="383.90;776.65;-60;-50;120;100" scenegeometry="383.90;776.65;323.90;726.65;120;100"/>
+        <transition type="external" event="QueuePaused" target="Paused"/>
+        <transition type="external" event="UserStop" target="Stopping"/>
+        <transition type="external" event="McDisconnected" target="Final_8"/>
+    </state>
+    <state id="Paused">
+        <qt:editorinfo geometry="579.99;488.77;-60;-50;120;100" scenegeometry="579.99;488.77;519.99;438.77;120;100"/>
+        <transition type="external" event="UserStop" target="Idle"/>
+        <transition type="external" event="McDisconnected" target="Final_10">
+            <qt:editorinfo endTargetFactors="28.71;47.98"/>
+        </transition>
+        <transition type="external" event="UserStart" target="Restoring"/>
+    </state>
+    <state id="Stopping">
+        <qt:editorinfo geometry="78.93;776.65;-60;-50;120;100" scenegeometry="78.93;776.65;18.93;726.65;120;100"/>
+        <transition type="external" event="QueueStopped" target="Idle"/>
+        <transition type="external" event="McDisconnected" target="Final_2"/>
+    </state>
+    <final id="Final_1">
+        <qt:editorinfo geometry="1100.94;682.57;-20;-20;40;40" scenegeometry="1100.94;682.57;1080.94;662.57;40;40"/>
+    </final>
+    <final id="Final_2">
+        <qt:editorinfo geometry="78.93;904.51;-20;-20;40;40" scenegeometry="78.93;904.51;58.93;884.51;40;40"/>
+    </final>
+    <final id="Final_3">
+        <qt:editorinfo geometry="579.99;1156.13;-20;-20;40;40" scenegeometry="579.99;1156.13;559.99;1136.13;40;40"/>
+    </final>
+    <final id="Final_6">
+        <qt:editorinfo geometry="896.06;1156.13;-20;-20;40;40" scenegeometry="896.06;1156.13;876.06;1136.13;40;40"/>
+    </final>
+    <final id="Final_7">
+        <qt:editorinfo geometry="1100.94;204.58;-20;-20;40;40" scenegeometry="1100.94;204.58;1080.94;184.58;40;40"/>
+    </final>
+    <final id="Final_8">
+        <qt:editorinfo geometry="383.90;652.76;-20;-20;40;40" scenegeometry="383.90;652.76;363.90;632.76;40;40"/>
+    </final>
+    <state id="Restoring">
+        <qt:editorinfo geometry="670.26;776.65;-60;-50;120;100" scenegeometry="670.26;776.65;610.26;726.65;120;100"/>
+        <transition type="external" event="QueueRunning" target="Run"/>
+        <transition type="external" event="UserPause" target="Pausing"/>
+        <transition type="external" event="McDisconnected" target="Final_9"/>
+    </state>
+    <final id="Final_9">
+        <qt:editorinfo geometry="741.59;652.76;-20;-20;40;40" scenegeometry="741.59;652.76;721.59;632.76;40;40"/>
+    </final>
+    <final id="Final_10">
+        <qt:editorinfo geometry="445.49;488.77;-20;-20;40;40" scenegeometry="445.49;488.77;425.49;468.77;40;40"/>
+    </final>
+</scxml>

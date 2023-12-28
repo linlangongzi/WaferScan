@@ -1,0 +1,13 @@
+[
+    {
+        "Axes": [
+            "1",
+            "2"
+        ],
+        "ID": "1",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2016-07-27T17:22:22",
+        "SpeedLimit": 5000,
+        "Type": "EndPoint"
+    }
+]

@@ -1,0 +1,47 @@
+{
+    "UTDefectList": [
+        {
+            "Children": null,
+            "WheelNo": 0,
+            "ProbeNo": 10000,
+            "Depth": 100,
+	    "Range": 300,
+	    "Amplitude": 60,
+            "Type": 1,
+            "Info": null
+	},
+	{
+            "Children": null,
+            "WheelNo": 0,
+            "ProbeNo": 10001,
+            "Depth": 200,
+	    "Range": 200,
+	    "Amplitude": 59,
+            "Type": 1,
+            "Info": null
+	},
+	{
+            "Children": null,
+            "WheelNo": 0,
+            "ProbeNo": 10100,
+            "Depth": 200,
+	    "Range": 200,
+	    "Amplitude": 59,
+            "Type": 1,
+            "Info": null
+	},
+	{
+            "Children": null,
+            "WheelNo": 1,
+            "ProbeNo": 10000,
+            "Depth": 100,
+	    "Range": 300,
+	    "Amplitude": 60,
+            "Type": 1,
+            "Info": null
+	}
+		
+    ]
+}
+
+ 

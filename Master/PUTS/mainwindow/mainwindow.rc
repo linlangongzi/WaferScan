@@ -1,0 +1,119 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG1                PNG                     "Resources\\A_move.png"
+IDB_PNG2                PNG                     "Resources\\A_noselect.png"
+IDB_PNG3                PNG                     "Resources\\A_select.png"
+IDB_PNG4                PNG                     "Resources\\c_move.png"
+IDB_PNG5                PNG                     "Resources\\C_noselect.png"
+IDB_PNG6                PNG                     "Resources\\C_select.png"
+IDB_PNG7                PNG                     "Resources\\fengexian.png"
+IDB_PNG8                PNG                     "Resources\\gangbancanshushezhi_move.png"
+IDB_PNG9                PNG                     "Resources\\gangbancanshushezhi_noselect.png"
+IDB_PNG10               PNG                     "Resources\\gangbancanshushezhi_select.png"
+IDB_PNG11               PNG                     "Resources\\mnue_move.png"
+IDB_PNG12               PNG                     "Resources\\mnue_noselect.png"
+IDB_PNG13               PNG                     "Resources\\mnue_select.png"
+IDB_PNG14               PNG                     "Resources\\shangyiji_move.png"
+IDB_PNG15               PNG                     "Resources\\shangyiji_noselect.png"
+IDB_PNG16               PNG                     "Resources\\shangyiji_select.png"
+IDB_PNG17               PNG                     "Resources\\tanshangliebiao_move.png"
+IDB_PNG18               PNG                     "Resources\\tanshangliebiao_noselect.png"
+IDB_PNG19               PNG                     "Resources\\tanshangliebiao_select.png"
+IDB_PNG20               PNG                     "Resources\\next_move.png"
+IDB_PNG21               PNG                     "Resources\\next_noselect.png"
+IDB_PNG22               PNG                     "Resources\\next_select.png"
+IDB_PNG23               PNG                     "Resources\\zhankaipng.png"
+IDB_PNG24               PNG                     "Resources\\anniu_noselect.png"
+IDB_PNG25               PNG                     "Resources\\anniu_select.png"
+IDB_PNG26               PNG                     "Resources\\logo.png"
+IDB_PNG27               PNG                     "Resources\\logoGONGSI.png"
+IDB_PNG28               PNG                     "Resources\\qiehuanyonghu_move.png"
+IDB_PNG29               PNG                     "Resources\\qiehuanyonghu_noselect.png"
+IDB_PNG30               PNG                     "Resources\\qiehuanyonghu_select.png"
+IDB_PNG31               PNG                     "Resources\\titleBackColor.png"
+IDB_PNG32               PNG                     "Resources\\zhuxiao_move.png"
+IDB_PNG33               PNG                     "Resources\\zhuxiao_noselect.png"
+IDB_PNG34               PNG                     "Resources\\zhuxiao_select.png"
+IDB_PNG35               PNG                     "Resources\\biaoding_noselect.png"
+IDB_PNG36               PNG                     "Resources\\zijian_move.png"
+IDB_PNG37               PNG                     "Resources\\biaoding_move.png"
+IDB_PNG38               PNG                     "Resources\\biaoding_select.png"
+IDB_PNG39               PNG                     "Resources\\zijian_noselect.png"
+IDB_PNG40               PNG                     "Resources\\zijian_select.png"
+IDB_PNG41               PNG                     "Resources\\qiehuan_move.png"
+IDB_PNG42               PNG                     "Resources\\qiehuan_noselect.png"
+IDB_PNG43               PNG                     "Resources\\qiehuan_select.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP                  "Resources\\logon.bmp"
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

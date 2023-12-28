@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PanelAScan</class>
+ <widget class="QFrame" name="PanelAScan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>227</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>A扫描</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../../resources/icons/Fatcow.qrc">
+    <normaloff>:/fatcow/16x16/system_monitor.png</normaloff>:/fatcow/16x16/system_monitor.png</iconset>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::Box</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Sunken</enum>
+  </property>
+  <layout class="QHBoxLayout" name="mainLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="childrenCollapsible">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QListView" name="channels"/>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="channelFilter">
+         <property name="placeholderText">
+          <string>过滤通道...</string>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="container" native="true">
+      <layout class="QGridLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QSplitter" name="splitter_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="AScanGraphicsView" name="view" native="true"/>
+        </widget>
+       </item>
+       <item row="0" column="1" rowspan="2">
+        <widget class="QFrame" name="gainContainer">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="gainTitle">
+            <property name="text">
+             <string>增益</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QSlider" name="gainSlider">
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>1100</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="pageStep">
+             <number>1</number>
+            </property>
+            <property name="value">
+             <number>900</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksBothSides</enum>
+            </property>
+            <property name="tickInterval">
+             <number>100</number>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QSlider" name="gainRefSlider">
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>1100</number>
+            </property>
+            <property name="singleStep">
+             <number>10</number>
+            </property>
+            <property name="pageStep">
+             <number>1</number>
+            </property>
+            <property name="value">
+             <number>0</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::TicksBothSides</enum>
+            </property>
+            <property name="tickInterval">
+             <number>100</number>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="gainRefTitle">
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>参考增益</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QDoubleSpinBox" name="gain">
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="wrapping">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::NoButtons</enum>
+            </property>
+            <property name="keyboardTracking">
+             <bool>false</bool>
+            </property>
+            <property name="suffix">
+             <string>dB</string>
+            </property>
+            <property name="decimals">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <double>110.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>0.100000000000000</double>
+            </property>
+            <property name="value">
+             <double>90.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QDoubleSpinBox" name="gainRef">
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::NoButtons</enum>
+            </property>
+            <property name="keyboardTracking">
+             <bool>false</bool>
+            </property>
+            <property name="suffix">
+             <string>dB</string>
+            </property>
+            <property name="decimals">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <double>110.000000000000000</double>
+            </property>
+            <property name="singleStep">
+             <double>0.100000000000000</double>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QFrame" name="statusBarContainer">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>800</width>
+           <height>0</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QComboBox" name="channelList">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="statusBar" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <property name="spacing">
+              <number>1</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="Line" name="line_4">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="position">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_6">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="waterPath">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_7">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="material">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_11">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="AlarmModelLabel" name="alarm">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_9">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolOptions">
+               <property name="minimumSize">
+                <size>
+                 <width>60</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>工具</string>
+               </property>
+               <property name="popupMode">
+                <enum>QToolButton::InstantPopup</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_12">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="gainPlus">
+               <property name="text">
+                <string>+6dB</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="gainMinus">
+               <property name="text">
+                <string>-6dB</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="gainShow">
+               <property name="toolTip">
+                <string>显示/隐藏增益滑杆</string>
+               </property>
+               <property name="text">
+                <string>增益</string>
+               </property>
+               <property name="icon">
+                <iconset resource="../../resources/icons/Fatcow.qrc">
+                 <normaloff>:/fatcow/16x16/vslider.png</normaloff>:/fatcow/16x16/vslider.png</iconset>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+            <zorder>line_9</zorder>
+            <zorder>gainShow</zorder>
+            <zorder>line_12</zorder>
+            <zorder>position</zorder>
+            <zorder>line_6</zorder>
+            <zorder>line_4</zorder>
+            <zorder>line_7</zorder>
+            <zorder>material</zorder>
+            <zorder>waterPath</zorder>
+            <zorder>gainMinus</zorder>
+            <zorder>gainPlus</zorder>
+            <zorder>toolOptions</zorder>
+            <zorder>alarm</zorder>
+            <zorder>line_11</zorder>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QWidget" name="instrumentContainer" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="connectionStatus">
+            <property name="text">
+             <string>仪器未连接</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="connect">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>连接</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionScreenshot">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/picture_save.png</normaloff>:/fatcow/16x16/picture_save.png</iconset>
+   </property>
+   <property name="text">
+    <string>截图</string>
+   </property>
+   <property name="toolTip">
+    <string>保存当前A扫描界面的截图</string>
+   </property>
+  </action>
+  <action name="actionFreeze">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/stop.png</normaloff>:/fatcow/16x16/stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>冻结</string>
+   </property>
+   <property name="toolTip">
+    <string>冻结当前画面</string>
+   </property>
+  </action>
+  <action name="actionGainPlus">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/bullet_arrow_up.png</normaloff>:/fatcow/16x16/bullet_arrow_up.png</iconset>
+   </property>
+   <property name="text">
+    <string>+6dB</string>
+   </property>
+   <property name="toolTip">
+    <string>增益+6dB</string>
+   </property>
+  </action>
+  <action name="actionGainMinus">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/bullet_arrow_down.png</normaloff>:/fatcow/16x16/bullet_arrow_down.png</iconset>
+   </property>
+   <property name="text">
+    <string>-6dB</string>
+   </property>
+   <property name="toolTip">
+    <string>增益-6dB</string>
+   </property>
+  </action>
+  <action name="actionCopyScreenshots">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/picture_go.png</normaloff>:/fatcow/16x16/picture_go.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制截图</string>
+   </property>
+   <property name="toolTip">
+    <string>将当前A扫描图像的截图复制到剪贴板</string>
+   </property>
+  </action>
+  <action name="actionFeature">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/chart_bullseye.png</normaloff>:/fatcow/16x16/chart_bullseye.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示闸门特征值</string>
+   </property>
+  </action>
+  <action name="actionCursor">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>显示光标</string>
+   </property>
+  </action>
+  <action name="actionFillWaveform">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/paintcan.png</normaloff>:/fatcow/16x16/paintcan.png</iconset>
+   </property>
+   <property name="text">
+    <string>填充</string>
+   </property>
+  </action>
+  <action name="actionUseDataSegment">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>使用A扫描数据源</string>
+   </property>
+   <property name="toolTip">
+    <string>使用批量上传的A扫描数据作为波形的数据源</string>
+   </property>
+  </action>
+  <action name="actionSetup">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/setting_tools.png</normaloff>:/fatcow/16x16/setting_tools.png</iconset>
+   </property>
+   <property name="text">
+    <string>工艺</string>
+   </property>
+  </action>
+  <action name="actionExportCsv">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/table_export.png</normaloff>:/fatcow/16x16/table_export.png</iconset>
+   </property>
+   <property name="text">
+    <string>导出CSV</string>
+   </property>
+  </action>
+  <action name="actionBladeTest">
+   <property name="text">
+    <string>叶片成像</string>
+   </property>
+  </action>
+  <action name="actionBladeSplit">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/clip_splitter.png</normaloff>:/fatcow/16x16/clip_splitter.png</iconset>
+   </property>
+   <property name="text">
+    <string>叶片切分</string>
+   </property>
+  </action>
+  <action name="actionBladeSplitSlice">
+   <property name="text">
+    <string>叶片B扫描切分</string>
+   </property>
+  </action>
+  <action name="actionGateAlarm">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/alarm_bell.png</normaloff>:/fatcow/16x16/alarm_bell.png</iconset>
+   </property>
+   <property name="text">
+    <string>闸门报警设置</string>
+   </property>
+  </action>
+  <action name="actionSelectProbe">
+   <property name="text">
+    <string>选择探头</string>
+   </property>
+   <property name="toolTip">
+    <string>选择探头</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>AScanGraphicsView</class>
+   <extends>QWidget</extends>
+   <header>Waveform/AScanGraphicsView.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AlarmModelLabel</class>
+   <extends>QLabel</extends>
+   <header>Waveform/AlarmModelLabel.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../resources/icons/Fatcow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

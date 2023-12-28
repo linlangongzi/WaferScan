@@ -1,0 +1,45 @@
+{
+    "CommunicationId": 305811457,
+    "AScanPlotAntialiasing": false,
+    "AScanPlotFillColor": false,
+    "AecSensorCardNumPerInstrument": 3,
+    "AecWorkCardNumPerInstrument": 8,
+    "StraightFlangeCardNum": 3,
+    "IsStraightFlangeTwoSensor": true,
+    "21DegreeCardNum":5,
+    "Is21DegreeTwoSensor": true,
+    "DeleteFrameNum": 2,
+    "DefaultWindowsState": {
+        "Geometry": "AdnQywABAAD////4////+AAAB4cAAAQXAAAA6wAAALwAAAZYAAAE2QAAAAACAA==",
+        "State": "AAAA/wAAAAD9AAAAAgAAAAIAAAeAAAABm/wBAAAAAvwAAAAAAAAEpwAAAUAA////+gAAAAABAAAAAvv/////AQAAAAD/////AAAAUAD////7/////wEAAAAA/////wAAAUAA/////AAABKsAAALVAAAC1QAAAtX6AAAAAAEAAAAF+/////8BAAAAAP////8AAALVAAAC1fv/////AQAAAAD/////AAABcgD////7/////wEAAAAA/////wAAAVQA////+/////8BAAAAAP////8AAAKTAP////v/////AQAAAAD/////AAACTAD///8AAAADAAAHgAAAAhT8AQAAAAL7/////wEAAAAAAAAG4wAAAP0A////+/////8BAAAG5wAAAJkAAABQAP///wAAB4AAAAAAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA"
+    },
+    "StraightFlangeAvgSize": 1,
+    "21DegreeAvgSize": 1,
+    "RefreshInterval": 500,
+    "UTInstrumentConnectOnLaunch": false,
+    "WindowsState": {
+        "Geometry": "AdnQywABAAD////4////+AAAB4cAAAQXAAAA6wAAALwAAAZYAAAE2QAAAAACAA==",
+        "State": "AAAA/wAAAAD9AAAAAgAAAAIAAAeAAAABm/wBAAAAAvwAAAAAAAAEpwAAAUAA////+gAAAAABAAAAAvv/////AQAAAAD/////AAAAUAD////7/////wEAAAAA/////wAAAUAA/////AAABKsAAALVAAAC1QAAAtX6AAAAAAEAAAAF+/////8BAAAAAP////8AAALVAAAC1fv/////AQAAAAD/////AAABcgD////7/////wEAAAAA/////wAAAVQA////+/////8BAAAAAP////8AAAKTAP////v/////AQAAAAD/////AAACTAD///8AAAADAAAHgAAAAhT8AQAAAAL7/////wEAAAAAAAAG4wAAAP0A////+/////8BAAAG5wAAAJkAAABQAP///wAAB4AAAAAAAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA"
+    },
+    "FlangeFilterParam": {
+            "Start0": 0.125,
+            "End0": 0.625,
+            "Start1": 0.2,
+            "End1": 0.7,
+            "Start2": 0.275, 
+            "End2": 0.7775,
+            "Start3": 0.375,
+            "End3": 0.875
+    },
+    "21DegreeFilterParam": {
+            "Start0": 0.125,
+            "End0": 0.625,
+            "Start1": 0.2,
+            "End1": 0.7,
+            "Start2": 0.275, 
+            "End2": 0.7775,
+            "Start3": 0.375,
+            "End3": 0.875
+    },
+    "IsFilter": true
+}

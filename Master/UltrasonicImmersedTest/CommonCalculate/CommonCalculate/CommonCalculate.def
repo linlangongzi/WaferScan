@@ -1,0 +1,6 @@
+; CommonCalculate.def : Declares the module parameters for the DLL.
+
+LIBRARY      "CommonCalculate"
+
+EXPORTS
+    ; Explicit exports can go here

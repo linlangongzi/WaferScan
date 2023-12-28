@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Axis_Langfang11.json</file>
+        <file>Axis_Beijing.json</file>
+        <file>Axis_Qihong.json</file>
+    </qresource>
+</RCC>

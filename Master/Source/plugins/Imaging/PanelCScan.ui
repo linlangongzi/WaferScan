@@ -1,0 +1,1043 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PanelCScan</class>
+ <widget class="QFrame" name="PanelCScan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1135</width>
+    <height>655</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::WheelFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>C扫描</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="1" column="0">
+    <widget class="QSplitter" name="splitterMain">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QWidget" name="layoutWidget1">
+      <layout class="QVBoxLayout" name="viewLayout">
+       <item>
+        <widget class="QToolBar" name="toolbar">
+         <property name="iconSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <addaction name="separator"/>
+         <addaction name="actionSliceDisable"/>
+         <addaction name="actionSliceImage"/>
+         <addaction name="actionSliceFeature"/>
+         <addaction name="separator"/>
+         <addaction name="actionWaveformRuler"/>
+         <addaction name="actionHideSliceCursor"/>
+         <addaction name="actionSliceBrush"/>
+         <addaction name="actionSliceSync"/>
+         <addaction name="actionSliceSyncOffset"/>
+         <addaction name="separator"/>
+         <addaction name="actionMagnifier"/>
+         <addaction name="actionZoomIn"/>
+         <addaction name="actionZoomOut"/>
+         <addaction name="actionZoomFit"/>
+         <addaction name="actionZoomFill"/>
+         <addaction name="separator"/>
+         <addaction name="actionCursorFollow"/>
+         <addaction name="actionCursorHide"/>
+         <addaction name="separator"/>
+         <addaction name="actionAnnotationLineItem"/>
+         <addaction name="actionReferenceLine"/>
+         <addaction name="actionReferenceCircle"/>
+         <addaction name="actionCustomCircle"/>
+         <addaction name="actionReferenceRect"/>
+         <addaction name="separator"/>
+         <addaction name="actionMoveModel"/>
+         <addaction name="actionSelectLayer"/>
+         <addaction name="actionViewImage"/>
+         <addaction name="actionViewProbe"/>
+         <addaction name="actionViewDefect"/>
+         <addaction name="separator"/>
+         <addaction name="actionRecalcFeatures"/>
+         <addaction name="actionColorPalette"/>
+         <addaction name="actionCDataStatistic"/>
+         <addaction name="separator"/>
+         <addaction name="actionImageOptions"/>
+         <addaction name="actionSurfacePlot"/>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSplitter" name="splitterV">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="QSplitter" name="splitterH1">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="AScanGraphicsView" name="waveform" native="true"/>
+          <widget class="QWidget" name="layoutWidget2">
+           <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,0">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="AbstractGraphicsView" name="sliceX" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="ColorPaletteView" name="paletteSlice" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>35</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>35</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+         <widget class="QSplitter" name="splitterH2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <widget class="AbstractGraphicsView" name="sliceY" native="true"/>
+          <widget class="QWidget" name="layoutWidget">
+           <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,0">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="AbstractGraphicsView" name="view" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="ColorPaletteView" name="palette" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>35</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>35</width>
+                <height>16777215</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QToolBox" name="statisticToolBox">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <widget class="QWidget" name="pageStatistics">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>312</width>
+         <height>591</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="../../resources/icons/Fatcow.qrc">
+         <normaloff>:/fatcow/16x16/statistics.png</normaloff>:/fatcow/16x16/statistics.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>统计</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QCheckBox" name="statisticsAutoRefresh">
+            <property name="text">
+             <string>自动刷新</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="statisticsRefresh">
+            <property name="icon">
+             <iconset resource="../../resources/icons/Fatcow.qrc">
+              <normaloff>:/fatcow/16x16/arrow_refresh.png</normaloff>:/fatcow/16x16/arrow_refresh.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>分布直方图</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+           <item>
+            <widget class="QtCharts::QChartView" name="histogram"/>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QSlider" name="histSizeSlider">
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="value">
+                <number>50</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="histSize">
+               <property name="minimum">
+                <number>1</number>
+               </property>
+               <property name="maximum">
+                <number>100</number>
+               </property>
+               <property name="value">
+                <number>50</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>统计</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3" columnstretch="0,1,0">
+           <item row="0" column="0">
+            <widget class="QLabel" name="maxTitle">
+             <property name="text">
+              <string>最大值</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QToolButton" name="maxCursor">
+             <property name="text">
+              <string>查看</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="minTitle">
+             <property name="text">
+              <string>最小值</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QToolButton" name="minCursor">
+             <property name="text">
+              <string>查看</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="averageTitle">
+             <property name="text">
+              <string>平均值</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="stdevTitle">
+             <property name="text">
+              <string>标准差</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="snrTitle">
+             <property name="text">
+              <string>信噪比</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="snr"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="max"/>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="min"/>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="average"/>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="stdev"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>焊合率</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4" columnstretch="0,1">
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>像素数</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="pixelCount"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>焊合率</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="ratio"/>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,1,1">
+             <item>
+              <widget class="QLabel" name="ratioTitle">
+               <property name="text">
+                <string>统计</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="ratioMode">
+               <item>
+                <property name="text">
+                 <string>高于</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>低于</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="threshold">
+               <property name="maximum">
+                <double>100.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>50.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>面积</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="areaCount"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageDefect">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>312</width>
+         <height>591</height>
+        </rect>
+       </property>
+       <attribute name="icon">
+        <iconset resource="../../resources/icons/Fatcow.qrc">
+         <normaloff>:/fatcow/16x16/bug_error.png</normaloff>:/fatcow/16x16/bug_error.png</iconset>
+       </attribute>
+       <attribute name="label">
+        <string>缺陷</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="defectRecord">
+          <property name="text">
+           <string>缺陷识别</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="generateReport">
+          <property name="text">
+           <string>生成报表</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="3">
+         <widget class="DefectTreeView" name="treeView">
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <property name="verticalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <property name="horizontalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>true</bool>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionSliceDisable">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/image.png</normaloff>:/fatcow/16x16/image.png</iconset>
+   </property>
+   <property name="text">
+    <string>仅显示C扫描图像</string>
+   </property>
+  </action>
+  <action name="actionSliceFeature">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/diagramm.png</normaloff>:/fatcow/16x16/diagramm.png</iconset>
+   </property>
+   <property name="text">
+    <string>特征值B扫描</string>
+   </property>
+  </action>
+  <action name="actionSliceImage">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/x_ray.png</normaloff>:/fatcow/16x16/x_ray.png</iconset>
+   </property>
+   <property name="text">
+    <string>透视B扫描</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/magnifier_zoom_in.png</normaloff>:/fatcow/16x16/magnifier_zoom_in.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/magnifier_zoom_out.png</normaloff>:/fatcow/16x16/magnifier_zoom_out.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="actionZoomFit">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/zoom_fit.png</normaloff>:/fatcow/16x16/zoom_fit.png</iconset>
+   </property>
+   <property name="text">
+    <string>重置视图</string>
+   </property>
+  </action>
+  <action name="actionImageOptions">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/cog.png</normaloff>:/fatcow/16x16/cog.png</iconset>
+   </property>
+   <property name="text">
+    <string>成像选项</string>
+   </property>
+  </action>
+  <action name="actionViewProbe">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/location_pin.png</normaloff>:/fatcow/16x16/location_pin.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示探头位置</string>
+   </property>
+  </action>
+  <action name="actionViewDefect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/bug_error.png</normaloff>:/fatcow/16x16/bug_error.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示缺陷</string>
+   </property>
+  </action>
+  <action name="actionViewImage">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/images.png</normaloff>:/fatcow/16x16/images.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示C扫描图像</string>
+   </property>
+  </action>
+  <action name="actionCursorFollow">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/control_cursor_blue.png</normaloff>:/fatcow/16x16/control_cursor_blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>光标跟随</string>
+   </property>
+  </action>
+  <action name="actionCursorHide">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/control_cursor.png</normaloff>:/fatcow/16x16/control_cursor.png</iconset>
+   </property>
+   <property name="text">
+    <string>隐藏光标</string>
+   </property>
+  </action>
+  <action name="actionColorPalette">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/color_gradient.png</normaloff>:/fatcow/16x16/color_gradient.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示调色板</string>
+   </property>
+   <property name="toolTip">
+    <string>显示调色板</string>
+   </property>
+  </action>
+  <action name="actionCDataStatistic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/statistics.png</normaloff>:/fatcow/16x16/statistics.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示统计判伤</string>
+   </property>
+   <property name="toolTip">
+    <string>显示统计判伤</string>
+   </property>
+  </action>
+  <action name="actionWaveformRuler">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/hrule.png</normaloff>:/fatcow/16x16/hrule.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示A扫描标尺</string>
+   </property>
+  </action>
+  <action name="actionHideSliceCursor">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/derivatives.png</normaloff>:/fatcow/16x16/derivatives.png</iconset>
+   </property>
+   <property name="text">
+    <string>隐藏B扫描光标</string>
+   </property>
+  </action>
+  <action name="actionSurfacePlot">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/piechart.png</normaloff>:/fatcow/16x16/piechart.png</iconset>
+   </property>
+   <property name="text">
+    <string>3D曲面成像</string>
+   </property>
+  </action>
+  <action name="actionSliceSync">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/timeline_marker.png</normaloff>:/fatcow/16x16/timeline_marker.png</iconset>
+   </property>
+   <property name="text">
+    <string>B扫描表面波同步</string>
+   </property>
+  </action>
+  <action name="actionSliceSyncOffset">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/numeric_stepper.png</normaloff>:/fatcow/16x16/numeric_stepper.png</iconset>
+   </property>
+   <property name="text">
+    <string>B扫描表面波同步偏移</string>
+   </property>
+  </action>
+  <action name="actionRecalcFeatures">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/things_digital.png</normaloff>:/fatcow/16x16/things_digital.png</iconset>
+   </property>
+   <property name="text">
+    <string>重闸门...</string>
+   </property>
+  </action>
+  <action name="actionZoomFill">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/zoom_extend.png</normaloff>:/fatcow/16x16/zoom_extend.png</iconset>
+   </property>
+   <property name="text">
+    <string>填充模式</string>
+   </property>
+  </action>
+  <action name="actionReferenceLine">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/draw_line.png</normaloff>:/fatcow/16x16/draw_line.png</iconset>
+   </property>
+   <property name="text">
+    <string>直线测距</string>
+   </property>
+   <property name="toolTip">
+    <string>点对点测距</string>
+   </property>
+  </action>
+  <action name="actionReferenceCircle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/select_lasso.png</normaloff>:/fatcow/16x16/select_lasso.png</iconset>
+   </property>
+   <property name="text">
+    <string>范围测距</string>
+   </property>
+   <property name="toolTip">
+    <string>圆形范围测距</string>
+   </property>
+  </action>
+  <action name="actionCustomCircle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/select_ellipse.png</normaloff>:/fatcow/16x16/select_ellipse.png</iconset>
+   </property>
+   <property name="text">
+    <string>圆形框选</string>
+   </property>
+   <property name="toolTip">
+    <string>圆形框选</string>
+   </property>
+  </action>
+  <action name="actionReferenceRect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/select_restangular.png</normaloff>:/fatcow/16x16/select_restangular.png</iconset>
+   </property>
+   <property name="text">
+    <string>正方形框选</string>
+   </property>
+   <property name="toolTip">
+    <string>正方形框选</string>
+   </property>
+  </action>
+  <action name="actionMagnifier">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/magnifier.png</normaloff>:/fatcow/16x16/magnifier.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大镜</string>
+   </property>
+   <property name="toolTip">
+    <string>放大镜</string>
+   </property>
+  </action>
+  <action name="actionSliceBrush">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/columnchart.png</normaloff>:/fatcow/16x16/columnchart.png</iconset>
+   </property>
+   <property name="text">
+    <string>显示B扫描颜色渲染</string>
+   </property>
+   <property name="toolTip">
+    <string>显示B扫描颜色渲染</string>
+   </property>
+  </action>
+  <action name="actionSelectLayer">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/areachart.png</normaloff>:/fatcow/16x16/areachart.png</iconset>
+   </property>
+   <property name="text">
+    <string>图层选择器...</string>
+   </property>
+   <property name="toolTip">
+    <string>图层选择器...</string>
+   </property>
+  </action>
+  <action name="actionMoveModel">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/fill.png</normaloff>:/fatcow/16x16/fill.png</iconset>
+   </property>
+   <property name="text">
+    <string>移动模式</string>
+   </property>
+   <property name="toolTip">
+    <string>移动模式</string>
+   </property>
+  </action>
+  <action name="actionCopyColorToOthers">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/color_swatches.png</normaloff>:/fatcow/16x16/color_swatches.png</iconset>
+   </property>
+   <property name="text">
+    <string>复制调色板至所有C扫图</string>
+   </property>
+   <property name="toolTip">
+    <string>复制调色板至所有C扫图</string>
+   </property>
+  </action>
+  <action name="actionZoomInput">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/zoom_actual_equal.png</normaloff>:/fatcow/16x16/zoom_actual_equal.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩放...</string>
+   </property>
+   <property name="toolTip">
+    <string>缩放...</string>
+   </property>
+  </action>
+  <action name="actionAnnotationLineItem">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/key_a.png</normaloff>:/fatcow/16x16/key_a.png</iconset>
+   </property>
+   <property name="text">
+    <string>直线测距</string>
+   </property>
+   <property name="toolTip">
+    <string>直线测距</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ColorPaletteView</class>
+   <extends>QWidget</extends>
+   <header>Imaging/ColorPaletteView.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AScanGraphicsView</class>
+   <extends>QWidget</extends>
+   <header>Waveform/AScanGraphicsView.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QtCharts::QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts/QChartView</header>
+  </customwidget>
+  <customwidget>
+   <class>AbstractGraphicsView</class>
+   <extends>QWidget</extends>
+   <header>Waveform/AbstractGraphicsView.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>DefectTreeView</class>
+   <extends>QTableView</extends>
+   <header>Imaging/DefectTreeView.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../resources/icons/Fatcow.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionSliceDisable</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>splitterH1</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>173</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSliceDisable</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>sliceY</receiver>
+   <slot>setHidden(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>457</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionCDataStatistic</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>statisticToolBox</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>855</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>histSize</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>histSizeSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1100</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>903</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>histSizeSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>histSize</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>903</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1100</x>
+     <y>342</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

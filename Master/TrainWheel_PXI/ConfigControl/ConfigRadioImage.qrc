@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/press.png</file>
+        <file>image/release.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,20 @@
+﻿<RCC>
+    <qresource prefix="/">
+        <file>Logo32.png</file>
+        <file>Logo64.png</file>
+        <file>Logo128.png</file>
+        <file>Logo256.png</file>
+        <file>Logo.ico</file>
+        <file>arrow.png</file>
+        <file>arrow-expanded.png</file>
+        <file>icons/minus.png</file>
+        <file>icons/plus.png</file>
+        <file>license/LGPL</file>
+        <file>license/CC-BY-4.0</file>
+        <file>license/MIT</file>
+        <file>license/OpenCV</file>
+        <file>TransparentBackground.png</file>
+        <file>license/StackWalker</file>
+        <file>alarm.gif</file>
+    </qresource>
+</RCC>

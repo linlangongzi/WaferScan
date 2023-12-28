@@ -1,0 +1,13 @@
+[
+    {
+        "WheelRadius": 625,
+        "RateRim": 0.96,
+        "RateArm": 0.85,
+        "RateHub": 0.13,
+        "FlangeRadius": 651,
+        "ID": "1",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-09-02T16:38:34",
+        "Type": "TrainInfo"
+    }
+]

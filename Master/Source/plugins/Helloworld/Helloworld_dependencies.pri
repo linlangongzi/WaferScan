@@ -1,0 +1,2 @@
+DS_PLUGIN_NAME = Helloworld
+DS_PLUGIN_DEPENDS +=

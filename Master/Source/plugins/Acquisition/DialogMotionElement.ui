@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogMotionElement</class>
+ <widget class="QDialog" name="DialogMotionElement">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string>运动类型</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="motionType"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>主步进轴</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="AxisSelector" name="stepAxis"/>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>步进间隔</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QDoubleSpinBox" name="stepInterval">
+     <property name="suffix">
+      <string> mm</string>
+     </property>
+     <property name="singleStep">
+      <double>0.100000000000000</double>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="text">
+      <string>扫描速度</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QDoubleSpinBox" name="speed">
+     <property name="suffix">
+      <string> mm/s</string>
+     </property>
+     <property name="maximum">
+      <double>99999.990000000005239</double>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_4">
+     <property name="text">
+      <string>插值方式</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QComboBox" name="Interpolate">
+     <item>
+      <property name="text">
+       <string>无</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>单向插值</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>双向插值</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item row="7" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>控制条件</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QListWidget" name="conditionList"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="addCondition">
+          <property name="text">
+           <string>添加控制条件</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../../Resources/Resources.qrc">
+            <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="editCondition">
+          <property name="text">
+           <string>编辑控制条件</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../resources/icons/Fatcow.qrc">
+            <normaloff>:/fatcow/16x16/cog_edit.png</normaloff>:/fatcow/16x16/cog_edit.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="deleteCondition">
+          <property name="text">
+           <string>删除控制条件</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../../Resources/Resources.qrc">
+            <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="8" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>特征点</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QListWidget" name="posList"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QToolButton" name="addPos">
+          <property name="text">
+           <string>添加</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../../Resources/Resources.qrc">
+            <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="editPos">
+          <property name="text">
+           <string>编辑</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../resources/icons/Fatcow.qrc">
+            <normaloff>:/fatcow/16x16/layer_edit.png</normaloff>:/fatcow/16x16/layer_edit.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="deletePos">
+          <property name="text">
+           <string>删除</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../../../Resources/Resources.qrc">
+            <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="9" column="1">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>轴选择</string>
+     </property>
+     <layout class="QGridLayout" name="axesLayout"/>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QLabel" name="label_5">
+     <property name="text">
+      <string>主扫描轴</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="AxisSelector" name="scanAxis"/>
+   </item>
+  </layout>
+  <action name="actionAddPos">
+   <property name="icon">
+    <iconset resource="../../../Resources/Resources.qrc">
+     <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加特征点</string>
+   </property>
+   <property name="toolTip">
+    <string>添加特征点</string>
+   </property>
+  </action>
+  <action name="actionEditPos">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/layer_edit.png</normaloff>:/fatcow/16x16/layer_edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>编辑特征点</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑特征点</string>
+   </property>
+  </action>
+  <action name="actionDeletePos">
+   <property name="icon">
+    <iconset resource="../../../Resources/Resources.qrc">
+     <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除特征点</string>
+   </property>
+   <property name="toolTip">
+    <string>删除特征点</string>
+   </property>
+  </action>
+  <action name="actionAddCondition">
+   <property name="icon">
+    <iconset resource="../../../Resources/Resources.qrc">
+     <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>添加控制条件</string>
+   </property>
+   <property name="toolTip">
+    <string>添加控制条件</string>
+   </property>
+  </action>
+  <action name="actionEditCondition">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/cog_edit.png</normaloff>:/fatcow/16x16/cog_edit.png</iconset>
+   </property>
+   <property name="text">
+    <string>编辑控制条件</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑控制条件</string>
+   </property>
+  </action>
+  <action name="actionDeleteCondition">
+   <property name="icon">
+    <iconset resource="../../../Resources/Resources.qrc">
+     <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除控制条件</string>
+   </property>
+   <property name="toolTip">
+    <string>删除控制条件</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AxisSelector</class>
+   <extends>QComboBox</extends>
+   <header>Acquisition/AxisSelector.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../resources/icons/Fatcow.qrc"/>
+  <include location="../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogMotionElement</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>519</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogMotionElement</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>519</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

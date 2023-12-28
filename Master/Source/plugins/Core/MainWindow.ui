@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionBrowseConfig"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionReloadFile"/>
+    <addaction name="separator"/>
+    <addaction name="actionOptions"/>
+    <addaction name="separator"/>
+    <addaction name="actionTaskInfo"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>视图</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuScan">
+    <property name="title">
+     <string>扫描</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+   <addaction name="menuScan"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionPlugins">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/plugin.png</normaloff>:/fatcow/16x16/plugin.png</iconset>
+   </property>
+   <property name="text">
+    <string>插件...</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/information.png</normaloff>:/fatcow/16x16/information.png</iconset>
+   </property>
+   <property name="text">
+    <string>关于...</string>
+   </property>
+  </action>
+  <action name="actionOptions">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/cog.png</normaloff>:/fatcow/16x16/cog.png</iconset>
+   </property>
+   <property name="text">
+    <string>选项...</string>
+   </property>
+  </action>
+  <action name="actionBrowseConfig">
+   <property name="text">
+    <string>浏览配置文件...</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/folder_go.png</normaloff>:/fatcow/16x16/folder_go.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开文件...</string>
+   </property>
+   <property name="toolTip">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionReloadFile">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/arrow_refresh.png</normaloff>:/fatcow/16x16/arrow_refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>重载文件</string>
+   </property>
+  </action>
+  <action name="actionArdFileMaintain">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/file_extension_m4p.png</normaloff>:/fatcow/16x16/file_extension_m4p.png</iconset>
+   </property>
+   <property name="text">
+    <string>文件过滤</string>
+   </property>
+   <property name="toolTip">
+    <string>文件过滤</string>
+   </property>
+  </action>
+  <action name="actionImportLayout">
+   <property name="text">
+    <string>导入界面布局...</string>
+   </property>
+  </action>
+  <action name="actionExportLayout">
+   <property name="text">
+    <string>导出界面布局...</string>
+   </property>
+  </action>
+  <action name="actionResetLayout">
+   <property name="text">
+    <string>恢复默认界面布局</string>
+   </property>
+  </action>
+  <action name="actionTaskInfo">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/align_compact.png</normaloff>:/fatcow/16x16/align_compact.png</iconset>
+   </property>
+   <property name="text">
+    <string>查看扫描任务</string>
+   </property>
+   <property name="toolTip">
+    <string>查看扫描任务</string>
+   </property>
+  </action>
+  <action name="actionMaterial">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/chart_column.png</normaloff>:/fatcow/16x16/chart_column.png</iconset>
+   </property>
+   <property name="text">
+    <string>编辑材料</string>
+   </property>
+   <property name="toolTip">
+    <string>编辑材料</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../../resources/icons/Fatcow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

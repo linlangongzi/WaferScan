@@ -1,0 +1,519 @@
+// FeatureInfoWnd.cpp : implementation file
+//
+
+#include "stdafx.h"
+#include "UltrasonicImmersedTest.h"
+#include "FeatureInfoWnd.h"
+#include "GlobalFunction.h"
+#include "const.h"
+#include "ChannelPanel.h"
+#include "ChannelInfoDockView.h"
+#include "CScanDlgBar.h"
+#include "MechanicalControl.h"
+#include "CScanParamDockBar.h"
+#include "MainFrm.h"
+#include "BScanView.h"
+
+
+// CFeatureInfoWnd
+const WORD FEATURE_INTERVAL = 120;
+extern short g_nWaveSpeed;
+extern DWORD g_dwActiveChannel;
+
+IMPLEMENT_DYNAMIC(CFeatureInfoWnd, CWnd)
+
+CFeatureInfoWnd::CFeatureInfoWnd()
+{
+	m_bMPFTimeDisplay = FALSE;
+	m_bMPMTimeDisplay = FALSE;
+	m_bMPMAltitudeDisplay = FALSE;
+	m_bFPFTimeDisplay = FALSE;
+	m_bFPMTimeDisplay = FALSE;
+	m_bFPMAltitudeDisplay = FALSE;
+
+	for (int i=0; i<4; i++)
+	{
+		m_bGateOpen[i] = FALSE;
+	}	
+	m_nGateOpenNum = 0;	
+	m_nFeatureOpenNum = 0;
+}
+
+CFeatureInfoWnd::~CFeatureInfoWnd()
+{
+}
+
+
+BEGIN_MESSAGE_MAP(CFeatureInfoWnd, CWnd)
+	ON_WM_PAINT()
+	ON_MESSAGE(WM_FEATURE_INFO, &CFeatureInfoWnd::OnReceiveFeatureInfo)
+	ON_WM_ERASEBKGND()
+	ON_WM_CREATE()
+	ON_WM_DESTROY()
+END_MESSAGE_MAP()
+
+
+
+// CFeatureInfoWnd message handlers
+
+void CFeatureInfoWnd::OnPaint()
+{
+	CPaintDC dc(this); // device context for painting
+	// TODO: Add your message handler code here
+	// Do not call CWnd::OnPaint() for painting messages
+	DrawInfo(&dc);
+}
+
+void CFeatureInfoWnd::DrawInfo(CDC* pDC)
+{	
+	CRect rect;
+	GetClientRect(&rect);
+	pDC->FillSolidRect(&rect, RGB(255, 255, 255));
+
+	// 特征值
+	CString strTitles[7] = {_T("同步时间(us)"),_T("FP_FTime(mm)"),_T("FP_MTime(mm)"),_T("MP_FTime(mm)"),
+		_T("MP_MTime(mm)"),_T("FP_MAltitude(%)"), _T("MP_MAltitude(%)")};
+
+	TEXTMETRIC tm;
+	pDC->GetTextMetrics(&tm);
+	long lCharHeight = tm.tmHeight + tm.tmExternalLeading;
+
+	int yGate = lCharHeight;
+	CString strGates[4] = {_T("闸门I"), _T("闸门A"), _T("闸门B"), _T("闸门C")};
+	for (int i=0; i<4; i++)
+	{
+		if(m_bGateOpen[i])
+		{
+			pDC->TextOut(0, yGate, strGates[i]);
+
+			yGate += lCharHeight;
+		}
+	}
+
+	BOOL bFeatureOpen[7] = {TRUE, m_bFPFTimeDisplay, m_bFPMTimeDisplay, m_bMPFTimeDisplay, 
+		m_bMPMTimeDisplay, m_bFPMAltitudeDisplay, m_bMPMAltitudeDisplay};
+	
+	int k = 0;
+	for (int i=0; i<7; i++)
+	{
+		if(bFeatureOpen[i])
+		{
+			for (int j=0; j < (m_nGateOpenNum + 1); j++)
+			{
+				int y = lCharHeight * j;
+
+				if (j==0)
+				{
+					pDC->TextOut((k+1) * FEATURE_INTERVAL, y, strTitles[i]);
+				}
+				else
+				{
+					CString str;
+					str.Format(_T("%.2f"), m_GateFeature.m_pfFeatures[j-1][k]);
+					pDC->TextOut((k+1) * FEATURE_INTERVAL, y, str);
+				}
+			}
+
+			k++;
+		}
+		else
+			continue;
+		
+	}
+
+	CString strX;
+	strX.Format(_T("X = %.2f mm"), m_GateFeature.m_dX);
+	pDC->TextOut(0, lCharHeight*5, strX);
+
+	CString strY;
+	strY.Format(_T("Y = %.2f mm"), m_GateFeature.m_dY);
+	pDC->TextOut(0, lCharHeight*6, strY);
+
+	CString strZ;
+	strZ.Format(_T("Z = %.2f mm"), m_GateFeature.m_dZ);
+	pDC->TextOut(0, lCharHeight*7, strZ);
+}
+
+LRESULT CFeatureInfoWnd::OnReceiveFeatureInfo(WPARAM wParam, LPARAM lParam)
+{
+	CH_FLAWDATA_CSCAN_D * pData = (CH_FLAWDATA_CSCAN_D*)wParam;
+
+	// 获取闸门开关状态、特征值开关状态
+	CMainFrame* pFrame = (CMainFrame*)AfxGetMainWnd();
+	pFrame->m_wndChannelInfo.m_pFormView->UpdateData(TRUE);
+
+	for (int i=0; i<4; i++)
+	{
+		m_bGateOpen[i] = pFrame->m_wndChannelInfo.m_pFormView->m_ChannelInfo[g_dwActiveChannel].m_GateInfo[i].m_bOpen;
+	}
+
+	m_bMPFTimeDisplay = pFrame->m_wndChannelInfo.m_pFormView->m_bMPFTimeDisplay;
+	m_bMPMTimeDisplay = pFrame->m_wndChannelInfo.m_pFormView->m_bMPMTimeDisplay;
+	m_bMPMAltitudeDisplay = pFrame->m_wndChannelInfo.m_pFormView->m_bMPMAltitudeDisplay;
+	m_bFPFTimeDisplay = pFrame->m_wndChannelInfo.m_pFormView->m_bFPFTimeDisplay;
+	m_bFPMTimeDisplay = pFrame->m_wndChannelInfo.m_pFormView->m_bFPMTimeDisplay;
+	m_bFPMAltitudeDisplay = pFrame->m_wndChannelInfo.m_pFormView->m_bFPMAltitudeDisplay;
+
+	// 统计闸门开的个数
+	m_nGateOpenNum = CountGateOpenNum();
+	// 统计特征值开的个数
+	m_nFeatureOpenNum = CountFeatureOpenNum();
+
+	const int nGateNum = m_nGateOpenNum;
+	const int nFeatureNum = m_nFeatureOpenNum+1;
+
+	m_GateFeature = CFeatureInfo(nGateNum, nFeatureNum);
+
+	GetCScanDataCoordinate(*pData, m_GateFeature.m_dX, m_GateFeature.m_dY, m_GateFeature.m_dZ);
+
+	CChannelInfo info = pFrame->GetChannelInfo((WORD)g_dwActiveChannel);
+	BOOL bMTPmode[4] = {FALSE, FALSE, FALSE, FALSE};
+	float fDelay[4] = {0.0f, 0.0f, 0.0f, 0.0f};
+	DWORD dwDelayDot[4] = {0, 0, 0, 0};
+	
+	for (int i=0; i<4; i++)
+	{
+		bMTPmode[i] = info.m_GateInfo[i].m_nMtpMode;
+		fDelay[i] = info.m_fChannelDelay;
+		dwDelayDot[i] = MicroSecond2Dot(fDelay[i]);
+	}	
+	
+	int i = 0;
+	if(m_bGateOpen[0])
+	{
+		int j = 1;
+		if (bMTPmode[0])
+		{
+			m_GateFeature.m_pfFeatures[i][0] = float(pData->wGate1SyncTime) / ADFREQUENCY + fDelay[0];
+		}
+		else
+			m_GateFeature.m_pfFeatures[i][0] = float(pData->wGate1SyncTime) / ADFREQUENCY;
+	
+		if (m_bFPFTimeDisplay)
+		{
+			if(bMTPmode[0])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate1FPFirstTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate1FPFirstTime + dwDelayDot[0]);
+
+			j++;
+		}
+
+		if (m_bFPMTimeDisplay)
+		{
+			if(bMTPmode[0])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate1FPTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate1FPTime + dwDelayDot[0]);
+
+			j++;
+		}
+
+		if(m_bMPFTimeDisplay)
+		{
+			if(bMTPmode[0])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate1MPFirstTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate1MPFirstTime + dwDelayDot[0]);
+
+			j++;
+		}
+
+		if (m_bMPMTimeDisplay)
+		{
+			if(bMTPmode[0])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate1MPTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate1MPTime + dwDelayDot[0]);
+
+			j++;
+		}
+		
+		if (m_bFPMAltitudeDisplay)
+		{
+			m_GateFeature.m_pfFeatures[i][j] = pData->wGate1FPAmp / MAX_HEIGHT *100.0f;
+			j++;
+		}
+
+		if (m_bMPMAltitudeDisplay)
+		{
+			m_GateFeature.m_pfFeatures[i][j] = pData->wGate1MPAmp / MAX_HEIGHT *100.0f;
+			j++;
+		}
+		
+		i++;
+	}
+
+	if (m_bGateOpen[1])
+	{
+		int j = 1;
+		if (bMTPmode[1])
+			m_GateFeature.m_pfFeatures[i][0] = float(pData->wGate2SyncTime) / ADFREQUENCY + fDelay[1];
+		else
+			m_GateFeature.m_pfFeatures[i][0] = float(pData->wGate2SyncTime) / ADFREQUENCY;
+
+		if (m_bFPFTimeDisplay)
+		{
+			if (bMTPmode[1])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate2FPFirstTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate2FPFirstTime + dwDelayDot[1]);
+
+			j++;
+		}
+
+		if (m_bFPMTimeDisplay)
+		{
+			if (bMTPmode[1])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate2FPTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate2FPTime + dwDelayDot[1]);
+
+			j++;
+		}
+
+		if(m_bMPFTimeDisplay)
+		{
+			if(bMTPmode[1])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate2MPFirstTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate2MPFirstTime + dwDelayDot[1]);
+
+			j++;
+		}
+
+		if (m_bMPMTimeDisplay)
+		{
+			if(bMTPmode[1])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate2MPTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate2MPTime + dwDelayDot[1]);
+
+			j++;
+		}
+
+		if (m_bFPMAltitudeDisplay)
+		{
+			m_GateFeature.m_pfFeatures[i][j] = pData->wGate2FPAmp / MAX_HEIGHT *100.0f;
+			j++;
+		}
+
+		if (m_bMPMAltitudeDisplay)
+		{
+			m_GateFeature.m_pfFeatures[i][j] = pData->wGate2MPAmp / MAX_HEIGHT *100.0f;
+			j++;
+		}
+
+		i++;
+	}
+
+	if(m_bGateOpen[2])
+	{
+		int j = 1;
+		if (bMTPmode[2])
+			m_GateFeature.m_pfFeatures[i][0] = float(pData->wGate3SyncTime) / ADFREQUENCY + fDelay[2];
+		else
+			m_GateFeature.m_pfFeatures[i][0] = float(pData->wGate3SyncTime) / ADFREQUENCY;
+
+		if (m_bFPFTimeDisplay)
+		{
+			if(bMTPmode[2])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate3FPFirstTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate3FPFirstTime + dwDelayDot[2]);
+
+			j++;
+		}
+
+		if (m_bFPMTimeDisplay)
+		{
+			if(bMTPmode[2])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate3FPTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate3FPTime + dwDelayDot[2]);
+
+			j++;
+		}
+
+		if(m_bMPFTimeDisplay)
+		{
+			if(bMTPmode[2])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate3MPFirstTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate3MPFirstTime + dwDelayDot[2]);
+
+			j++;
+		}
+
+		if (m_bMPMTimeDisplay)
+		{
+			if(bMTPmode[2])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate3MPTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate3MPTime + dwDelayDot[2]);
+
+			j++;
+		}
+
+		if (m_bFPMAltitudeDisplay)
+		{
+			m_GateFeature.m_pfFeatures[i][j] = pData->wGate3FPAmp / MAX_HEIGHT *100.0f;
+			j++;
+		}
+
+		if (m_bMPMAltitudeDisplay)
+		{
+			m_GateFeature.m_pfFeatures[i][j] = pData->wGate3MPAmp / MAX_HEIGHT *100.0f;
+			j++;
+		}
+
+		i++;
+	}
+
+	if (m_bGateOpen[3])
+	{
+		int j = 1;
+
+		if (bMTPmode[3])
+			m_GateFeature.m_pfFeatures[i][0] = float(pData->wGate4SyncTime) / ADFREQUENCY + fDelay[3];
+		else
+			m_GateFeature.m_pfFeatures[i][0] = float(pData->wGate4SyncTime) / ADFREQUENCY;
+
+		if (m_bFPFTimeDisplay)
+		{
+			if(bMTPmode[3])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate4FPFirstTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate4FPFirstTime + dwDelayDot[3]);
+
+			j++;
+		}
+
+		if (m_bFPMTimeDisplay)
+		{
+			if(bMTPmode[3])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate4FPTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate4FPTime + dwDelayDot[3]);
+
+			j++;
+		}
+
+		if(m_bMPFTimeDisplay)
+		{
+			if(bMTPmode[3])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate4MPFirstTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate4MPFirstTime + dwDelayDot[3]);
+
+			j++;
+		}
+
+		if (m_bMPMTimeDisplay)
+		{
+			if(bMTPmode[3])
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate4MPTime);
+			else
+				m_GateFeature.m_pfFeatures[i][j] = Dot2Range(g_nWaveSpeed, pData->wGate4MPTime +dwDelayDot[3]);
+
+			j++;
+		}
+
+		if (m_bFPMAltitudeDisplay)
+		{
+			m_GateFeature.m_pfFeatures[i][j] = pData->wGate4FPAmp / MAX_HEIGHT *100.0f;
+			j++;
+		}
+
+		if (m_bMPMAltitudeDisplay)
+		{
+			m_GateFeature.m_pfFeatures[i][j] = pData->wGate4MPAmp / MAX_HEIGHT *100.0f;
+			j++;
+		}
+
+		i++;
+	}
+
+ 	delete pData;
+ 	pData = NULL;
+
+	Invalidate(FALSE);
+	return 0;
+}
+BOOL CFeatureInfoWnd::OnEraseBkgnd(CDC* pDC)
+{
+	// TODO: Add your message handler code here and/or call default
+	CRect rect;
+	GetClientRect(&rect);
+	static int nCount = 0;
+	if(nCount == 0)
+	{
+		m_bmpBack.CreateCompatibleBitmap(pDC, rect.Width(), rect.Height());
+		pDC->SelectObject(&m_bmpBack);
+		nCount++;
+	}
+	
+	pDC->FillSolidRect(&rect, RGB(255, 255, 255));
+
+	return TRUE;
+}
+
+int CFeatureInfoWnd::OnCreate(LPCREATESTRUCT lpCreateStruct)
+{
+	if (CWnd::OnCreate(lpCreateStruct) == -1)
+		return -1;
+
+	// TODO:  Add your specialized creation code here
+	// 禁止关闭操作
+	CMenu* pSysMenu = GetSystemMenu(FALSE);
+	if (pSysMenu != NULL)
+	{
+		pSysMenu->EnableMenuItem(SC_CLOSE, MF_BYCOMMAND|MF_DISABLED);
+	}
+
+	return 0;
+}
+
+void CFeatureInfoWnd::OnDestroy()
+{
+	CWnd::OnDestroy();
+	// TODO: Add your message handler code here
+}
+
+int CFeatureInfoWnd::CountGateOpenNum()
+{
+	int nCount = 0;
+
+	for (int i=0; i<4; i++)
+	{
+		if (m_bGateOpen[i])
+			nCount++;
+	}
+
+	return nCount;
+}
+
+int CFeatureInfoWnd::CountFeatureOpenNum()
+{
+	int nCount = 0;
+
+	if(m_bMPFTimeDisplay)
+		nCount++;
+
+	if(m_bMPMTimeDisplay)
+		nCount++;
+
+	if(m_bMPMAltitudeDisplay)
+		nCount++;
+
+	if(m_bFPFTimeDisplay)
+		nCount++;
+
+	if(m_bFPMTimeDisplay)
+		nCount++;
+
+	if(m_bFPMAltitudeDisplay)
+		nCount++;
+
+	return nCount;
+}

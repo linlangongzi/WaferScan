@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FormOnLineClass</class>
+ <widget class="QDialog" name="FormOnLineClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>392</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FormOnLine</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(73, 73, 73);</string>
+  </property>
+  <widget class="QCheckBox" name="checkBoxSingle">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>90</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{
+color: rgb(255, 255, 255);
+font: 18pt &quot;新宋体&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>单一报表输出</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>20</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;新宋体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>在线打印设置界面</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxWhole">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{
+color: rgb(255, 255, 255);
+font: 18pt &quot;新宋体&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>整体报表输出</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxTestOutPut">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>190</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{
+color: rgb(255, 255, 255);
+font: 18pt &quot;新宋体&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>检测界面输出</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxQualified">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>240</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{
+color: rgb(255, 255, 255);
+font: 15pt &quot;新宋体&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>合格品</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxDefect">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>270</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{
+color: rgb(255, 255, 255);
+font: 15pt &quot;新宋体&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>不合格品</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxBadCouple">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>300</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox{
+color: rgb(255, 255, 255);
+font: 15pt &quot;新宋体&quot;;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>耦合不良品</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonYes">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>350</y>
+     <width>61</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 15pt &quot;新宋体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonNo">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>350</y>
+     <width>61</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 15pt &quot;新宋体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="formonline.qrc"/>
+ </resources>
+ <connections/>
+</ui>

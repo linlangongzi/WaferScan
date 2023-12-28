@@ -1,0 +1,66 @@
+﻿BasedOnStyle: Google
+ColumnLimit: 0
+MaxEmptyLinesToKeep: 1
+
+# Indents
+TabWidth: 4
+IndentWidth: 4
+UseTab: Never
+AccessModifierOffset: -4
+IndentCaseLabels: false
+NamespaceIndentation: None
+
+# Spaces
+SpacesBeforeTrailingComments: 1
+PointerAlignment: Right
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInAngles: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+
+# Breaks
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterFunction: true
+  AfterStruct: true
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterNamespace: false
+  AfterUnion: false
+  BeforeCatch: false
+  BeforeElse: false
+BreakConstructorInitializersBeforeComma: false
+
+BinPackParameters: false
+BinPackArguments: false
+BreakBeforeBinaryOperators: NonAssignment
+AllowAllParametersOfDeclarationOnNextLine: false
+AlwaysBreakTemplateDeclarations: true
+AlwaysBreakAfterReturnType: None
+AllowShortLoopsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: true
+Cpp11BracedListStyle: true
+
+AlignOperands: false
+AlignTrailingComments: false
+AlignConsecutiveAssignments: true
+AlignEscapedNewlinesLeft: true
+AlignAfterOpenBracket: DontAlign
+
+ForEachMacros: ["foreach"]
+
+# All #include <Q...> goes last.
+IncludeCategories:
+  - Regex:    '^<Q'
+    Priority: 3
+  - Regex:    '.*'
+    Priority: 2
+  - Regex:    '^\"ui_'
+    Priority: 1

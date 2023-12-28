@@ -1,0 +1,149 @@
+[
+    {
+        "ColorPalette": [
+            {
+                "Color": "#000000",
+                "Position": 0
+            },
+            {
+                "Color": "#0000ff",
+                "Position": 25
+            },
+            {
+                "Color": "#00ff00",
+                "Position": 50
+            },
+            {
+                "Color": "#ff0000",
+                "Position": 75
+            },
+            {
+                "Color": "#ffff00",
+                "Position": 100
+            }
+        ],
+        "EmptyColor": "#eeeeee",
+        "ID": "1",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-11-10T17:09:03",
+        "MaxLimit": 100,
+        "MinLimit": 0,
+        "Type": "ColorPalette"
+    },
+    {
+        "ColorPalette": [
+            {
+                "Color": "#000000",
+                "Position": 0
+            },
+            {
+                "Color": "#ffffff",
+                "Position": 25
+            },
+            {
+                "Color": "#00ff00",
+                "Position": 50
+            },
+            {
+                "Color": "#ffffff",
+                "Position": 75
+            },
+            {
+                "Color": "#ff00ff",
+                "Position": 100
+            }
+        ],
+        "EmptyColor": "#eeeeee",
+        "ID": "2",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-11-10T17:09:03",
+        "MaxLimit": 100,
+        "MinLimit": 0,
+        "Type": "ColorPalette"
+    },
+    {
+        "ColorPalette": [
+            {
+                "Color": "#ffffff",
+                "Position": 0
+            },
+            {
+                "Color": "#000000",
+                "Position": 100
+            }
+        ],
+        "EmptyColor": "#eeeeee",
+        "ID": "3",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-11-10T17:09:03",
+        "MaxLimit": 100,
+        "MinLimit": 0,
+        "Type": "ColorPalette"
+    },
+    {
+        "ColorPalette": [
+            {
+                "Color": "#0000ff",
+                "Position": 0
+            },
+            {
+                "Color": "#00ffff",
+                "Position": 25
+            },
+            {
+                "Color": "#00ff00",
+                "Position": 50
+            },
+            {
+                "Color": "#ffff00",
+                "Position": 75
+            },
+            {
+                "Color": "#ff0000",
+                "Position": 100
+            }
+        ],
+        "EmptyColor": "#eeeeee",
+        "ID": "4",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-11-10T17:09:03",
+        "MaxLimit": 100,
+        "MinLimit": 0,
+        "Type": "ColorPalette"
+    },
+    {
+        "ColorPalette": [
+            {
+                "Color": "#000000",
+                "Position": 0
+            },
+            {
+                "Color": "#0000ff",
+                "Position": 20
+            },
+            {
+                "Color": "#00ff00",
+                "Position": 40
+            },
+            {
+                "Color": "#ff0000",
+                "Position": 60
+            },
+            {
+                "Color": "#ffff00",
+                "Position": 80
+            },
+            {
+                "Color": "#ffffff",
+                "Position": 100
+            }
+        ],
+        "EmptyColor": "#eeeeee",
+        "ID": "5",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-11-10T17:09:03",
+        "MaxLimit": 100,
+        "MinLimit": 0,
+        "Type": "ColorPalette"
+    }
+]

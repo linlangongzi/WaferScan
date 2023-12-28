@@ -1,0 +1,34 @@
+﻿#pragma once
+
+#include <QAbstractTableModel>
+#include "UTInstrument.h"
+
+class InstrumentModel : public QAbstractTableModel
+{
+    Q_OBJECT
+
+public:
+    enum Columns {
+        ColName,
+        ColDevice,
+        ColConnection,
+    };
+    Q_ENUM(Columns)
+
+    explicit InstrumentModel(QObject *parent = nullptr);
+
+    // Header:
+    QVariant headerData(int section, Qt::Orientation orientation, int role = Qt::DisplayRole) const override;
+
+    // Basic functionality:
+    int rowCount(const QModelIndex &parent = QModelIndex()) const override;
+    int columnCount(const QModelIndex &parent = QModelIndex()) const override;
+
+    QVariant data(const QModelIndex &index, int role = Qt::DisplayRole) const override;
+
+    UTInstrument *instrument(const QModelIndex &index) const;
+
+private slots:
+    void resetModel();
+    void updateInstrumentInfo();
+};

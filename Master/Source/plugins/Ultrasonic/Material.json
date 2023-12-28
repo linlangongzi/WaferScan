@@ -1,0 +1,208 @@
+[{
+	"density": 0,
+	"id": "{421939ef-b5a3-4c13-a389-0f180c1fdbc2}",
+	"legacyId": 1,
+	"longitudinalVelocity": 1250,
+	"name": "水",
+	"shearVelocity": 0,
+	"state": "Liquid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{e27c9378-bc5f-476c-acfb-5cb9d8288dd4}",
+	"legacyId": 2,
+	"longitudinalVelocity": 5920,
+	"name": "钢",
+	"shearVelocity": 3240,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{7e835790-a443-4101-a93e-ec0a3b59aceb}",
+	"legacyId": 3,
+	"longitudinalVelocity": 6260,
+	"name": "铝",
+	"shearVelocity": 3040,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{fef758f9-0ca6-4cf0-bda4-39e52f126ca4}",
+	"legacyId": 4,
+	"longitudinalVelocity": 4720,
+	"name": "铜",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{af4b8325-40e4-4ac2-a6cc-39e10273dcad}",
+	"legacyId": 5,
+	"longitudinalVelocity": 5930,
+	"name": "铁",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{c247be24-6145-4af9-ba31-0933776452b0}",
+	"legacyId": 6,
+	"longitudinalVelocity": 6070,
+	"name": "钛",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{642ccb55-1d1f-4a95-8ec7-51744ceda813}",
+	"legacyId": 7,
+	"longitudinalVelocity": 12890,
+	"name": "铍",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{12af470e-f8d8-467d-a38c-bbd789648f3d}",
+	"legacyId": 8,
+	"longitudinalVelocity": 3475,
+	"name": "黄铜",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{400d56f4-5196-457c-b510-474baf8200d6}",
+	"legacyId": 9,
+	"longitudinalVelocity": 3962,
+	"name": "玻璃",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{1d131800-c768-4d7d-b8ed-98e788d7ca7b}",
+	"legacyId": 10,
+	"longitudinalVelocity": 3240,
+	"name": "金",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{4cbf255a-3c0d-45d9-86e2-b31e119fa0a2}",
+	"legacyId": 11,
+	"longitudinalVelocity": 2160,
+	"name": "铅",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{c30c5687-b882-4f6e-8df8-f57beaab2adc}",
+	"legacyId": 12,
+	"longitudinalVelocity": 3650,
+	"name": "银",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{86febfd8-25eb-49be-a2f8-be7ae0266894}",
+	"legacyId": 13,
+	"longitudinalVelocity": 4210,
+	"name": "锌",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{d72e2486-dcbd-46c0-affd-0ad35cbf5c0d}",
+	"legacyId": 14,
+	"longitudinalVelocity": 8433,
+	"name": "硅",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{369a757f-7ef1-4277-8d9f-a61c3fd57339}",
+	"legacyId": 16,
+	"longitudinalVelocity": 1215,
+	"name": "铟",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{14852fb9-1232-4fa7-b2f4-c285d233ac9d}",
+	"legacyId": 17,
+	"longitudinalVelocity": 6250,
+	"name": "钼",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{ab76a3f4-d1ee-4eda-8667-cc5293a85dd5}",
+	"legacyId": 18,
+	"longitudinalVelocity": 3320,
+	"name": "锡",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{b54a73e2-fabd-4dc0-a429-c40159822d0b}",
+	"legacyId": 19,
+	"longitudinalVelocity": 5220,
+	"name": "钨",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{730146d8-dc7d-4e20-a2ab-4d355a90e88e}",
+	"legacyId": 20,
+	"longitudinalVelocity": 3260,
+	"name": "铂",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{3d6df455-fcfe-4d4b-abe0-5bc207a358e4}",
+	"legacyId": 21,
+	"longitudinalVelocity": 6040,
+	"name": "镍",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{6a4375e6-9eba-4412-845f-3815e884f967}",
+	"legacyId": 22,
+	"longitudinalVelocity": 5770,
+	"name": "镁",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{3ecf9878-2c97-4352-8868-f661f0169b2e}",
+	"legacyId": 23,
+	"longitudinalVelocity": 1460,
+	"name": "汞",
+	"shearVelocity": 0,
+	"state": "Liquid",
+	"surfaceVelocity": 0
+}, {
+	"density": 0,
+	"id": "{8b3dfa93-2212-4e08-9c22-ebc84a553b4c}",
+	"legacyId": 27,
+	"longitudinalVelocity": 5600,
+	"name": "钴",
+	"shearVelocity": 0,
+	"state": "Solid",
+	"surfaceVelocity": 0
+}]

@@ -1,0 +1,9 @@
+﻿<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<Package>
+    <DisplayName>$$DS_APP_DISPLAY_NAME</DisplayName>
+    <Description>WaferScan 通用超声检测软件平台</Description>
+    <Version>$$DS_VERSION</Version>
+    <ReleaseDate>$$DS_DATE</ReleaseDate>
+    <Default>true</Default>
+    <Script>installscript.qs</Script>
+</Package>

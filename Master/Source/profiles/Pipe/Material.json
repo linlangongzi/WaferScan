@@ -1,0 +1,204 @@
+﻿[
+    {
+        "DelayUnit": "TIME",
+        "ID": "1",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-09-02T16:38:34",
+        "MaterialName": "水",
+        "MaterialVelocity": 1500,
+        "RangeUnit": "TIME",
+        "Type": "Material"
+    },
+    {
+        "DelayUnit": "TIME",
+        "ID": "2",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-09-02T16:39:00",
+        "MaterialName": "钢",
+        "MaterialVelocity": 5920,
+        "RangeUnit": "TIME",
+        "Type": "Material"
+    },
+    {
+        "DelayUnit": "TIME",
+        "ID": "3",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-09-02T16:39:16",
+        "MaterialName": "铝",
+        "MaterialVelocity": 6260,
+        "RangeUnit": "TIME",
+        "Type": "Material"
+    },
+    {
+        "DelayUnit": "TIME",
+        "ID": "4",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-09-02T16:39:16",
+        "MaterialName": "铜",
+        "MaterialVelocity": 4720,
+        "RangeUnit": "TIME",
+        "Type": "Material"
+    },
+    {
+        "DelayUnit": "TIME",
+        "ID": "5",
+        "LastModifiedBy": "1",
+        "LastModifiedTime": "2014-09-02T16:39:16",
+        "MaterialName": "铁",
+        "MaterialVelocity": 5930,
+        "RangeUnit": "TIME",
+        "Type": "Material"
+    },
+    {
+        "ID": "6",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T09:54:37",
+        "MaterialName": "钛",
+        "MaterialVelocity": 6070,
+        "Type": "Material"
+    },
+    {
+        "ID": "7",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T09:57:57",
+        "MaterialName": "铍",
+        "MaterialVelocity": 12890,
+        "Type": "Material"
+    },
+    {
+        "ID": "8",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T09:58:18",
+        "MaterialName": "黄铜",
+        "MaterialVelocity": 3475,
+        "Type": "Material"
+    },
+    {
+        "ID": "9",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T09:58:54",
+        "MaterialName": "玻璃",
+        "MaterialVelocity": 3962,
+        "Type": "Material"
+    },
+    {
+        "ID": "10",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T09:59:15",
+        "MaterialName": "金",
+        "MaterialVelocity": 3240,
+        "Type": "Material"
+    },
+    {
+        "ID": "11",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T09:59:58",
+        "MaterialName": "铅",
+        "MaterialVelocity": 2160,
+        "Type": "Material"
+    },
+    {
+        "ID": "12",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:00:17",
+        "MaterialName": "银",
+        "MaterialVelocity": 3650,
+        "Type": "Material"
+    },
+    {
+        "ID": "13",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:01:35",
+        "MaterialName": "锌",
+        "MaterialVelocity": 4210,
+        "Type": "Material"
+    },
+    {
+        "ID": "14",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:01:54",
+        "MaterialName": "硅",
+        "MaterialVelocity": 8433,
+        "Type": "Material"
+    },
+    {
+        "ID": "15",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:03:53",
+        "MaterialName": "铝(横波)",
+        "MaterialVelocity": 3040,
+        "Type": "Material"
+    },
+    {
+        "ID": "16",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:05:34",
+        "MaterialName": "铟",
+        "MaterialVelocity": 1215,
+        "Type": "Material"
+    },
+    {
+        "ID": "17",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:06:40",
+        "MaterialName": "钼",
+        "MaterialVelocity": 6250,
+        "Type": "Material"
+    },
+    {
+        "ID": "18",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:07:18",
+        "MaterialName": "锡",
+        "MaterialVelocity": 3320,
+        "Type": "Material"
+    },
+    {
+        "ID": "19",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:07:52",
+        "MaterialName": "钨",
+        "MaterialVelocity": 5220,
+        "Type": "Material"
+    },
+    {
+        "ID": "20",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:08:39",
+        "MaterialName": "铂",
+        "MaterialVelocity": 3260,
+        "Type": "Material"
+    },
+    {
+        "ID": "21",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:08:58",
+        "MaterialName": "镍",
+        "MaterialVelocity": 6040,
+        "Type": "Material"
+    },
+    {
+        "ID": "22",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:16:42",
+        "MaterialName": "镁",
+        "MaterialVelocity": 5770,
+        "Type": "Material"
+    },
+    {
+        "ID": "23",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:12:16",
+        "MaterialName": "汞(液体)",
+        "MaterialVelocity": 1460,
+        "Type": "Material"
+    },
+    {
+        "ID": "24",
+        "LastModifiedBy": "0",
+        "LastModifiedTime": "2015-06-03T10:15:38",
+        "MaterialName": "钢(横波)",
+        "MaterialVelocity": 3240,
+        "Type": "Material"
+    }
+]

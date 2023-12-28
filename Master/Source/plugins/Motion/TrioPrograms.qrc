@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/Motion">
+        <file>WARDEN.BAS</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WizardDatum</class>
+ <widget class="QWizard" name="WizardDatum">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>453</width>
+    <height>452</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>复位机械轴</string>
+  </property>
+  <widget class="QWizardPage" name="pageAxisList">
+   <property name="title">
+    <string>选择复位轴</string>
+   </property>
+   <property name="subTitle">
+    <string>请选择要复位的机械轴，多个轴将按顺序复位。</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="axis"/>
+    </item>
+    <item row="2" column="0" colspan="2">
+     <widget class="QRadioButton" name="multiple">
+      <property name="text">
+       <string>复位多个轴</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QRadioButton" name="single">
+      <property name="text">
+       <string>复位一个轴</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QWidget" name="axisList" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_2"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="pageDatum">
+   <property name="title">
+    <string>正在执行复位</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QProgressBar" name="progress"/>
+    </item>
+    <item>
+     <widget class="QPlainTextEdit" name="history"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>single</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>axis</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>238</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>127</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>multiple</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>axisList</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>238</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

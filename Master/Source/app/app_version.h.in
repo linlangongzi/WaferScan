@@ -1,0 +1,48 @@
+﻿#pragma once
+
+namespace Core {
+namespace Constants {
+
+#define STRINGIFY_INTERNAL(x) #x
+#define STRINGIFY(x) STRINGIFY_INTERNAL(x)
+
+#define DS_VERSION $${DS_VERSION}
+#define DS_VERSION_STR STRINGIFY(DS_VERSION)
+
+#define DS_VERSION_MAJOR $$replace(DS_VERSION, "^(\\d+)\\.\\d+\\.\\d+(-.*)?$", \\1)
+#define DS_VERSION_MINOR $$replace(DS_VERSION, "^\\d+\\.(\\d+)\\.\\d+(-.*)?$", \\1)
+#define DS_VERSION_RELEASE $$replace(DS_VERSION, "^\\d+\\.\\d+\\.(\\d+)(-.*)?$", \\1)
+
+const char * const DS_APP_NAME              = \"$${DS_APP_NAME}\";
+const char * const DS_APP_DISPLAY_NAME      = \"$${DS_APP_DISPLAY_NAME}\";
+const char * const DS_APP_IDENTIFIER        = \"$${DS_APP_IDENTIFIER}\";
+
+const char * const DS_VERSION_LONG          = DS_VERSION_STR;
+const char * const DS_AUTHOR                = \"$${DS_AUTHOR}\";
+const char * const DS_AUTHOR_LONG           = \"$${DS_AUTHOR_LONG}\";
+const char * const DS_ORGANIZATION_DOMAIN   = \"$${DS_ORGANIZATION_DOMAIN}\";
+const char * const DS_YEAR                  = \"$${DS_YEAR}\";
+const char * const DS_YEAR_START            = \"$${DS_YEAR_START}\";
+
+const char * const DS_REVISION_TYPE         = \"$$DS_REVISION_TYPE\";
+const char * const DS_BRANCH_STR            = \"$$DS_BRANCH\";
+const char * const DS_REVISION_STR          = \"$$DS_REVISION\";
+const char * const DS_QMAKE_SPEC            = \"$$QMAKESPEC\";
+const char * const DS_TELEPHONE             = \"010-82420304\";
+const char * const DS_WEBPORTAL             = \"http://www.allrising.com.cn\";
+
+// changes the path where the settings are saved to
+#ifdef DS_SETTINGSVARIANT
+const char * const DS_SETTINGSVARIANT_STR      = STRINGIFY(DS_SETTINGSVARIANT);
+#else
+const char * const DS_SETTINGSVARIANT_STR      = \"DolphinSense\";
+#endif
+
+
+#undef DS_VERSION
+#undef DS_VERSION_STR
+#undef STRINGIFY
+#undef STRINGIFY_INTERNAL
+
+} // Constants
+} // Core

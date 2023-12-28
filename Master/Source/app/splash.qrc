@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/DolphinSense">
+        <file>Logo.ico</file>
+        <file>Splash.png</file>
+    </qresource>
+</RCC>

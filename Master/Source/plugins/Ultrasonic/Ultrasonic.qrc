@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/Ultrasonic">
+        <file>Material.json</file>
+    </qresource>
+</RCC>

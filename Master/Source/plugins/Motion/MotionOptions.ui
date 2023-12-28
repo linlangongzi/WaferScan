@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MotionOptions</class>
+ <widget class="QWidget" name="MotionOptions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>494</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>运动控制器配置</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <item>
+    <widget class="QGroupBox" name="connectionGroup">
+     <property name="title">
+      <string>运动控制器</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="ipTitle">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>22</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>IP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="ip"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="statusTitle">
+        <property name="text">
+         <string>状态</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLabel" name="connectionStatus"/>
+      </item>
+      <item row="3" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QToolButton" name="connect">
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="disconnect">
+          <property name="toolButtonStyle">
+           <enum>Qt::ToolButtonTextBesideIcon</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="fastProgramTitle">
+        <property name="text">
+         <string>快速编程</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QCheckBox" name="fastProgram"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="modelTitle">
+        <property name="text">
+         <string>型号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLabel" name="model"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="serialTitle">
+        <property name="text">
+         <string>序列号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLabel" name="serial"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="versionTitle">
+        <property name="text">
+         <string>版本</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLabel" name="version"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="fpgaVersionTitle">
+        <property name="text">
+         <string>FPGA版本</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QLabel" name="fpgaVersion"/>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="axisCountTitle">
+        <property name="text">
+         <string>最大轴数量</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QLabel" name="axisCount"/>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="servoPeriodTitle">
+        <property name="text">
+         <string>伺服周期</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QLabel" name="servoPeriod"/>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="tableSizeTitle">
+        <property name="text">
+         <string>表容量</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QLabel" name="tableSize"/>
+      </item>
+      <item row="12" column="0">
+       <widget class="QLabel" name="digitalInputTitle">
+        <property name="text">
+         <string>数字输入</string>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="1">
+       <widget class="QLabel" name="digitalInputCount"/>
+      </item>
+      <item row="13" column="0">
+       <widget class="QLabel" name="digitalOutputTitle">
+        <property name="text">
+         <string>数字输出</string>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="1">
+       <widget class="QLabel" name="digitalOutputCount"/>
+      </item>
+      <item row="14" column="0">
+       <widget class="QLabel" name="digitalIoTitle">
+        <property name="text">
+         <string>数字I/O</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="1">
+       <widget class="QLabel" name="digitalIoCount"/>
+      </item>
+      <item row="15" column="0">
+       <widget class="QLabel" name="analogInputTitle">
+        <property name="text">
+         <string>模拟输入</string>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="1">
+       <widget class="QLabel" name="analogInputCount"/>
+      </item>
+      <item row="16" column="0">
+       <widget class="QLabel" name="analogOutputTitle">
+        <property name="text">
+         <string>模拟输出</string>
+        </property>
+       </widget>
+      </item>
+      <item row="16" column="1">
+       <widget class="QLabel" name="analogOutputCount"/>
+      </item>
+      <item row="17" column="0">
+       <widget class="QLabel" name="featureEnabledTitle">
+        <property name="text">
+         <string>启用功能</string>
+        </property>
+       </widget>
+      </item>
+      <item row="17" column="1">
+       <widget class="QLabel" name="featureEnabled"/>
+      </item>
+      <item row="18" column="0" colspan="2">
+       <widget class="Line" name="line">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="0">
+       <widget class="QLabel" name="hasMemoryCardTitle">
+        <property name="text">
+         <string>存储卡</string>
+        </property>
+       </widget>
+      </item>
+      <item row="19" column="1">
+       <widget class="QLabel" name="hasMemoryCard"/>
+      </item>
+      <item row="20" column="0">
+       <widget class="QLabel" name="memoryFreeTitle">
+        <property name="text">
+         <string>程序内存</string>
+        </property>
+       </widget>
+      </item>
+      <item row="20" column="1">
+       <widget class="QLabel" name="memoryFree"/>
+      </item>
+      <item row="21" column="0">
+       <widget class="QLabel" name="systemErrorTitle">
+        <property name="text">
+         <string>系统错误</string>
+        </property>
+       </widget>
+      </item>
+      <item row="21" column="1">
+       <widget class="QLabel" name="systemError"/>
+      </item>
+      <item row="22" column="0">
+       <widget class="QLabel" name="cpuLoadTitle">
+        <property name="text">
+         <string>CPU负载</string>
+        </property>
+       </widget>
+      </item>
+      <item row="22" column="1">
+       <widget class="QLabel" name="cpuLoad"/>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="QCheckBox" name="simulateDynamic">
+        <property name="text">
+         <string>模拟运动</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <widget class="QGroupBox" name="groupAxis">
+       <property name="title">
+        <string>轴配置</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QTreeView" name="axisList"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="axisSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="axisAdd">
+            <property name="text">
+             <string>添加</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../../Resources/Resources.qrc">
+              <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="axisRemove">
+            <property name="text">
+             <string>删除</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../../Resources/Resources.qrc">
+              <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupEndPoint">
+       <property name="title">
+        <string>机械臂配置</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QListWidget" name="endPointList"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <spacer name="endPointSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="endPointAdd">
+            <property name="text">
+             <string>添加</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../../Resources/Resources.qrc">
+              <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="endPointRemove">
+            <property name="text">
+             <string>删除</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../../Resources/Resources.qrc">
+              <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="ioGroup">
+       <property name="title">
+        <string>IO</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_7">
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <spacer name="ioSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QToolButton" name="ioAdd">
+            <property name="text">
+             <string>添加</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../../Resources/Resources.qrc">
+              <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QToolButton" name="ioRemove">
+            <property name="text">
+             <string>删除</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../../../Resources/Resources.qrc">
+              <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <widget class="QTreeView" name="ioList"/>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupAdvanced">
+       <property name="title">
+        <string>高级</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QCheckBox" name="disableDatumStatus">
+          <property name="text">
+           <string>禁用复位提示</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

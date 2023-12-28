@@ -1,0 +1,15 @@
+﻿{
+    \"Name\" : \"Ultrasonic\",
+    \"Version\" : \"$$DS_VERSION\",
+    \"CompatVersion\" : \"$$DS_COMPAT_VERSION\",
+    \"Vendor\" : \"Allrising (Beijing) Technology Ltd\",
+    \"Copyright\" : \"(C) $$DS_YEAR Allrising (Beijing) Technology Ltd\",
+    \"License\" : [ \"Commercial Usage\"
+    ],
+    \"Category\" : \"DolphinSense\",
+    \"Description\" : \"Ultrasonic core plugin.\",
+    \"Url\" : \"http://www.allrising.com.cn\",
+    \"Arguments\" : [
+    ],
+    $$dependencyList
+}

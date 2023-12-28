@@ -1,0 +1,38 @@
+﻿#ifndef QJSONOBJECT
+#define QJSONOBJECT
+
+#include <QVariantMap>
+
+class QJsonValue : public QVariant
+{
+public:
+    explicit QJsonValue(const QVariant &var) :
+        QVariant(var)
+    {}
+
+    double toDouble(double defaultValue = 0) const
+    {
+        bool ok = false;
+        double val = QVariant::toDouble(&ok);
+        return ok ? val : defaultValue;
+    }
+
+    int toInt(int defaultValue = 0) const
+    {
+        bool ok = false;
+        int val = QVariant::toInt(&ok);
+        return ok ? val : defaultValue;
+    }
+};
+
+class QJsonObject : public QVariantMap
+{
+public:
+    QJsonValue value(const QString &key) const
+    {
+        return QJsonValue(QVariantMap::value(key));
+    }
+};
+
+#endif // QJSONOBJECT
+

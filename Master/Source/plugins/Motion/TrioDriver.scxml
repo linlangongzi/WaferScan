@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" name="TrioDriver" qt:editorversion="4.2.2">
+    <state id="All">
+        <qt:editorinfo scenegeometry="90.59;85.96;41.05;49.16;1189.55;412.11" geometry="90.59;85.96;-49.54;-36.80;1189.55;412.11"/>
+        <transition type="external" event="SocketDisconnected" target="Disconnected">
+            <qt:editorinfo movePoint="61;-11"/>
+        </transition>
+        <state id="Disconnected">
+            <qt:editorinfo scenegeometry="132.56;166.73;72.56;116.73;120;100" geometry="40.91;81.83;-60;-50;120;100"/>
+            <transition type="external" event="connectToHost" target="Connecting"/>
+        </state>
+        <state id="Connecting">
+            <qt:editorinfo scenegeometry="387.43;166.73;327.43;116.73;120;100" geometry="295.78;81.83;-60;-50;120;100"/>
+            <transition type="external" event="socketConnected" target="RequestInfo"/>
+        </state>
+        <state id="RequestInfo">
+            <qt:editorinfo scenegeometry="631.59;167.79;571.59;117.79;120;100" geometry="541;81.83;-60;-50;120;100"/>
+            <transition type="external" event="controllerInfoDone" target="ConfigureAxis"/>
+            <transition type="internal" event="timeout" target="Disconnected">
+                <qt:editorinfo localGeometry="-42;148.21;-417.59;148.21"/>
+            </transition>
+            <onentry>
+                <send event="timeout" id="request-timeout" delay="5"/>
+            </onentry>
+            <onexit>
+                <cancel sendid="request-timeout"/>
+            </onexit>
+        </state>
+        <state id="ConfigureAxis">
+            <qt:editorinfo scenegeometry="886.59;167.79;826.59;117.79;120;100" geometry="796;81.83;-60;-50;120;100"/>
+            <transition type="external" event="axisConfigured" target="Connected"/>
+            <transition type="external" event="timeout" target="Disconnected">
+                <qt:editorinfo endTargetFactors="42.28;74.32" localGeometry="-41.59;170.21;-677.59;170.21"/>
+            </transition>
+            <onentry>
+                <send event="timeout" id="configure-timeout" delay="30"/>
+            </onentry>
+            <onexit>
+                <cancel sendid="configure-timeout"/>
+            </onexit>
+        </state>
+        <state id="Connected">
+            <qt:editorinfo scenegeometry="1151.65;166.73;1091.65;116.73;120;100" geometry="1060;81.83;-60;-50;120;100"/>
+            <transition type="external" event="switchMode" target="SwitchingMode">
+                <qt:editorinfo localGeometry="-38.87;104.17" movePoint="-58;28"/>
+            </transition>
+        </state>
+        <state id="SwitchingMode">
+            <qt:editorinfo scenegeometry="1151.65;387.90;1091.65;337.90;120;100" geometry="1060;303;-60;-50;120;100"/>
+            <transition type="external" event="modeUpdated" target="Connected">
+                <qt:editorinfo localGeometry="32.45;-114" movePoint="80;-30"/>
+            </transition>
+        </state>
+    </state>
+</scxml>

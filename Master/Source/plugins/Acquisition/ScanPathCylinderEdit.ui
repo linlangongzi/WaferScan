@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScanPathCylinderEdit</class>
+ <widget class="QWidget" name="ScanPathCylinderEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" rowspan="4" colspan="2">
+    <widget class="QGroupBox" name="scanGroup">
+     <property name="title">
+      <string>扫描选项</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="endPointAxisTitle">
+        <property name="text">
+         <string>机械臂</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="EndPointSelector" name="endPointAxis"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="scanAxisTitle">
+        <property name="text">
+         <string>扫描轴</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="AxisSelector" name="scanAxis"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="scanIntervalTitle">
+        <property name="text">
+         <string>扫描间隔</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="scanInterval">
+        <property name="suffix">
+         <string> mm</string>
+        </property>
+        <property name="maximum">
+         <double>1000.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.100000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="calculationModeTitle">
+        <property name="text">
+         <string>计算模式</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="calculationMode"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="linearSpeedTitle">
+        <property name="text">
+         <string>扫描线速度</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QDoubleSpinBox" name="linearSpeed">
+          <property name="suffix">
+           <string> mm/s</string>
+          </property>
+          <property name="maximum">
+           <double>99999.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="linearSpeedText"/>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="stepIntervalTitle">
+        <property name="text">
+         <string>步进间隔</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QDoubleSpinBox" name="stepInterval">
+        <property name="suffix">
+         <string> mm</string>
+        </property>
+        <property name="maximum">
+         <double>10000.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="rotatorDiameterTitle">
+        <property name="text">
+         <string>承载轮直径</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QDoubleSpinBox" name="rotatorDiameter">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="specialValueText">
+         <string>主轴装夹</string>
+        </property>
+        <property name="suffix">
+         <string> mm</string>
+        </property>
+        <property name="maximum">
+         <double>1000.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="rotatorAngularitySpeedTitle">
+        <property name="text">
+         <string>承载轮角速度</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QDoubleSpinBox" name="rotatorAngularitySpeed">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="suffix">
+           <string> °/s</string>
+          </property>
+          <property name="maximum">
+           <double>10000.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="rotatorAngularitySpeedText">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="cylinderDiameterTitle">
+        <property name="text">
+         <string>工件直径</string>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QDoubleSpinBox" name="cylinderDiameter">
+        <property name="suffix">
+         <string> mm</string>
+        </property>
+        <property name="maximum">
+         <double>2000.000000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="cylinderAngularitySpeedTitle">
+        <property name="text">
+         <string>工件角速度</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QDoubleSpinBox" name="cylinderAngularitySpeed">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="suffix">
+           <string> °/s</string>
+          </property>
+          <property name="maximum">
+           <double>10000.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="cylinderAngularSpeedText"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QGroupBox" name="advanced">
+     <property name="title">
+      <string>高级</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="0" colspan="2">
+       <widget class="QCheckBox" name="alterSource">
+        <property name="text">
+         <string>关联检测</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="gainTitle">
+        <property name="text">
+         <string>增益补偿</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDoubleSpinBox" name="gain">
+        <property name="suffix">
+         <string> dB</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QGroupBox" name="setupOptions">
+     <property name="title">
+      <string>工艺选项</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QCheckBox" name="setup">
+        <property name="text">
+         <string>使用此工艺</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="editSetup">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string>编辑工艺</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="3" rowspan="4">
+    <widget class="QGroupBox" name="channelOptions">
+     <property name="title">
+      <string>通道选项</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="1" column="1">
+       <widget class="QLabel" name="channelListTitle">
+        <property name="text">
+         <string>通道列表</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="singleChannel">
+        <property name="text">
+         <string>单通道扫查</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QRadioButton" name="multiChannel">
+        <property name="text">
+         <string>多通道并行</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" colspan="3">
+       <widget class="QComboBox" name="channelList"/>
+      </item>
+      <item row="3" column="1" colspan="4">
+       <widget class="QGroupBox" name="multiChannelGroup">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="probeDistanceTitle">
+           <property name="text">
+            <string>探头间距</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="5">
+          <widget class="QListWidget" name="multiChannelList"/>
+         </item>
+         <item row="0" column="1" colspan="4">
+          <widget class="QDoubleSpinBox" name="probeDistance">
+           <property name="suffix">
+            <string> mm</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QToolButton" name="removeChannel">
+           <property name="icon">
+            <iconset resource="../../../Resources/Resources.qrc">
+             <normaloff>:/icons/minus.png</normaloff>:/icons/minus.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QToolButton" name="addChannel">
+           <property name="icon">
+            <iconset resource="../../../Resources/Resources.qrc">
+             <normaloff>:/icons/plus.png</normaloff>:/icons/plus.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="4" column="0" colspan="2">
+    <widget class="QGroupBox" name="startGroup">
+     <property name="title">
+      <string>起点</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="PointXYZ" name="start" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="5" column="0" colspan="2">
+    <widget class="QGroupBox" name="endGroup">
+     <property name="title">
+      <string>终点</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_6">
+      <item row="0" column="0">
+       <widget class="PointXYZ" name="end" native="true"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2" rowspan="6">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AxisSelector</class>
+   <extends>QComboBox</extends>
+   <header>Acquisition/AxisSelector.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PointXYZ</class>
+   <extends>QWidget</extends>
+   <header>Acquisition/PointXYZ.h</header>
+   <container>1</container>
+   <slots>
+    <signal>pointChanged()</signal>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>EndPointSelector</class>
+   <extends>QComboBox</extends>
+   <header location="global">Motion/EndPointSelector.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../../Resources/Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

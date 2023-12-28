@@ -1,0 +1,2 @@
+DS_PLUGIN_NAME = Gamepad
+DS_PLUGIN_DEPENDS +=

@@ -1,0 +1,425 @@
+{
+	"ProbeBoxList" : 
+	[
+		{
+			"BoxIndex" : 0,
+			"ProbeList" : 
+			[
+				{
+					"Index" : 0,
+					"ProbeNo" : 0,
+					"ChannelNo" : 0,
+                    "HardChannel" : 0,
+                    "SoftChannel" : 0,
+                    "ProbeName" : "B1-1",
+                    "TxCardNo" : 0,
+                    "TxChannelIn" : 1,
+                    "TxChannelOut" : 1,
+					"Name" : "纵1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 1,
+					"ProbeNo" : 1,
+					"ChannelNo" : 1,
+                    "HardChannel" : 0,
+                    "SoftChannel" : 1,
+                    "ProbeName" : "B1-2",
+                    "TxCardNo" : 0,
+                    "TxChannelIn" : 2,
+                    "TxChannelOut" : 1,
+					"Name" : "横1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 2,
+					"ProbeNo" : 2,
+					"ChannelNo" : 2,
+                    "HardChannel" : 0,
+                    "SoftChannel" : 2,
+                    "ProbeName" : "B1-3",
+                    "TxCardNo" : 0,
+                    "TxChannelIn" : 3,
+                    "TxChannelOut" : 1,
+					"Name" : "纵2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 3,
+					"ProbeNo" : 3,
+					"ChannelNo" : 3,
+                    "HardChannel" : 0,
+                    "SoftChannel" : 3,
+                    "ProbeName" : "B1-4",
+                    "TxCardNo" : 0,
+                    "TxChannelIn" : 4,
+                    "TxChannelOut" : 1,
+					"Name" : "横2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 20,
+					"ProbeNo" : 24,
+					"ChannelNo" : 24,
+                    "HardChannel" : 6,
+                    "SoftChannel" : 0,
+                    "ProbeName" : "B1-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 1,
+                    "TxChannelOut" : 1,
+					"Name" : "分层",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 25,
+					"ProbeNo" : 24,
+					"ChannelNo" : 32,
+                    "HardChannel" : 6,
+                    "SoftChannel" : 0,
+                    "ProbeName" : "B1-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 1,
+                    "TxChannelOut" : 1,
+					"Name" : "测厚",
+					"IsFlaw" : 0
+				}
+			]
+		},
+		{
+			"BoxIndex" : 1,
+			"ProbeList" :  
+			[
+				{
+					"Index" : 4,
+					"ProbeNo" : 4,
+					"ChannelNo" : 4,
+                    "HardChannel" : 1,
+                    "SoftChannel" : 0,
+                    "ProbeName" : "B2-1",
+                    "TxCardNo" : 0,
+                    "TxChannelIn" : 5,
+                    "TxChannelOut" : 2,
+					"Name" : "纵1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 5,
+					"ProbeNo" : 5,
+					"ChannelNo" : 5,
+                    "HardChannel" : 1,
+                    "SoftChannel" : 1,
+                    "ProbeName" : "B2-2",
+                    "TxCardNo" : 0,
+                    "TxChannelIn" : 6,
+                    "TxChannelOut" : 2,
+					"Name" : "横1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 6,
+					"ProbeNo" : 6,
+					"ChannelNo" : 6,
+                    "HardChannel" : 1,
+                    "SoftChannel" : 2,
+                    "ProbeName" : "B2-3",
+                    "TxCardNo" : 0,
+                    "TxChannelIn" : 7,
+                    "TxChannelOut" : 2,
+					"Name" : "纵2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 7,
+					"ProbeNo" : 7,
+					"ChannelNo" : 7,
+                    "HardChannel" : 1,
+                    "SoftChannel" : 3,
+                    "ProbeName" : "B2-4",
+                    "TxCardNo" : 0,
+                    "TxChannelIn" : 8,
+                    "TxChannelOut" : 2,
+					"Name" : "横2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 21,
+					"ProbeNo" : 25,
+					"ChannelNo" : 25,
+                    "HardChannel" : 6,
+                    "SoftChannel" : 1,
+                    "ProbeName" : "B2-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 2,
+                    "TxChannelOut" : 1,
+					"Name" : "分层",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 26,
+					"ProbeNo" : 25,
+					"ChannelNo" : 33,
+                    "HardChannel" : 6,
+                    "SoftChannel" : 1,
+                    "ProbeName" : "B2-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 2,
+                    "TxChannelOut" : 1,
+					"Name" : "测厚",
+					"IsFlaw" : 0
+				}
+			]
+		},
+		{
+			"BoxIndex" : 2,
+			"ProbeList" :  
+			[
+				{
+					"Index" : 8,
+					"ProbeNo" : 8,
+					"ChannelNo" : 8,
+                    "HardChannel" : 2,
+                    "SoftChannel" : 0,
+                    "ProbeName" : "B3-1",
+                    "TxCardNo" : 1,
+                    "TxChannelIn" : 1,
+                    "TxChannelOut" : 1,
+					"Name" : "纵1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 9,
+					"ProbeNo" : 9,
+					"ChannelNo" : 9,
+                    "HardChannel" : 2,
+                    "SoftChannel" : 1,
+                    "ProbeName" : "B3-2",
+                    "TxCardNo" : 1,
+                    "TxChannelIn" : 2,
+                    "TxChannelOut" : 1,
+					"Name" : "横1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 10,
+					"ProbeNo" : 10,
+					"ChannelNo" : 10,
+                    "HardChannel" : 2,
+                    "SoftChannel" : 2,
+                    "ProbeName" : "B3-3",
+                    "TxCardNo" : 1,
+                    "TxChannelIn" : 3,
+                    "TxChannelOut" : 1,
+					"Name" : "纵2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 11,
+					"ProbeNo" : 11,
+					"ChannelNo" : 11,
+                    "HardChannel" : 2,
+                    "SoftChannel" : 3,
+                    "ProbeName" : "B3-4",
+                    "TxCardNo" : 1,
+                    "TxChannelIn" : 4,
+                    "TxChannelOut" : 1,
+					"Name" : "横2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 22,
+					"ProbeNo" : 26,
+					"ChannelNo" : 26,
+                    "HardChannel" : 6,
+                    "SoftChannel" : 2,
+                    "ProbeName" : "B3-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 3,
+                    "TxChannelOut" : 1,
+					"Name" : "分层",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 27,
+					"ProbeNo" : 26,
+					"ChannelNo" : 34,
+                    "HardChannel" : 6,
+                    "SoftChannel" : 2,
+                    "ProbeName" : "B3-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 3,
+                    "TxChannelOut" : 1,
+					"Name" : "测厚",
+					"IsFlaw" : 0
+				}
+			]
+		},
+		{
+			"BoxIndex" : 3,
+			"ProbeList" : 
+			[
+				{
+					"Index" : 12,
+					"ProbeNo" : 12,
+					"ChannelNo" : 12,
+                    "HardChannel" : 3,
+                    "SoftChannel" : 0,
+                    "ProbeName" : "B4-1",
+                    "TxCardNo" : 1,
+                    "TxChannelIn" : 5,
+                    "TxChannelOut" : 2,
+					"Name" : "纵1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 13,
+					"ProbeNo" : 13,
+					"ChannelNo" : 13,
+                    "HardChannel" : 3,
+                    "SoftChannel" : 1,
+                    "ProbeName" : "B4-2",
+                    "TxCardNo" : 1,
+                    "TxChannelIn" : 6,
+                    "TxChannelOut" : 2,
+					"Name" : "横1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 14,
+					"ProbeNo" : 14,
+					"ChannelNo" : 14,
+                    "HardChannel" : 3,
+                    "SoftChannel" : 2,
+                    "ProbeName" : "B4-3",
+                    "TxCardNo" : 1,
+                    "TxChannelIn" : 7,
+                    "TxChannelOut" : 2,
+					"Name" : "纵2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 15,
+					"ProbeNo" : 15,
+					"ChannelNo" : 15,
+                    "HardChannel" : 3,
+                    "SoftChannel" : 3,
+                    "ProbeName" : "B4-4",
+                    "TxCardNo" : 1,
+                    "TxChannelIn" : 8,
+                    "TxChannelOut" : 2,
+					"Name" : "横2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 23,
+					"ProbeNo" : 27,
+					"ChannelNo" : 27,
+                    "HardChannel" : 6,
+                    "SoftChannel" : 3,
+                    "ProbeName" : "B4-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 4,
+                    "TxChannelOut" : 1,
+					"Name" : "分层",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 28,
+					"ProbeNo" : 27,
+					"ChannelNo" : 35,
+                    "HardChannel" : 6,
+                    "SoftChannel" : 3,
+                    "ProbeName" : "B4-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 4,
+                    "TxChannelOut" : 1,
+					"Name" : "测厚",
+					"IsFlaw" : 0
+				}
+			]
+		},
+		{
+			"BoxIndex" : 4,
+			"ProbeList" : 
+			[
+				{
+					"Index" : 16,
+					"ProbeNo" : 16,
+					"ChannelNo" : 16,
+                    "HardChannel" : 4,
+                    "SoftChannel" : 0,
+                    "ProbeName" : "B5-1",
+                    "TxCardNo" : 2,
+                    "TxChannelIn" : 1,
+                    "TxChannelOut" : 1,
+					"Name" : "纵1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 17,
+					"ProbeNo" : 17,
+					"ChannelNo" : 17,
+                    "HardChannel" : 4,
+                    "SoftChannel" : 1,
+                    "ProbeName" : "B5-2",
+                    "TxCardNo" : 2,
+                    "TxChannelIn" : 2,
+                    "TxChannelOut" : 1,
+					"Name" : "横1",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 18,
+					"ProbeNo" : 18,
+					"ChannelNo" : 18,
+                    "HardChannel" : 4,
+                    "SoftChannel" : 2,
+                    "ProbeName" : "B5-3",
+                    "TxCardNo" : 2,
+                    "TxChannelIn" : 3,
+                    "TxChannelOut" : 1,
+					"Name" : "纵2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 19,
+					"ProbeNo" : 19,
+					"ChannelNo" : 19,
+                    "HardChannel" : 4,
+                    "SoftChannel" : 3,
+                    "ProbeName" : "B5-4",
+                    "TxCardNo" : 2,
+                    "TxChannelIn" : 4,
+                    "TxChannelOut" : 1,
+					"Name" : "横2",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 24,
+					"ProbeNo" : 28,
+					"ChannelNo" : 28,
+                    "HardChannel" : 7,
+                    "SoftChannel" : 0,
+                    "ProbeName" : "B5-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 5,
+                    "TxChannelOut" : 2,
+					"Name" : "分层",
+					"IsFlaw" : 1
+				},
+				{
+					"Index" : 29,
+					"ProbeNo" : 28,
+					"ChannelNo" : 36,
+                    "HardChannel" : 7,
+                    "SoftChannel" : 0,
+                    "ProbeName" : "B5-5",
+                    "TxCardNo" : 3,
+                    "TxChannelIn" : 5,
+                    "TxChannelOut" : 2,
+					"Name" : "测厚",
+					"IsFlaw" : 0
+				}
+			]
+		}
+	]
+}

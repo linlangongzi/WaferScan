@@ -1,0 +1,2435 @@
+{
+    "autoChannelOffset": true,
+    "autoDeadZone": true,
+    "channels": [
+        {
+            "baseOffset": 0,
+            "channelNo": 0,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 0,
+            "index": 0,
+            "isFlaw": false,
+            "muxCardId": 0,
+            "muxInput": 1,
+            "muxOutput": 1,
+            "name": "纵1",
+            "probeBoxIndex": 0,
+            "probeName": "B1-1",
+            "probeNo": 0,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 0,
+            "channelNo": 1,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 0,
+            "index": 1,
+            "isFlaw": false,
+            "muxCardId": 0,
+            "muxInput": 2,
+            "muxOutput": 1,
+            "name": "横1",
+            "probeBoxIndex": 0,
+            "probeName": "B1-2",
+            "probeNo": 1,
+            "softChannel": 1,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 0,
+            "channelNo": 2,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 0,
+            "index": 2,
+            "isFlaw": false,
+            "muxCardId": 0,
+            "muxInput": 3,
+            "muxOutput": 1,
+            "name": "纵2",
+            "probeBoxIndex": 0,
+            "probeName": "B1-3",
+            "probeNo": 2,
+            "softChannel": 2,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 0,
+            "channelNo": 3,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 0,
+            "index": 3,
+            "isFlaw": false,
+            "muxCardId": 0,
+            "muxInput": 4,
+            "muxOutput": 1,
+            "name": "横2",
+            "probeBoxIndex": 0,
+            "probeName": "B1-4",
+            "probeNo": 3,
+            "softChannel": 3,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 315,
+            "channelNo": 4,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 1,
+            "index": 4,
+            "isFlaw": false,
+            "muxCardId": 0,
+            "muxInput": 5,
+            "muxOutput": 2,
+            "name": "纵1",
+            "probeBoxIndex": 1,
+            "probeName": "B2-1",
+            "probeNo": 4,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 315,
+            "channelNo": 5,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 1,
+            "index": 5,
+            "isFlaw": false,
+            "muxCardId": 0,
+            "muxInput": 6,
+            "muxOutput": 2,
+            "name": "横1",
+            "probeBoxIndex": 1,
+            "probeName": "B2-2",
+            "probeNo": 5,
+            "softChannel": 1,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 315,
+            "channelNo": 6,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 1,
+            "index": 6,
+            "isFlaw": false,
+            "muxCardId": 0,
+            "muxInput": 7,
+            "muxOutput": 2,
+            "name": "纵2",
+            "probeBoxIndex": 1,
+            "probeName": "B2-3",
+            "probeNo": 6,
+            "softChannel": 2,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 315,
+            "channelNo": 7,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 1,
+            "index": 7,
+            "isFlaw": false,
+            "muxCardId": 0,
+            "muxInput": 8,
+            "muxOutput": 2,
+            "name": "横2",
+            "probeBoxIndex": 1,
+            "probeName": "B2-4",
+            "probeNo": 7,
+            "softChannel": 3,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 630,
+            "channelNo": 8,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 2,
+            "index": 8,
+            "isFlaw": false,
+            "muxCardId": 1,
+            "muxInput": 1,
+            "muxOutput": 1,
+            "name": "纵1",
+            "probeBoxIndex": 2,
+            "probeName": "B3-1",
+            "probeNo": 8,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 630,
+            "channelNo": 9,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 2,
+            "index": 9,
+            "isFlaw": false,
+            "muxCardId": 1,
+            "muxInput": 2,
+            "muxOutput": 1,
+            "name": "横1",
+            "probeBoxIndex": 2,
+            "probeName": "B3-2",
+            "probeNo": 9,
+            "softChannel": 1,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 630,
+            "channelNo": 10,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 2,
+            "index": 10,
+            "isFlaw": false,
+            "muxCardId": 1,
+            "muxInput": 3,
+            "muxOutput": 1,
+            "name": "纵2",
+            "probeBoxIndex": 2,
+            "probeName": "B3-3",
+            "probeNo": 10,
+            "softChannel": 2,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 630,
+            "channelNo": 11,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 2,
+            "index": 11,
+            "isFlaw": false,
+            "muxCardId": 1,
+            "muxInput": 4,
+            "muxOutput": 1,
+            "name": "横2",
+            "probeBoxIndex": 2,
+            "probeName": "B3-4",
+            "probeNo": 11,
+            "softChannel": 3,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 945,
+            "channelNo": 12,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 3,
+            "index": 12,
+            "isFlaw": false,
+            "muxCardId": 1,
+            "muxInput": 5,
+            "muxOutput": 2,
+            "name": "纵1",
+            "probeBoxIndex": 3,
+            "probeName": "B4-1",
+            "probeNo": 12,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 945,
+            "channelNo": 13,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 3,
+            "index": 13,
+            "isFlaw": false,
+            "muxCardId": 1,
+            "muxInput": 6,
+            "muxOutput": 2,
+            "name": "横1",
+            "probeBoxIndex": 3,
+            "probeName": "B4-2",
+            "probeNo": 13,
+            "softChannel": 1,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 945,
+            "channelNo": 14,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 3,
+            "index": 14,
+            "isFlaw": false,
+            "muxCardId": 1,
+            "muxInput": 7,
+            "muxOutput": 2,
+            "name": "纵2",
+            "probeBoxIndex": 3,
+            "probeName": "B4-3",
+            "probeNo": 14,
+            "softChannel": 2,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 945,
+            "channelNo": 15,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 3,
+            "index": 15,
+            "isFlaw": false,
+            "muxCardId": 1,
+            "muxInput": 8,
+            "muxOutput": 2,
+            "name": "横2",
+            "probeBoxIndex": 3,
+            "probeName": "B4-4",
+            "probeNo": 15,
+            "softChannel": 3,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 1260,
+            "channelNo": 16,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 4,
+            "index": 16,
+            "isFlaw": false,
+            "muxCardId": 2,
+            "muxInput": 1,
+            "muxOutput": 1,
+            "name": "纵1",
+            "probeBoxIndex": 4,
+            "probeName": "B5-1",
+            "probeNo": 16,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 1260,
+            "channelNo": 17,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 4,
+            "index": 17,
+            "isFlaw": false,
+            "muxCardId": 2,
+            "muxInput": 2,
+            "muxOutput": 1,
+            "name": "横1",
+            "probeBoxIndex": 4,
+            "probeName": "B5-2",
+            "probeNo": 17,
+            "softChannel": 1,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 1260,
+            "channelNo": 18,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 4,
+            "index": 18,
+            "isFlaw": false,
+            "muxCardId": 2,
+            "muxInput": 3,
+            "muxOutput": 1,
+            "name": "纵2",
+            "probeBoxIndex": 4,
+            "probeName": "B5-3",
+            "probeNo": 18,
+            "softChannel": 2,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 1260,
+            "channelNo": 19,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 4,
+            "index": 19,
+            "isFlaw": false,
+            "muxCardId": 2,
+            "muxInput": 4,
+            "muxOutput": 1,
+            "name": "横2",
+            "probeBoxIndex": 4,
+            "probeName": "B5-4",
+            "probeNo": 19,
+            "softChannel": 3,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 0,
+            "channelNo": 24,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 6,
+            "index": 20,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 1,
+            "muxOutput": 1,
+            "name": "分层",
+            "probeBoxIndex": 0,
+            "probeName": "B1-5",
+            "probeNo": 24,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 315,
+            "channelNo": 25,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 6,
+            "index": 21,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 2,
+            "muxOutput": 1,
+            "name": "分层",
+            "probeBoxIndex": 1,
+            "probeName": "B2-5",
+            "probeNo": 25,
+            "softChannel": 1,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 630,
+            "channelNo": 26,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 6,
+            "index": 22,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 3,
+            "muxOutput": 1,
+            "name": "分层",
+            "probeBoxIndex": 2,
+            "probeName": "B3-5",
+            "probeNo": 26,
+            "softChannel": 2,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 945,
+            "channelNo": 27,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 6,
+            "index": 23,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 4,
+            "muxOutput": 1,
+            "name": "分层",
+            "probeBoxIndex": 3,
+            "probeName": "B4-5",
+            "probeNo": 27,
+            "softChannel": 3,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 1260,
+            "channelNo": 28,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 7,
+            "index": 24,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 5,
+            "muxOutput": 2,
+            "name": "分层",
+            "probeBoxIndex": 4,
+            "probeName": "B5-5",
+            "probeNo": 28,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 0,
+            "channelNo": 32,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 6,
+            "index": 25,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 1,
+            "muxOutput": 1,
+            "name": "测厚",
+            "probeBoxIndex": 0,
+            "probeName": "B1-5",
+            "probeNo": 24,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 315,
+            "channelNo": 33,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 6,
+            "index": 26,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 2,
+            "muxOutput": 1,
+            "name": "测厚",
+            "probeBoxIndex": 1,
+            "probeName": "B2-5",
+            "probeNo": 25,
+            "softChannel": 1,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 630,
+            "channelNo": 34,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 6,
+            "index": 27,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 3,
+            "muxOutput": 1,
+            "name": "测厚",
+            "probeBoxIndex": 2,
+            "probeName": "B3-5",
+            "probeNo": 26,
+            "softChannel": 2,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 945,
+            "channelNo": 35,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 6,
+            "index": 28,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 4,
+            "muxOutput": 1,
+            "name": "测厚",
+            "probeBoxIndex": 3,
+            "probeName": "B4-5",
+            "probeNo": 27,
+            "softChannel": 3,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 1260,
+            "channelNo": 36,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 7,
+            "index": 29,
+            "isFlaw": false,
+            "muxCardId": 3,
+            "muxInput": 5,
+            "muxOutput": 2,
+            "name": "测厚",
+            "probeBoxIndex": 4,
+            "probeName": "B5-5",
+            "probeNo": 28,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 0,
+            "channelNo": 40,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 8,
+            "index": 30,
+            "isFlaw": true,
+            "muxCardId": 4,
+            "muxInput": 1,
+            "muxOutput": 1,
+            "name": "ARS500-1-1",
+            "probeBoxIndex": 0,
+            "probeName": "B1-5",
+            "probeNo": 24,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 315,
+            "channelNo": 41,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 9,
+            "index": 31,
+            "isFlaw": true,
+            "muxCardId": 4,
+            "muxInput": 2,
+            "muxOutput": 2,
+            "name": "ARS500-1-2",
+            "probeBoxIndex": 1,
+            "probeName": "B2-5",
+            "probeNo": 25,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 630,
+            "channelNo": 42,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 10,
+            "index": 32,
+            "isFlaw": true,
+            "muxCardId": 5,
+            "muxInput": 1,
+            "muxOutput": 1,
+            "name": "ARS500-2-1",
+            "probeBoxIndex": 2,
+            "probeName": "B3-5",
+            "probeNo": 26,
+            "softChannel": 0,
+            "correctAngle": 0
+        },
+        {
+            "baseOffset": 945,
+            "channelNo": 43,
+            "enable": true,
+            "gateOffset": [
+            ],
+            "hardChannel": 11,
+            "index": 33,
+            "isFlaw": true,
+            "muxCardId": 5,
+            "muxInput": 2,
+            "muxOutput": 2,
+            "name": "ARS500-2-2",
+            "probeBoxIndex": 3,
+            "probeName": "B4-5",
+            "probeNo": 27,
+            "softChannel": 0,
+            "correctAngle": 0
+        }
+    ],
+    "deadZoneLeft": 99,
+    "deadZoneRight": 100,
+    "intervalPlot": 2,
+    "intervalR": 10,
+    "intervalX": 10,
+    "modes": [
+        {
+            "imageChannels": [
+            ],
+            "name": "手动模式",
+            "plots": [
+            ]
+        },
+        {
+            "imageChannels": [
+                [
+                    0,
+                    4,
+                    8,
+                    12,
+                    16
+                ],
+                [
+                    1,
+                    5,
+                    9,
+                    13,
+                    17
+                ],
+                [
+                    2,
+                    6,
+                    10,
+                    14,
+                    18
+                ],
+                [
+                    3,
+                    7,
+                    11,
+                    15,
+                    19
+                ],
+                [
+                    20,
+                    21,
+                    22,
+                    23,
+                    24
+                ]
+            ],
+            "name": "成品管",
+            "plots": [
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                0,
+                                4,
+                                8,
+                                12,
+                                16
+                            ],
+                            "color": "#55ff00",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 1,
+                            "name": "内部纵伤1",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                0,
+                                4,
+                                8,
+                                12,
+                                16
+                            ],
+                            "color": "#ff0000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 1,
+                            "name": "外部纵伤1",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                2,
+                                6,
+                                10,
+                                14,
+                                18
+                            ],
+                            "color": "#0055ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 0.10000000000000001,
+                            "lineWidth": 1,
+                            "name": "内部纵伤2",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                2,
+                                6,
+                                10,
+                                14,
+                                18
+                            ],
+                            "color": "#55007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 0.10000000000000001,
+                            "lineWidth": 1,
+                            "name": "外部纵伤2",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "纵向缺陷",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                1,
+                                5,
+                                9,
+                                13,
+                                17
+                            ],
+                            "color": "#55ff00",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 1,
+                            "name": "内部横伤1",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                1,
+                                5,
+                                9,
+                                13,
+                                17
+                            ],
+                            "color": "#ff0000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 1,
+                            "name": "外部横伤1",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                3,
+                                7,
+                                11,
+                                15,
+                                19
+                            ],
+                            "color": "#0000ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 0.10000000000000001,
+                            "lineWidth": 1,
+                            "name": "内部横伤2",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                3,
+                                7,
+                                11,
+                                15,
+                                19
+                            ],
+                            "color": "#55007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 0.10000000000000001,
+                            "lineWidth": 1,
+                            "name": "外部横伤2",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "横向缺陷",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                25,
+                                26,
+                                27,
+                                28,
+                                29
+                            ],
+                            "color": "#ff00ff",
+                            "enable": true,
+                            "featureBaseIndex": 2,
+                            "featureIndex": 4,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "增厚",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 2.96
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                25,
+                                26,
+                                27,
+                                28,
+                                29
+                            ],
+                            "color": "#55ff00",
+                            "enable": true,
+                            "featureBaseIndex": 2,
+                            "featureIndex": 4,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "减薄",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMin",
+                            "scale": 2.96
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmNone",
+                            "color": "#0000ff",
+                            "comment": "thickness",
+                            "name": "标准厚度",
+                            "orientation": "Horizontal",
+                            "value": 30
+                        },
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "thicknessMax",
+                            "name": "最大厚度",
+                            "orientation": "Horizontal",
+                            "value": 35
+                        },
+                        {
+                            "alarmMode": "AlarmLow",
+                            "color": "#ff0000",
+                            "comment": "thicknessMin",
+                            "name": "最小厚度",
+                            "orientation": "Horizontal",
+                            "value": 25
+                        }
+                    ],
+                    "name": "测厚",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 50
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "mm"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                21,
+                                22,
+                                23,
+                                24
+                            ],
+                            "color": "#000000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "分层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "分层缺陷",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                21,
+                                22,
+                                23,
+                                24
+                            ],
+                            "color": "#000000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 7,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "耦合不良",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMin",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmLow",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "警报线",
+                            "orientation": "Horizontal",
+                            "value": 30
+                        }
+                    ],
+                    "name": "耦合不良",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 110
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                }
+            ]
+        },
+        {
+            "imageChannels": [
+                [
+                    20,
+                    30
+                ],
+                [
+                    21,
+                    31
+                ],
+                [
+                    22,
+                    32
+                ],
+                [
+                    23,
+                    33
+                ],
+                [
+                    24
+                ]
+            ],
+            "name": "成品棒",
+            "plots": [
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                30
+                            ],
+                            "color": "#ff00ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                30
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (1盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                21,
+                                31
+                            ],
+                            "color": "#ff55ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                21,
+                                31
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (2盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                22,
+                                32
+                            ],
+                            "color": "#ff55ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                22,
+                                32
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (3盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                23,
+                                33
+                            ],
+                            "color": "#ff55ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                23,
+                                33
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (4盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                24
+                            ],
+                            "color": "#ff55ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                24
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (5盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                21,
+                                22,
+                                23,
+                                24,
+                                30,
+                                31,
+                                32,
+                                33
+                            ],
+                            "color": "#000000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 7,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "耦合不良",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMin",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmLow",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "警报线",
+                            "orientation": "Horizontal",
+                            "value": 30
+                        }
+                    ],
+                    "name": "耦合不良",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 110
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                }
+            ]
+        },
+        {
+            "imageChannels": [
+                [
+                    0,
+                    4,
+                    8,
+                    12,
+                    16,
+                    30
+                ],
+                [
+                    1,
+                    5,
+                    9,
+                    13,
+                    17,
+                    30
+                ],
+                [
+                    2,
+                    6,
+                    10,
+                    14,
+                    18,
+                    30
+                ],
+                [
+                    3,
+                    7,
+                    11,
+                    15,
+                    19,
+                    30
+                ],
+                [
+                    20,
+                    21,
+                    22,
+                    23,
+                    24,
+                    30
+                ]
+            ],
+            "name": "试样管",
+            "plots": [
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                0,
+                                4,
+                                8,
+                                12,
+                                16,
+                                30
+                            ],
+                            "color": "#55ff00",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 1,
+                            "name": "内部纵伤1",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                0,
+                                4,
+                                8,
+                                12,
+                                16,
+                                30
+                            ],
+                            "color": "#ff0000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 1,
+                            "name": "外部纵伤1",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                2,
+                                6,
+                                10,
+                                14,
+                                18
+                            ],
+                            "color": "#0055ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 0.10000000000000001,
+                            "lineWidth": 1,
+                            "name": "内部纵伤2",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                2,
+                                6,
+                                10,
+                                14,
+                                18
+                            ],
+                            "color": "#55007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 0.10000000000000001,
+                            "lineWidth": 1,
+                            "name": "外部纵伤2",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "纵向缺陷",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                1,
+                                5,
+                                9,
+                                13,
+                                17
+                            ],
+                            "color": "#55ff00",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 1,
+                            "name": "内部横伤1",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                1,
+                                5,
+                                9,
+                                13,
+                                17
+                            ],
+                            "color": "#ff0000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 1,
+                            "name": "外部横伤1",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                3,
+                                7,
+                                11,
+                                15,
+                                19
+                            ],
+                            "color": "#0000ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 0.10000000000000001,
+                            "lineWidth": 1,
+                            "name": "内部横伤2",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                3,
+                                7,
+                                11,
+                                15,
+                                19
+                            ],
+                            "color": "#55007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 0.10000000000000001,
+                            "lineWidth": 1,
+                            "name": "外部横伤2",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "横向缺陷",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                25,
+                                26,
+                                27,
+                                28,
+                                29
+                            ],
+                            "color": "#ff00ff",
+                            "enable": true,
+                            "featureBaseIndex": 2,
+                            "featureIndex": 4,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "增厚",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 2.96
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                25,
+                                26,
+                                27,
+                                28,
+                                29
+                            ],
+                            "color": "#55ff00",
+                            "enable": true,
+                            "featureBaseIndex": 2,
+                            "featureIndex": 4,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "减薄",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMin",
+                            "scale": 2.96
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmNone",
+                            "color": "#0000ff",
+                            "comment": "thickness",
+                            "name": "标准厚度",
+                            "orientation": "Horizontal",
+                            "value": 30
+                        },
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "thicknessMax",
+                            "name": "最大厚度",
+                            "orientation": "Horizontal",
+                            "value": 35
+                        },
+                        {
+                            "alarmMode": "AlarmLow",
+                            "color": "#ff0000",
+                            "comment": "thicknessMin",
+                            "name": "最小厚度",
+                            "orientation": "Horizontal",
+                            "value": 25
+                        }
+                    ],
+                    "name": "测厚",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 50
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "mm"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                21,
+                                22,
+                                23,
+                                24
+                            ],
+                            "color": "#000000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "分层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "分层缺陷",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                21,
+                                22,
+                                23,
+                                24
+                            ],
+                            "color": "#000000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 7,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "耦合不良",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMin",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmLow",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "警报线",
+                            "orientation": "Horizontal",
+                            "value": 30
+                        }
+                    ],
+                    "name": "耦合不良",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 110
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                }
+            ]
+        },
+        {
+            "imageChannels": [
+                [
+                    20,
+                    30
+                ],
+                [
+                    21,
+                    31
+                ],
+                [
+                    22,
+                    32
+                ],
+                [
+                    23,
+                    33
+                ],
+                [
+                    24
+                ]
+            ],
+            "name": "试样棒",
+            "plots": [
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                30
+                            ],
+                            "color": "#ff00ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                30
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (1盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                21,
+                                31
+                            ],
+                            "color": "#ff55ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                21,
+                                31
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (2盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                22,
+                                32
+                            ],
+                            "color": "#ff55ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                22,
+                                32
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (3盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                23,
+                                33
+                            ],
+                            "color": "#ff55ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                23,
+                                33
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (4盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                24
+                            ],
+                            "color": "#ff55ff",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 3,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "表层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        },
+                        {
+                            "axis": 0,
+                            "channels": [
+                                24
+                            ],
+                            "color": "#00007f",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 5,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "深层缺陷",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMax",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmHigh",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "评定线",
+                            "orientation": "Horizontal",
+                            "value": 50
+                        }
+                    ],
+                    "name": "缺陷 (5盒)",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 100
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                },
+                {
+                    "curves": [
+                        {
+                            "axis": 0,
+                            "channels": [
+                                20,
+                                21,
+                                22,
+                                23,
+                                24,
+                                30,
+                                31,
+                                32,
+                                33
+                            ],
+                            "color": "#000000",
+                            "enable": true,
+                            "featureBaseIndex": -1,
+                            "featureIndex": 7,
+                            "interval": 10,
+                            "lineWidth": 2,
+                            "name": "耦合不良",
+                            "offset": [
+                                0
+                            ],
+                            "reduce": "ReduceByMin",
+                            "scale": 1
+                        }
+                    ],
+                    "deadZoneLeft": 0,
+                    "deadZoneRight": 0,
+                    "lines": [
+                        {
+                            "alarmMode": "AlarmLow",
+                            "color": "#ff0000",
+                            "comment": "",
+                            "name": "警报线",
+                            "orientation": "Horizontal",
+                            "value": 30
+                        }
+                    ],
+                    "name": "耦合不良",
+                    "range": [
+                        {
+                            "X": 0,
+                            "Y": 0
+                        },
+                        {
+                            "X": 600,
+                            "Y": 110
+                        }
+                    ],
+                    "unitNameH": "mm",
+                    "unitNameV": "%"
+                }
+            ]
+        }
+    ]
+}

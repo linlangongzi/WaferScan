@@ -1,0 +1,210 @@
+//Microsoft Windows CE Platform Builder generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_NDT_CE              ICON    DISCARDABLE     "NDT_CE.ICO"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Operation"
+    BEGIN
+        MENUITEM "Start",                       ID_START
+        MENUITEM "Stop",                        ID_STOP
+    END
+    POPUP "Set"
+    BEGIN
+        MENUITEM "Parameter Set",               ID_PARAM_SET
+        MENUITEM "Parameter Set2",              IDC_PARAM_SET2
+        MENUITEM "Alarm Open",                  IDC_ALAM_OPEN
+        MENUITEM "Alarm Close",                 IDC_ALAM_CLOSE
+        MENUITEM "SPI and Dleay",               IDC_SEND_SPI_DELAY
+        MENUITEM "¡Ÿ ±",                        IDC_TEMP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PARAMSETDLG DIALOG DISCARDABLE  0, 0, 275, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameter Set"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,204,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,162,204,50,14
+    LTEXT           "PlusA:",IDC_STATIC,20,61,22,8
+    CONTROL         "Slider1",IDC_SLIDER_PLUS_A,"msctls_trackbar32",
+                    WS_TABSTOP,44,59,126,15
+    EDITTEXT        IDC_EDIT_PLUS_A,178,58,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Range:",IDC_STATIC,15,17,24,8
+    CONTROL         "Slider1",IDC_SLIDER_RANGE,"msctls_trackbar32",
+                    WS_TABSTOP,44,15,126,15
+    EDITTEXT        IDC_EDIT_RANGE,178,14,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Apply",IDC_BUTTON_RANGE,231,14,34,14
+    PUSHBUTTON      "Apply",IDC_BUTTON_PLUS_A,231,57,34,14
+    LTEXT           "PlusB:",IDC_STATIC,20,84,21,8
+    CONTROL         "Slider1",IDC_SLIDER_PLUS_B,"msctls_trackbar32",
+                    WS_TABSTOP,44,82,126,15
+    EDITTEXT        IDC_EDIT_PLUS_B,178,81,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Apply",IDC_BUTTON_PLUS_B,231,80,34,14
+    LTEXT           "PlusC:",IDC_STATIC,20,105,22,8
+    CONTROL         "Slider1",IDC_SLIDER_PLUS_C,"msctls_trackbar32",
+                    WS_TABSTOP,44,103,126,15
+    EDITTEXT        IDC_EDIT_PLUS_C,178,102,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Apply",IDC_BUTTON_PLUS_C,231,101,34,14
+    LTEXT           "PlusD:",IDC_STATIC,20,127,22,8
+    CONTROL         "Slider1",IDC_SLIDER_PLUS_D,"msctls_trackbar32",
+                    WS_TABSTOP,44,125,126,15
+    EDITTEXT        IDC_EDIT_PLUS_D,178,124,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Apply",IDC_BUTTON_PLUS_D,231,123,34,14
+    LTEXT           "Delay:",IDC_STATIC,15,38,22,8
+    CONTROL         "Slider1",IDC_SLIDER_DELAY,"msctls_trackbar32",
+                    WS_TABSTOP,44,36,126,15
+    EDITTEXT        IDC_EDIT_DELAY,178,35,40,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Apply",IDC_BUTTON_DELAY,231,35,34,14
+    LTEXT           "MaiKuan:",IDC_STATIC,13,147,31,8
+    CONTROL         "Slider1",IDC_SLIDER_MAIKUAN,"msctls_trackbar32",
+                    WS_TABSTOP,44,145,126,15
+    EDITTEXT        IDC_EDIT_MAIKUAN,178,144,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Apply",IDC_BUTTON_MAIKUAN,231,143,34,14
+    LTEXT           "Press:",IDC_STATIC,20,167,22,8
+    CONTROL         "Slider1",IDC_SLIDER_PRESS,"msctls_trackbar32",
+                    WS_TABSTOP,44,165,126,15
+    EDITTEXT        IDC_EDIT_PRESS,178,164,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Apply",IDC_BUTTON_PRESS,231,163,34,14
+    LTEXT           "Middle Value:",IDC_STATIC,1,187,46,8
+    CONTROL         "Slider1",IDC_SLIDER_MID_VALUE,"msctls_trackbar32",
+                    WS_TABSTOP,44,185,126,15
+    EDITTEXT        IDC_EDIT_MID_VALUE,178,184,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Apply",IDC_BUTTON_MID_VALUE,231,183,34,14
+END
+
+IDD_DIALOG_PARAM_SET2 DIALOG DISCARDABLE  0, 0, 310, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parameter Set 2"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,54,152,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,205,152,50,14
+    LTEXT           "Address:",IDC_STATIC,23,20,30,8
+    EDITTEXT        IDC_EDIT_ADDRESS,64,17,40,14,ES_AUTOHSCROLL
+    LTEXT           "Value:",IDC_STATIC,121,20,22,8
+    EDITTEXT        IDC_EDIT_VALUE,156,17,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Read",IDC_BUTTON_READ,205,17,37,14
+    PUSHBUTTON      "Write",IDC_BUTTON_WRITE,252,17,37,14
+    LTEXT           "MCP41010:",IDC_STATIC,19,44,38,8
+    CONTROL         "Slider1",IDC_SLIDER_MCP41010,"msctls_trackbar32",
+                    WS_TABSTOP,62,42,136,15
+    PUSHBUTTON      "Apply",IDC_BUTTON_MCP41010,252,40,36,14
+    LTEXT           "MAX500:",IDC_STATIC,23,68,31,8
+    CONTROL         "Slider1",IDC_SLIDER_MAX500,"msctls_trackbar32",
+                    WS_TABSTOP,62,66,136,15
+    PUSHBUTTON      "Apply",IDC_BUTTON_MAX500,252,64,36,14
+    EDITTEXT        IDC_EDIT_MCP41010,205,41,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_MAX500,205,64,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_MAX500_2,65,86,40,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_APP_TITLE           "NDT_CE"
+    IDS_HELLO               "Hello World!"
+    IDC_NDT_CE              "NDT_CE"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

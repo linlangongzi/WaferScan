@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DgsTableEditor</class>
+ <widget class="QDialog" name="DgsTableEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>367</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>编辑DGS曲线</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout" rowstretch="1,0,0,1,0">
+   <item row="0" column="0">
+    <widget class="QtCharts::QChartView" name="chartView"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="Line" name="line">
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="midLineWidth">
+      <number>0</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,1">
+       <item>
+        <widget class="QLabel" name="materialNameLabel">
+         <property name="text">
+          <string>材料</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="MaterialComboBox" name="material"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1">
+       <item>
+        <widget class="QLabel" name="waterPathLengthLabel">
+         <property name="text">
+          <string>水距</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDoubleSpinBox" name="waterPathLength"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0,0">
+       <item>
+        <widget class="QLabel" name="dateLabel">
+         <property name="text">
+          <string>日期</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateEdit" name="date"/>
+       </item>
+       <item>
+        <widget class="QToolButton" name="recoverDate">
+         <property name="toolTip">
+          <string>更新为今天</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="../../resources/icons/Fatcow.qrc">
+           <normaloff>:/fatcow/16x16/arrow_rotate_clockwise.png</normaloff>:/fatcow/16x16/arrow_rotate_clockwise.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="deleteDate">
+         <property name="toolTip">
+          <string>清空</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../../libs/utils/utils.qrc">
+           <normaloff>:/utils/images/editclear.png</normaloff>:/utils/images/editclear.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QTreeView" name="treeView">
+     <property name="contextMenuPolicy">
+      <enum>Qt::ActionsContextMenu</enum>
+     </property>
+     <property name="dragDropMode">
+      <enum>QAbstractItemView::InternalMove</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <attribute name="headerDefaultSectionSize">
+      <number>150</number>
+     </attribute>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionAddCurveItem">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/chart_curve_add.png</normaloff>:/fatcow/16x16/chart_curve_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建曲线</string>
+   </property>
+   <property name="toolTip">
+    <string>新建曲线</string>
+   </property>
+  </action>
+  <action name="actionAddPointItem">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/chart_line_add.png</normaloff>:/fatcow/16x16/chart_line_add.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建缺陷点</string>
+   </property>
+   <property name="toolTip">
+    <string>新建缺陷点</string>
+   </property>
+  </action>
+  <action name="actionRemoveCurveItem">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/chart_curve_delete.png</normaloff>:/fatcow/16x16/chart_curve_delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除此曲线</string>
+   </property>
+   <property name="toolTip">
+    <string>删除此曲线</string>
+   </property>
+  </action>
+  <action name="actionRemovePointItem">
+   <property name="icon">
+    <iconset resource="../../resources/icons/Fatcow.qrc">
+     <normaloff>:/fatcow/16x16/chart_line_delete.png</normaloff>:/fatcow/16x16/chart_line_delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>删除此缺陷点</string>
+   </property>
+   <property name="toolTip">
+    <string>删除此缺陷点</string>
+   </property>
+  </action>
+  <action name="actionCleanAll">
+   <property name="icon">
+    <iconset resource="../../libs/utils/utils.qrc">
+     <normaloff>:/utils/images/clean_pane_small.png</normaloff>:/utils/images/clean_pane_small.png</iconset>
+   </property>
+   <property name="text">
+    <string>清空所有曲线</string>
+   </property>
+   <property name="toolTip">
+    <string>清空所有曲线</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QtCharts::QChartView</class>
+   <extends>QGraphicsView</extends>
+   <header>QtCharts/QChartView</header>
+  </customwidget>
+  <customwidget>
+   <class>MaterialComboBox</class>
+   <extends>QComboBox</extends>
+   <header>Waveform/MaterialComboBox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../../libs/utils/utils.qrc"/>
+  <include location="../../resources/icons/Fatcow.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DgsTableEditor</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DgsTableEditor</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

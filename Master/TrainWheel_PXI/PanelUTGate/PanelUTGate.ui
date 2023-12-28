@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PanelUTGate</class>
+ <widget class="QWidget" name="PanelUTGate">
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <widget class="QTableView" name="gateTableView"/>
+     <widget class="QWidget" name="">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>闸门前沿</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout">
+          <item row="0" column="0">
+           <widget class="ConfigDoubleSpinBox" name="gateStartSpinBox"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="ConfigDoubleSlider" name="gateStartSlider">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>闸门宽度</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="ConfigDoubleSpinBox" name="gateWidthSpinBox"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="ConfigDoubleSlider" name="gateWidthSlider">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="title">
+          <string>闸门幅值</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="ConfigDoubleSpinBox" name="gateAmpSpinBox"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="ConfigDoubleSlider" name="gateAmpSlider">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ConfigDoubleSpinBox</class>
+   <extends>QDoubleSpinBox</extends>
+   <header location="global">ConfigControl/ConfigDoubleSpinBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ConfigDoubleSlider</class>
+   <extends>QSlider</extends>
+   <header location="global">ConfigControl/ConfigDoubleSlider.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

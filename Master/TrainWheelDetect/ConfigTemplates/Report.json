@@ -1,0 +1,47 @@
+{
+    "ReportNumber" : 
+	    {
+	    	"DisplayIndex" : 0,
+	    	"DisplayName" : "报表编号"
+	    },
+	"TrainNumber" : 
+		{
+			"DisplayIndex" : 1,
+			"DisplayName" : "机车编号"
+		},
+	"Entrusted" : 
+		{
+			"DisplayIndex" : 2,
+			"DisplayName" :"请托单位"
+		},
+	"WheelCount" : 
+		{
+			"DisplayIndex" : 3,
+			"DisplayName" :"车轮数量"
+		},
+	"WheelDiameter" : 
+		{
+			"DisplayIndex" : 4,
+			"DisplayName" :"车轮直径"
+		},
+	"DetectionSpeed" : 
+		{
+			"DisplayIndex" : 5,
+			"DisplayName" :"检测速度"
+		},
+	"RepetitionFrequency" :
+		{
+			"DisplayIndex" : 6,
+			"DisplayName" : "重复频率"
+		},
+	"ProbeFrequency" :
+		{
+			"DisplayIndex" : 7,
+			"DisplayName" : "探头频率"
+		},
+	"ProbeSensitivity" :
+		{
+			"DisplayIndex" : 8,
+			"DisplayName" : "探头灵敏度"
+		}
+}

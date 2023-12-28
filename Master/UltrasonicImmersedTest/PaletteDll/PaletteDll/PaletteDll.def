@@ -1,0 +1,6 @@
+; PaletteDll.def : Declares the module parameters for the DLL.
+
+LIBRARY      "PaletteDll"
+
+EXPORTS
+    ; Explicit exports can go here
